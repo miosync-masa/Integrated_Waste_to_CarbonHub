@@ -1,0 +1,16 @@
+Quantity,Value,Unit
+CH4 feed,48.0,t/d
+CO2 feed,42.0,t/d
+Solar H2,2.52,t/d
+Pyro X_CH4,0.583291225067477,-
+Pyro tau_s,3.0,s
+RWGS X_CO2,0.634640909414529,-
+RWGS tau_s,3.0,s
+CFR tau_s,3.0,s
+Stage1 C,20.961398953169837,t/d
+Stage3 C,0.0,t/d
+Stage3 C(eng),0.0,t/d
+Water,10.365582806375956,t/d
+Q1,1822.9378201471573,kW
+Q2,247.24172691895237,kW
+Q3,-4.891130655641556,kW
