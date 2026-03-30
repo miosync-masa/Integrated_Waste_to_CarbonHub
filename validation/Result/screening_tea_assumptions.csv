@@ -1,0 +1,4 @@
+name,waste_gate_fee_usd_per_t_waste,carbon_product_price_usd_per_t,recovered_water_value_usd_per_t,carbon_credit_usd_per_tCO2e,carbonate_value_usd_per_tCO2_fixed,carbonate_fixed_co2_tpd,electricity_cost_usd_per_kWh,heat_cost_usd_per_kWhth,fixed_opex_usd_per_year,capex_usd,waste_tpd,creditable_fraction_of_fixed_CO2e
+Conservative,8.0,180.0,0.3,0.0,15.0,0.0,0.08,0.025,1800000.0,14000000.0,100.0,0.0
+Base,15.0,350.0,0.75,35.0,25.0,0.0,0.06,0.018,1500000.0,12000000.0,100.0,0.0
+Opportunity,25.0,700.0,1.5,80.0,40.0,10.0,0.04,0.01,1300000.0,10000000.0,100.0,0.5
