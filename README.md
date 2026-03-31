@@ -1,4 +1,7 @@
-# Waste-to-Solid-Carbon: Thermodynamic and Kinetic Workflow
+# Integrated Waste-to-Solid-Carbon System
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15_kDIGbXsrWM8ixbpGA8rqWov2XR4zH7)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Companion code for:**  
 *Mass-Balance-Consistent Carbon Management: Thermodynamic Design of an Integrated Waste-to-Solid-Carbon System*  
