@@ -1,0 +1,19 @@
+# environments / caches
+.venv/
+__pycache__/
+*.pyc
+.claude/
+.DS_Store
+
+# manuscript (TeX) and internal working documents
+Integrated_Waste_to_Carbon_Hub/
+FPT_revision_tracker.md
+FPT_revision_skeleton.md
+revision/notes/
+*.bib
+
+# third-party source documents (see revision/SOURCES.md for URLs and checksums)
+revision/sources/
+
+# regenerable binary caches
+*.pkl

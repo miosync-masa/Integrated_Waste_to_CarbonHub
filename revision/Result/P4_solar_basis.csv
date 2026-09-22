@@ -1,0 +1,42 @@
+section,item,value,unit,note
+1 basis,code LHV used (Workflow_cantera.solar_h2_kmol_per_day),33.333333333333336,kWh/kg,LHV=120e6 J/kg in code
+1 basis,AFDC LHV,33.32964166666667,kWh/kg,"51,585 Btu/lb"
+1 basis,AFDC HHV,39.42117722222223,kWh/kg,"61,013 Btu/lb"
+1 basis,H2 produced in model,2.52,t/d,"1250.0 kmol/d, 105.0 kg/h"
+1 basis,specific consumption implied (LHV/eff),47.61377380952381,kWh/kg H2,eff 0.70 LHV
+1 basis,"continuous power, eff 0.70 on LHV",4999.446250000001,kW,"= submitted 5,000 kW"
+1 basis,"continuous power, eff 0.70 on HHV",5913.176583333334,kW,"if 0.70 were HHV-based, the same H2 needs this power"
+1 basis,LHV-equivalent efficiency if 0.70 is HHV,0.8279364156246971,-,0.70 HHV = 0.83 LHV (implausible today)
+1 basis,HHV-equivalent efficiency of 0.70 LHV,0.5918328880730336,-,
+1 basis,IRENA 2020 system efficiency (LHV),0.65,-,51.2 kWh/kg
+1 basis,IRENA 2050 target (LHV),0.76,-,43.8 kWh/kg
+1 basis,power at IRENA 2020 efficiency (LHV) for same H2,5376.0,kW,
+1 basis,power at IRENA 2050 efficiency (LHV) for same H2,4599.0,kW,
+1 basis,"daily electricity, LHV basis",119.98671000000002,MWh/d,
+1 basis,"daily electricity, HHV basis",141.91623800000002,MWh/d,
+2 PV,equatorial dry belt PVOUT avg range (country averages),4.50-4.94,kWh/kWp/day,"Sudan, Eritrea, Chad, Niger, Djibouti, Somalia, Mauritania, Ethiopia, Mali, Kenya"
+2 PV,equatorial dry belt PVOUT 90th-percentile sites,4.81-5.25,kWh/kWp/day,best decile of each country's area
+2 PV,equatorial dry belt specific yield,1644-1916,kWh/kWp/yr,avg to p90
+2 PV,equatorial dry belt capacity factor,0.188-0.219,-,PVOUT/24 h
+2 PV,"PV capacity for 5 MW continuous (LHV), belt",22.9-26.6,MWp,120 MWh/d / PVOUT
+2 PV,"PV capacity, Kenya (avg / best-decile sites e.g. Turkana-Marsabit)",26.6 / 24.4,MWp,
+2 PV,"PV capacity, HHV basis, belt",27.0-31.5,MWp,
+2 PV,"land at 1-2 ha/MWp, belt",24-53,ha,0.2-0.5 km2
+2 PV,ratio PV nameplate / continuous power,4.9-5.3,-,= 1/CF
+3a PV-following,"intra-day H2 buffer, sin2 bell (6 PSH, 12 h daylight)",1534.669999685741,kg,peak/mean production 4.00
+3a PV-following,"electrolyser peak / continuous, sin2 bell (6 PSH, 12 h daylight)",19997.785000000003,kW,electrolyser capacity if it follows PV
+3a PV-following,"intra-day H2 buffer, half-sine (7.6 PSH)",1388.7811348912778,kg,peak/mean production 3.14
+3a PV-following,"electrolyser peak / continuous, half-sine (7.6 PSH)",15706.248529758815,kW,electrolyser capacity if it follows PV
+3a PV-following,"intra-day H2 buffer, 6 h rectangular",1888.2500000000066,kg,peak/mean production 3.99
+3a PV-following,"electrolyser peak / continuous, 6 h rectangular",19942.389473684212,kW,electrolyser capacity if it follows PV
+3a PV-following,"cloudy-day autonomy, 1 day",2520.0,kg,adds one day of Stage 2 demand
+3a PV-following,electrolyser capacity factor if sized to PV peak (sin2),0.25,-,= 6 PSH / 24 h
+3a PV-following,H2 buffer volume at 30 bar / 200 bar (2 t),833 / 138,m3,densities ~2.4 and ~14.5 kg/m3 at 300 K
+3b baseload,electrolyser capacity,5262.575000000001,kW,5 MW continuous at 95 % availability
+3b baseload,Kenya geothermal installed capacity 2023 (IRENA 2025),985.0,MW,"IRENA Renewable Capacity Statistics 2025, p.57"
+3b baseload,Kenya geothermal installed capacity 2024 (IRENA 2025),940.0,MW,same table; EPRA FY2023/24 reports 943.7 MW as at June 2024 (to be checked)
+3b baseload,5 MW as share of Kenya geothermal (2024),0.005319148936170213,-,
+4 annual,"annual electricity, 365 d continuous (LHV basis)",43.79514915000001,GWh/yr,process-model basis
+4 annual,"annual electricity, 330 operating days (LHV basis)",39.59561430000001,GWh/yr,"= screening TEA basis (5,000 kW x 24 h x 330 d)"
+4 annual,"annual H2, 365 d / 330 d",920 / 832,t/yr,
+4 annual,"annual electricity, 330 d, HHV basis",46.83235854000001,GWh/yr,

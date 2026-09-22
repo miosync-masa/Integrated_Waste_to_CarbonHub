@@ -1,0 +1,33 @@
+K3 Stage 2 extent decomposition and heat apportionment
+Conditions: T = 950 K, P = 1.00 atm, Gibbs equilibrium (GRI-3.0 gas phase). ALL VALUES EQUILIBRIUM.
+Feed A = EQ chain (Stage 1 Gibbs 1200 K) -> main-text baseline.  Feed B = KIN chain (Stage 1 kinetic tau=3 s) -> validation_stage2 CSV feed.
+
+===== Feed case A_eq_chain =====
+Stage 1 X_CH4 = 0.9698  (CH4 residual 90.3 kmol/d)
+Stage 2 feed  [kmol/d]: CO2 954.4, H2 7053.3, CH4 90.3
+Stage 2 out   [kmol/d]: CO2 177.8, H2 5683.9, CO 579.0, H2O 974.2, CH4 287.9
+Trace species beyond the 5-species basis (sum 0.0022 kmol/d): C2H6 0.0016, C2H4 0.0003, CH2O 0.0002, CH3OH 0.0000
+X_CO2 (Gibbs, equilibrium)            = 0.8137
+X_CO2 (RWGS-only equilibrium, CH4 inert) = 0.8177   <- plateau of 1-reaction reduced model
+xi1 (RWGS)            = +579.0 kmol/d
+xi2 (CO2 methanation) = +197.6 kmol/d
+Element-closure residuals dn - dn_pred [kmol/d]: CO2 -0.0042, H2 -0.0139, H2O +0.0081   (max relative 1.0e-05)
+dH(950 K): RWGS +35.27 kJ/mol ; CO2 methanation -189.22 kJ/mol
+Q_RWGS = +236.3 kW ; Q_meth = -432.8 kW ; sum = -196.4 kW ; direct Q2 = -196.4 kW ; difference +0.006 kW
+
+===== Feed case B_kin_chain =====
+Stage 1 X_CH4 = 0.5833  (CH4 residual 1246.8 kmol/d)
+Stage 2 feed  [kmol/d]: CO2 954.4, H2 4740.4, CH4 1246.8
+Stage 2 out   [kmol/d]: CO2 173.4, H2 5016.8, CO 1133.4, H2O 428.5, CH4 894.3
+Trace species beyond the 5-species basis (sum 0.0222 kmol/d): C2H6 0.0177, C2H4 0.0040, CH2O 0.0004, CH3OH 0.0000
+X_CO2 (Gibbs, equilibrium)            = 0.8183
+X_CO2 (RWGS-only equilibrium, CH4 inert) = 0.7565   <- plateau of 1-reaction reduced model
+xi1 (RWGS)            = +1133.4 kmol/d
+xi2 (CO2 methanation) = -352.5 kmol/d   (negative = net steam reforming of CH4)
+Element-closure residuals dn - dn_pred [kmol/d]: CO2 -0.0439, H2 -0.1491, H2O +0.0874   (max relative 5.4e-04)
+dH(950 K): RWGS +35.27 kJ/mol ; CO2 methanation -189.22 kJ/mol
+Q_RWGS = +462.7 kW ; Q_meth = +772.0 kW ; sum = +1234.6 kW ; direct Q2 = +1234.6 kW ; difference +0.070 kW
+
+Saved: <repo>/revision/Result/K3_extent_decomposition.csv
+       <repo>/revision/Result/K3_heat_apportionment.csv
+       <repo>/revision/Result/K3_extent_summary.txt

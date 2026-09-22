@@ -1,0 +1,8 @@
+item,value,unit,note
+organic waste intake,800.0,t/d,manuscript boundary (not in code)
+CH4 to Stage 1,48.0,t/d,"= 66,964 Nm3/d = 60 kg CH4 per t waste"
+biogas CO2 to Stage 2,32.0,t/d,"= 16,188 Nm3/d = 40 kg CO2 per t waste"
+CH4 yield per t waste,83.70535714285714,Nm3 CH4/t waste,83.7; plausible for food-rich organic waste (order 50-100)
+CH4 fraction if 48+32 t/d were the whole biogas,0.8053231939163499,vol fraction,0.80 - higher than typical raw biogas (0.55-0.65)
+biogas CO2 at 60 vol% CH4,88.25,t/d,88 t/d -> the 32 t/d routed to Stage 2 is ~36 % of biogas CO2; the rest must be vented/used elsewhere - manuscript should say so
+total biogas at 60 vol% CH4,139.50892857142856,Nm3 biogas/t waste,"139 Nm3/t; high end for mixed organic MSW, typical for food waste"

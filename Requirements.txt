@@ -1,4 +1,8 @@
-cantera>=2.6
+# submitted version (submitted_v1/): cantera>=2.6, numpy, pandas, matplotlib
+# revision (revision/): tested with Python 3.12, cantera 3.2.0, numpy 2.5, scipy 1.18, pandas, matplotlib, openpyxl, pypdf
+cantera>=3.0
 numpy
+scipy
 pandas
 matplotlib
+openpyxl

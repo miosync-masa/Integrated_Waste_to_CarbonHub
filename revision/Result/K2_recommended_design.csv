@@ -1,0 +1,4 @@
+priority,stage,measure,temperatures,residence_times,pressures,min_points,parameters
+1,Stage 3 CO2 methanation (650 K reactor),CH4 yield and COx conversion at reactor outlet,600 / 650 / 700 K,1 / 3 / 10 s (add 0.3 and 30 s if the 1-10 s points are near equilibrium),1 and 5 bar,3 T x 3 tau x 2 P = 18,"k_ref, Ea, pressure order n"
+2,Stage 2 CO2 methanation and RWGS (950 K reactor),CO2 conversion and CH4 yield (both needed to separate the two reactions),900 / 950 / 1000 K,1 / 3 / 10 s,1 bar (5 bar optional),3 T x 3 tau = 9,"k1_ref, Ea1 (RWGS); k2_ref, Ea2 (methanation)"
+4,Stage 1 CH4 pyrolysis (1200 K reactor),CH4 conversion (solid carbon yield as check),1150 / 1200 / 1250 K,1 / 3 / 10 s,1 bar,3 T x 3 tau = 9,"k_ref, Ea"

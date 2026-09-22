@@ -1,0 +1,325 @@
+scenario,path,charge_basis,chargeable_tpd,fee_usd_per_t,fee_label,gate_revenue_usd_y,annual_value_usd_y,simple_payback_y,gate_share_of_gross_revenue
+Conservative,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,0.0,0 (no fee),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",33000.0,-3043979.0660242215,,0.015051269737280248
+Conservative,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,8.0,8 (submitted Conservative),264000.0,-2812979.0660242215,,0.10893308878039973
+Conservative,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",435600.0,-2641379.0660242215,,0.1678544117858474
+Conservative,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,15.0,15 (submitted Base),495000.0,-2581979.0660242215,,0.1864753706227676
+Conservative,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",613800.0,-2463179.0660242215,,0.221324292499052
+Conservative,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,25.0,25 (submitted Opportunity),825000.0,-2251979.0660242215,,0.2764276518220179
+Conservative,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",1155000.0,-1921979.0660242215,,0.3484682126480578
+Conservative,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),1745700.0,-1331279.0660242215,,0.44701866596445683
+Conservative,Carbon Product Path,no gate fee (0 t/d),0.0,0.0,0 (no fee),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,no gate fee (0 t/d),0.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,no gate fee (0 t/d),0.0,8.0,8 (submitted Conservative),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,no gate fee (0 t/d),0.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,no gate fee (0 t/d),0.0,15.0,15 (submitted Base),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,no gate fee (0 t/d),0.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,no gate fee (0 t/d),0.0,25.0,25 (submitted Opportunity),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,no gate fee (0 t/d),0.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,no gate fee (0 t/d),0.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,0.0,0 (no fee),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",66000.0,-3010979.0660242215,,0.029656176364718758
+Conservative,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,8.0,8 (submitted Conservative),528000.0,-2548979.0660242215,,0.19646467380679192
+Conservative,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",871200.0,-2205779.0660242215,,0.2874577688655036
+Conservative,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,15.0,15 (submitted Base),990000.0,-2086979.0660242215,,0.3143350047374161
+Conservative,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",1227600.0,-1849379.0660242215,,0.3624332928745439
+Conservative,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,25.0,25 (submitted Opportunity),1650000.0,-1426979.0660242215,,0.4331270188755866
+Conservative,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",2310000.0,-766979.066024222,,0.5168356352483126
+Conservative,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),3491400.0,414420.93397577805,33.782077236518816,0.6178478225317336
+Conservative,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,0.0,0 (no fee),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",132000.0,-2944979.0660242215,,0.05760403724167847
+Conservative,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,8.0,8 (submitted Conservative),1056000.0,-2020979.0660242215,,0.3284086494283199
+Conservative,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",1742400.0,-1334579.0660242215,,0.44655098725111403
+Conservative,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,15.0,15 (submitted Base),1980000.0,-1096979.0660242215,,0.47831793812752543
+Conservative,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",2455200.0,-621779.066024222,,0.5320382212766693
+Conservative,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,25.0,25 (submitted Opportunity),3300000.0,223020.93397577805,62.77437615574024,0.6044502869193167
+Conservative,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",4620000.0,1543020.933975778,9.073110864366127,0.6814655764119154
+Conservative,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),6982800.0,3905820.9339757776,3.5843937130392836,0.7637897877995441
+Conservative,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,0.0,0 (no fee),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",198000.0,-2878979.0660242215,,0.08398705902458217
+Conservative,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,8.0,8 (submitted Conservative),1584000.0,-1492979.0660242215,,0.4231327471347679
+Conservative,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",2613600.0,-463379.06602422195,,0.5475679717014784
+Conservative,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,15.0,15 (submitted Base),2970000.0,-106979.06602422195,,0.5790031183274027
+Conservative,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",3682800.0000000005,605820.933975778,23.109138715499963,0.6303675238461596
+Conservative,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,25.0,25 (submitted Opportunity),4950000.0,1873020.933975778,7.474556074652527,0.6962509017220976
+Conservative,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",6930000.0,3853020.9339757776,3.6335125710189073,0.7624176671219346
+Conservative,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),10474200.0,7397220.9339757785,1.8926026578031963,0.829067888416709
+Conservative,Carbon Product Path,full intake 800 t/d,800.0,0.0,0 (no fee),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Product Path,full intake 800 t/d,800.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",264000.0,-2812979.0660242215,,0.10893308878039973
+Conservative,Carbon Product Path,full intake 800 t/d,800.0,8.0,8 (submitted Conservative),2112000.0,-964979.066024222,,0.49443919168947065
+Conservative,Carbon Product Path,full intake 800 t/d,800.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",3484800.0,407820.93397577805,34.328791961502176,0.6174009643444321
+Conservative,Carbon Product Path,full intake 800 t/d,800.0,15.0,15 (submitted Base),3960000.0,883020.933975778,15.854663758610315,0.6471110520831195
+Conservative,Carbon Product Path,full intake 800 t/d,800.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",4910400.0,1833420.933975778,7.635998771782846,0.6945495404590027
+Conservative,Carbon Product Path,full intake 800 t/d,800.0,25.0,25 (submitted Opportunity),6600000.0,3523020.9339757776,3.973862279665993,0.7534671430423855
+Conservative,Carbon Product Path,full intake 800 t/d,800.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",9240000.0,6163020.933975778,2.2716132477857043,0.8105614363704036
+Conservative,Carbon Product Path,full intake 800 t/d,800.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),13965600.0,10888620.933975779,1.2857459254840786,0.8660780248109128
+Conservative,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,0.0,0 (no fee),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",33000.0,-3043979.0660242215,,0.015051269737280248
+Conservative,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,8.0,8 (submitted Conservative),264000.0,-2812979.0660242215,,0.10893308878039973
+Conservative,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",435600.0,-2641379.0660242215,,0.1678544117858474
+Conservative,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,15.0,15 (submitted Base),495000.0,-2581979.0660242215,,0.1864753706227676
+Conservative,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",613800.0,-2463179.0660242215,,0.221324292499052
+Conservative,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,25.0,25 (submitted Opportunity),825000.0,-2251979.0660242215,,0.2764276518220179
+Conservative,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",1155000.0,-1921979.0660242215,,0.3484682126480578
+Conservative,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),1745700.0,-1331279.0660242215,,0.44701866596445683
+Conservative,Carbon Fixation Path,no gate fee (0 t/d),0.0,0.0,0 (no fee),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,no gate fee (0 t/d),0.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,no gate fee (0 t/d),0.0,8.0,8 (submitted Conservative),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,no gate fee (0 t/d),0.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,no gate fee (0 t/d),0.0,15.0,15 (submitted Base),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,no gate fee (0 t/d),0.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,no gate fee (0 t/d),0.0,25.0,25 (submitted Opportunity),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,no gate fee (0 t/d),0.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,no gate fee (0 t/d),0.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,0.0,0 (no fee),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",66000.0,-3010979.0660242215,,0.029656176364718758
+Conservative,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,8.0,8 (submitted Conservative),528000.0,-2548979.0660242215,,0.19646467380679192
+Conservative,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",871200.0,-2205779.0660242215,,0.2874577688655036
+Conservative,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,15.0,15 (submitted Base),990000.0,-2086979.0660242215,,0.3143350047374161
+Conservative,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",1227600.0,-1849379.0660242215,,0.3624332928745439
+Conservative,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,25.0,25 (submitted Opportunity),1650000.0,-1426979.0660242215,,0.4331270188755866
+Conservative,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",2310000.0,-766979.066024222,,0.5168356352483126
+Conservative,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),3491400.0,414420.93397577805,33.782077236518816,0.6178478225317336
+Conservative,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,0.0,0 (no fee),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",132000.0,-2944979.0660242215,,0.05760403724167847
+Conservative,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,8.0,8 (submitted Conservative),1056000.0,-2020979.0660242215,,0.3284086494283199
+Conservative,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",1742400.0,-1334579.0660242215,,0.44655098725111403
+Conservative,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,15.0,15 (submitted Base),1980000.0,-1096979.0660242215,,0.47831793812752543
+Conservative,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",2455200.0,-621779.066024222,,0.5320382212766693
+Conservative,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,25.0,25 (submitted Opportunity),3300000.0,223020.93397577805,62.77437615574024,0.6044502869193167
+Conservative,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",4620000.0,1543020.933975778,9.073110864366127,0.6814655764119154
+Conservative,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),6982800.0,3905820.9339757776,3.5843937130392836,0.7637897877995441
+Conservative,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,0.0,0 (no fee),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",198000.0,-2878979.0660242215,,0.08398705902458217
+Conservative,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,8.0,8 (submitted Conservative),1584000.0,-1492979.0660242215,,0.4231327471347679
+Conservative,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",2613600.0,-463379.06602422195,,0.5475679717014784
+Conservative,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,15.0,15 (submitted Base),2970000.0,-106979.06602422195,,0.5790031183274027
+Conservative,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",3682800.0000000005,605820.933975778,23.109138715499963,0.6303675238461596
+Conservative,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,25.0,25 (submitted Opportunity),4950000.0,1873020.933975778,7.474556074652527,0.6962509017220976
+Conservative,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",6930000.0,3853020.9339757776,3.6335125710189073,0.7624176671219346
+Conservative,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),10474200.0,7397220.9339757785,1.8926026578031963,0.829067888416709
+Conservative,Carbon Fixation Path,full intake 800 t/d,800.0,0.0,0 (no fee),0.0,-3076979.0660242215,,0.0
+Conservative,Carbon Fixation Path,full intake 800 t/d,800.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",264000.0,-2812979.0660242215,,0.10893308878039973
+Conservative,Carbon Fixation Path,full intake 800 t/d,800.0,8.0,8 (submitted Conservative),2112000.0,-964979.066024222,,0.49443919168947065
+Conservative,Carbon Fixation Path,full intake 800 t/d,800.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",3484800.0,407820.93397577805,34.328791961502176,0.6174009643444321
+Conservative,Carbon Fixation Path,full intake 800 t/d,800.0,15.0,15 (submitted Base),3960000.0,883020.933975778,15.854663758610315,0.6471110520831195
+Conservative,Carbon Fixation Path,full intake 800 t/d,800.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",4910400.0,1833420.933975778,7.635998771782846,0.6945495404590027
+Conservative,Carbon Fixation Path,full intake 800 t/d,800.0,25.0,25 (submitted Opportunity),6600000.0,3523020.9339757776,3.973862279665993,0.7534671430423855
+Conservative,Carbon Fixation Path,full intake 800 t/d,800.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",9240000.0,6163020.933975778,2.2716132477857043,0.8105614363704036
+Conservative,Carbon Fixation Path,full intake 800 t/d,800.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),13965600.0,10888620.933975779,1.2857459254840786,0.8660780248109128
+Base,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,0.0,0 (no fee),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",33000.0,163647.25110929506,73.32845445711497,0.007795969487205427
+Base,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,8.0,8 (submitted Conservative),264000.0,394647.25110929506,30.406901267574458,0.0591403607619083
+Base,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",435600.0,566247.2511092951,21.192155858578822,0.09396929938416844
+Base,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,15.0,15 (submitted Base),495000.0,625647.2511092951,19.180137016063874,0.10543228593090974
+Base,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",613800.0,744447.2511092951,16.119342212787934,0.12750956458498802
+Base,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,25.0,25 (submitted Opportunity),825000.0,955647.2511092951,12.556934565626234,0.16418052454603346
+Base,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",1155000.0,1285647.251109295,9.333819980283113,0.21568802512323457
+Base,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),1745700.0,1876347.251109295,6.3954046847701616,0.2936092909595288
+Base,Carbon Product Path,no gate fee (0 t/d),0.0,0.0,0 (no fee),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,no gate fee (0 t/d),0.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,no gate fee (0 t/d),0.0,8.0,8 (submitted Conservative),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,no gate fee (0 t/d),0.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,no gate fee (0 t/d),0.0,15.0,15 (submitted Base),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,no gate fee (0 t/d),0.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,no gate fee (0 t/d),0.0,25.0,25 (submitted Opportunity),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,no gate fee (0 t/d),0.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,no gate fee (0 t/d),0.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,0.0,0 (no fee),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",66000.0,196647.25110929506,61.02297353412019,0.015471324996809092
+Base,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,8.0,8 (submitted Conservative),528000.0,658647.2511092951,18.219160529083776,0.111676153516357
+Base,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",871200.0,1001847.2511092951,11.977873859226548,0.17179513069894534
+Base,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,15.0,15 (submitted Base),990000.0,1120647.251109295,10.708097475027543,0.19075304253868938
+Base,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",1227600.0,1358247.251109295,8.834915727014703,0.22617912714899502
+Base,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,25.0,25 (submitted Opportunity),1650000.0,1780647.251109295,6.739122525544756,0.28205337760662996
+Base,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",2310000.0,2440647.251109295,4.916728541802137,0.35484107874036225
+Base,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),3491400.0,3622047.2511092955,3.3130434718445088,0.4539381295595758
+Base,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,0.0,0 (no fee),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",132000.0,262647.25110929506,45.688656360642646,0.030471219848295976
+Base,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,8.0,8 (submitted Conservative),1056000.0,1186647.251109295,10.112525005878728,0.20091490343318555
+Base,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",1742400.0,1873047.251109295,6.406672331887576,0.29321700730480765
+Base,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,15.0,15 (submitted Base),1980000.0,2110647.251109295,5.685459753491801,0.32039060279367965
+Base,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",2455200.0,2585847.251109295,4.640645341619523,0.3689169422984504
+Base,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,25.0,25 (submitted Opportunity),3300000.0,3430647.2511092955,3.4978822133694494,0.44000254986757953
+Base,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",4620000.0,4750647.251109295,2.525971592017899,0.5238121050629333
+Base,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),6982800.0,7113447.251109295,1.6869458050917128,0.6244256482868111
+Base,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,0.0,0 (no fee),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",198000.0,328647.25110929506,36.51331316326536,0.0450209087680237
+Base,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,8.0,8 (submitted Conservative),1584000.0,1714647.251109295,6.998524035912676,0.2738609790679962
+Base,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",2613600.0,2744247.2511092955,4.372783828115083,0.3835882165152207
+Base,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,15.0,15 (submitted Base),2970000.0,3100647.2511092955,3.8701596886607623,0.41422845240961476
+Base,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",3682800.0000000005,3813447.2511092955,3.1467591420097167,0.4671969739139618
+Base,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,25.0,25 (submitted Opportunity),4950000.0,5080647.251109295,2.3619037903841784,0.540986176294929
+Base,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",6930000.0,7060647.251109295,1.6995609004705179,0.6226439409005112
+Base,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),10474200.0,10604847.251109295,1.1315580239729308,0.7137854890586375
+Base,Carbon Product Path,full intake 800 t/d,800.0,0.0,0 (no fee),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Product Path,full intake 800 t/d,800.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",264000.0,394647.25110929506,30.406901267574458,0.0591403607619083
+Base,Carbon Product Path,full intake 800 t/d,800.0,8.0,8 (submitted Conservative),2112000.0,2242647.251109295,5.350819213349029,0.33460306447827126
+Base,Carbon Product Path,full intake 800 t/d,800.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",3484800.0,3615447.2511092955,3.319091433658214,0.4534691480989736
+Base,Carbon Product Path,full intake 800 t/d,800.0,15.0,15 (submitted Base),3960000.0,4090647.2511092955,2.933521094185244,0.4852967025299906
+Base,Carbon Product Path,full intake 800 t/d,800.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",4910400.0,5041047.251109295,2.3804577505912827,0.5389909802402305
+Base,Carbon Product Path,full intake 800 t/d,800.0,25.0,25 (submitted Opportunity),6600000.0,6730647.251109295,1.782889453614175,0.6111135704697767
+Base,Carbon Product Path,full intake 800 t/d,800.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",9240000.0,9370647.251109295,1.2805945713706641,0.6875022233023932
+Base,Carbon Product Path,full intake 800 t/d,800.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),13965600.0,14096247.251109298,0.8512904027740904,0.7687956034741966
+Base,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,0.0,0 (no fee),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",33000.0,163647.25110929506,73.32845445711497,0.007795969487205427
+Base,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,8.0,8 (submitted Conservative),264000.0,394647.25110929506,30.406901267574458,0.0591403607619083
+Base,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",435600.0,566247.2511092951,21.192155858578822,0.09396929938416844
+Base,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,15.0,15 (submitted Base),495000.0,625647.2511092951,19.180137016063874,0.10543228593090974
+Base,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",613800.0,744447.2511092951,16.119342212787934,0.12750956458498802
+Base,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,25.0,25 (submitted Opportunity),825000.0,955647.2511092951,12.556934565626234,0.16418052454603346
+Base,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",1155000.0,1285647.251109295,9.333819980283113,0.21568802512323457
+Base,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),1745700.0,1876347.251109295,6.3954046847701616,0.2936092909595288
+Base,Carbon Fixation Path,no gate fee (0 t/d),0.0,0.0,0 (no fee),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,no gate fee (0 t/d),0.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,no gate fee (0 t/d),0.0,8.0,8 (submitted Conservative),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,no gate fee (0 t/d),0.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,no gate fee (0 t/d),0.0,15.0,15 (submitted Base),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,no gate fee (0 t/d),0.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,no gate fee (0 t/d),0.0,25.0,25 (submitted Opportunity),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,no gate fee (0 t/d),0.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,no gate fee (0 t/d),0.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,0.0,0 (no fee),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",66000.0,196647.25110929506,61.02297353412019,0.015471324996809092
+Base,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,8.0,8 (submitted Conservative),528000.0,658647.2511092951,18.219160529083776,0.111676153516357
+Base,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",871200.0,1001847.2511092951,11.977873859226548,0.17179513069894534
+Base,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,15.0,15 (submitted Base),990000.0,1120647.251109295,10.708097475027543,0.19075304253868938
+Base,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",1227600.0,1358247.251109295,8.834915727014703,0.22617912714899502
+Base,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,25.0,25 (submitted Opportunity),1650000.0,1780647.251109295,6.739122525544756,0.28205337760662996
+Base,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",2310000.0,2440647.251109295,4.916728541802137,0.35484107874036225
+Base,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),3491400.0,3622047.2511092955,3.3130434718445088,0.4539381295595758
+Base,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,0.0,0 (no fee),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",132000.0,262647.25110929506,45.688656360642646,0.030471219848295976
+Base,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,8.0,8 (submitted Conservative),1056000.0,1186647.251109295,10.112525005878728,0.20091490343318555
+Base,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",1742400.0,1873047.251109295,6.406672331887576,0.29321700730480765
+Base,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,15.0,15 (submitted Base),1980000.0,2110647.251109295,5.685459753491801,0.32039060279367965
+Base,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",2455200.0,2585847.251109295,4.640645341619523,0.3689169422984504
+Base,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,25.0,25 (submitted Opportunity),3300000.0,3430647.2511092955,3.4978822133694494,0.44000254986757953
+Base,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",4620000.0,4750647.251109295,2.525971592017899,0.5238121050629333
+Base,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),6982800.0,7113447.251109295,1.6869458050917128,0.6244256482868111
+Base,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,0.0,0 (no fee),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",198000.0,328647.25110929506,36.51331316326536,0.0450209087680237
+Base,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,8.0,8 (submitted Conservative),1584000.0,1714647.251109295,6.998524035912676,0.2738609790679962
+Base,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",2613600.0,2744247.2511092955,4.372783828115083,0.3835882165152207
+Base,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,15.0,15 (submitted Base),2970000.0,3100647.2511092955,3.8701596886607623,0.41422845240961476
+Base,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",3682800.0000000005,3813447.2511092955,3.1467591420097167,0.4671969739139618
+Base,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,25.0,25 (submitted Opportunity),4950000.0,5080647.251109295,2.3619037903841784,0.540986176294929
+Base,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",6930000.0,7060647.251109295,1.6995609004705179,0.6226439409005112
+Base,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),10474200.0,10604847.251109295,1.1315580239729308,0.7137854890586375
+Base,Carbon Fixation Path,full intake 800 t/d,800.0,0.0,0 (no fee),0.0,130647.25110929506,91.85038259979314,0.0
+Base,Carbon Fixation Path,full intake 800 t/d,800.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",264000.0,394647.25110929506,30.406901267574458,0.0591403607619083
+Base,Carbon Fixation Path,full intake 800 t/d,800.0,8.0,8 (submitted Conservative),2112000.0,2242647.251109295,5.350819213349029,0.33460306447827126
+Base,Carbon Fixation Path,full intake 800 t/d,800.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",3484800.0,3615447.2511092955,3.319091433658214,0.4534691480989736
+Base,Carbon Fixation Path,full intake 800 t/d,800.0,15.0,15 (submitted Base),3960000.0,4090647.2511092955,2.933521094185244,0.4852967025299906
+Base,Carbon Fixation Path,full intake 800 t/d,800.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",4910400.0,5041047.251109295,2.3804577505912827,0.5389909802402305
+Base,Carbon Fixation Path,full intake 800 t/d,800.0,25.0,25 (submitted Opportunity),6600000.0,6730647.251109295,1.782889453614175,0.6111135704697767
+Base,Carbon Fixation Path,full intake 800 t/d,800.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",9240000.0,9370647.251109295,1.2805945713706641,0.6875022233023932
+Base,Carbon Fixation Path,full intake 800 t/d,800.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),13965600.0,14096247.251109298,0.8512904027740904,0.7687956034741966
+Opportunity,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,0.0,0 (no fee),0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",33000.0,5441519.025705097,1.8377221420638563,0.0039132384875251655
+Opportunity,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,8.0,8 (submitted Conservative),264000.0,5672519.025705097,1.7628852287114178,0.030471219848295976
+Opportunity,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",435600.0,5844119.025705097,1.7111218912577661,0.04930104187398834
+Opportunity,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,15.0,15 (submitted Base),495000.0,5903519.025705097,1.6939049330506109,0.055649784986816726
+Opportunity,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",613800.0,6022319.025705097,1.6604899138217264,0.06809624346985102
+Opportunity,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,25.0,25 (submitted Opportunity),825000.0,6233519.025705097,1.6042302844930936,0.08943173702056649
+Opportunity,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",1155000.0,6563519.025705097,1.5235729432391998,0.12088022058930092
+Opportunity,Carbon Product Path,"submitted (100 t/d, undocumented)",100.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),1745700.0,7154219.025705097,1.3977766076311078,0.17206451570791173
+Opportunity,Carbon Product Path,no gate fee (0 t/d),0.0,0.0,0 (no fee),0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,no gate fee (0 t/d),0.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,no gate fee (0 t/d),0.0,8.0,8 (submitted Conservative),0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,no gate fee (0 t/d),0.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,no gate fee (0 t/d),0.0,15.0,15 (submitted Base),0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,no gate fee (0 t/d),0.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,no gate fee (0 t/d),0.0,25.0,25 (submitted Opportunity),0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,no gate fee (0 t/d),0.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,no gate fee (0 t/d),0.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,0.0,0 (no fee),0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",66000.0,5474519.025705097,1.8266444874966963,0.007795969487205427
+Opportunity,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,8.0,8 (submitted Conservative),528000.0,5936519.025705097,1.6844888320411424,0.0591403607619083
+Opportunity,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",871200.0,6279719.025705097,1.5924279349229615,0.09396929938416844
+Opportunity,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,15.0,15 (submitted Base),990000.0,6398519.025705097,1.5628616496765093,0.10543228593090974
+Opportunity,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",1227600.0,6636119.025705097,1.5069048582861253,0.12750956458498802
+Opportunity,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,25.0,25 (submitted Opportunity),1650000.0,7058519.025705097,1.416727781505281,0.16418052454603346
+Opportunity,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",2310000.0,7718519.025705097,1.2955853275345766,0.21568802512323457
+Opportunity,Carbon Product Path,municipal share 25 % of 800 t/d,200.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),3491400.0,8899919.025705097,1.123605728447372,0.2936092909595288
+Opportunity,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,0.0,0 (no fee),0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",132000.0,5540519.025705097,1.8048850574477326,0.015471324996809092
+Opportunity,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,8.0,8 (submitted Conservative),1056000.0,6464519.025705097,1.546905494474785,0.111676153516357
+Opportunity,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",1742400.0,7150919.025705097,1.3984216523852997,0.17179513069894534
+Opportunity,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,15.0,15 (submitted Base),1980000.0,7388519.025705097,1.3534512079091094,0.19075304253868938
+Opportunity,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",2455200.0,7863719.025705097,1.2716629329343763,0.22617912714899502
+Opportunity,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,25.0,25 (submitted Opportunity),3300000.0,8708519.025705097,1.148300873028217,0.28205337760662996
+Opportunity,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",4620000.0,10028519.025705097,0.9971562076482083,0.35484107874036225
+Opportunity,Carbon Product Path,municipal share 50 % of 800 t/d,400.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),6982800.0,12391319.025705097,0.8070165879238167,0.4539381295595758
+Opportunity,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,0.0,0 (no fee),0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",198000.0,5606519.025705097,1.783637931870277,0.023028844129301
+Opportunity,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,8.0,8 (submitted Conservative),1584000.0,6992519.025705097,1.4300997913969409,0.1586552275031295
+Opportunity,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",2613600.0,8022119.025705097,1.2465534315755256,0.23730847574511799
+Opportunity,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,15.0,15 (submitted Base),2970000.0,8378519.025705097,1.1935283514091497,0.2612157173831527
+Opportunity,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",3682800.0000000005,9091319.025705097,1.0999504001262819,0.30479909418428913
+Opportunity,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,25.0,25 (submitted Opportunity),4950000.0,10358519.025705097,0.9653889687497395,0.3707889311981497
+Opportunity,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",6930000.0,12338519.025705097,0.810470039326988,0.45205735785385365
+Opportunity,Carbon Product Path,municipal share 75 % of 800 t/d,600.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),10474200.0,15882719.025705095,0.6296151171481208,0.55495058016118
+Opportunity,Carbon Product Path,full intake 800 t/d,800.0,0.0,0 (no fee),0.0,5408519.025705097,1.8489349769267607,0.0
+Opportunity,Carbon Product Path,full intake 800 t/d,800.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",264000.0,5672519.025705097,1.7628852287114178,0.030471219848295976
+Opportunity,Carbon Product Path,full intake 800 t/d,800.0,8.0,8 (submitted Conservative),2112000.0,7520519.025705097,1.3296954592921113,0.20091490343318555
+Opportunity,Carbon Product Path,full intake 800 t/d,800.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",3484800.0,8893319.025705097,1.1244395901121023,0.29321700730480765
+Opportunity,Carbon Product Path,full intake 800 t/d,800.0,15.0,15 (submitted Base),3960000.0,9368519.025705097,1.0674045676336101,0.32039060279367965
+Opportunity,Carbon Product Path,full intake 800 t/d,800.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",4910400.0,10318919.025705097,0.969093756341081,0.3689169422984504
+Opportunity,Carbon Product Path,full intake 800 t/d,800.0,25.0,25 (submitted Opportunity),6600000.0,12008519.025705097,0.8327421540153521,0.44000254986757953
+Opportunity,Carbon Product Path,full intake 800 t/d,800.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",9240000.0,14648519.025705095,0.6826628673145787,0.5238121050629333
+Opportunity,Carbon Product Path,full intake 800 t/d,800.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),13965600.0,19374119.025705095,0.5161525015270243,0.6244256482868111
+Opportunity,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,0.0,0 (no fee),0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",33000.0,7462706.911598928,1.3399963469632552,0.0031566559505333833
+Opportunity,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,8.0,8 (submitted Conservative),264000.0,7693706.911598928,1.2997635749451457,0.02470730047480911
+Opportunity,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",435600.0,7865306.911598928,1.2714062035205582,0.04012268567046924
+Opportunity,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,15.0,15 (submitted Base),495000.0,7924706.911598928,1.2618763206704322,0.04534586129744766
+Opportunity,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",613800.0,8043506.911598928,1.2432388148482552,0.05562351690108956
+Opportunity,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,25.0,25 (submitted Opportunity),825000.0,8254706.911598928,1.2114300491939587,0.0733587581154422
+Opportunity,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",1155000.0,8584706.911598928,1.1648621325078492,0.09977452719887317
+Opportunity,Carbon Fixation Path,"submitted (100 t/d, undocumented)",100.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),1745700.0,9175406.911598928,1.0898699203583742,0.14348060808007423
+Opportunity,Carbon Fixation Path,no gate fee (0 t/d),0.0,0.0,0 (no fee),0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,no gate fee (0 t/d),0.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,no gate fee (0 t/d),0.0,8.0,8 (submitted Conservative),0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,no gate fee (0 t/d),0.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,no gate fee (0 t/d),0.0,15.0,15 (submitted Base),0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,no gate fee (0 t/d),0.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,no gate fee (0 t/d),0.0,25.0,25 (submitted Opportunity),0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,no gate fee (0 t/d),0.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,no gate fee (0 t/d),0.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,0.0,0 (no fee),0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",66000.0,7495706.911598928,1.334096986172966,0.0062934456583798835
+Opportunity,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,8.0,8 (submitted Conservative),528000.0,7957706.911598928,1.2566434163872362,0.04822313740394104
+Opportunity,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",871200.0,8300906.911598928,1.2046876451568098,0.07714990976205066
+Opportunity,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,15.0,15 (submitted Base),990000.0,8419706.911598928,1.187689797874564,0.08675762343606722
+Opportunity,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",1227600.0,8657306.911598928,1.1550936223136725,0.10538514159741177
+Opportunity,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,25.0,25 (submitted Opportunity),1650000.0,9079706.911598928,1.1013571360134364,0.13669010023124495
+Opportunity,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",2310000.0,9739706.911598928,1.026724940571989,0.18144542309594858
+Opportunity,Carbon Fixation Path,municipal share 25 % of 800 t/d,200.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),3491400.0,10921106.911598928,0.915658099581403,0.25095416059740777
+Opportunity,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,0.0,0 (no fee),0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",132000.0,7561706.911598928,1.3224527367836705,0.012508171817142899
+Opportunity,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,8.0,8 (submitted Conservative),1056000.0,8485706.911598928,1.178452202530259,0.09200929779774147
+Opportunity,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",1742400.0,9172106.911598928,1.0902620408135593,0.14324823139815993
+Opportunity,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,15.0,15 (submitted Base),1980000.0,9409706.911598928,1.0627323564853486,0.15966324333067092
+Opportunity,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",2455200.0,9884906.911598928,1.011643315352421,0.19067587871701955
+Opportunity,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,25.0,25 (submitted Opportunity),3300000.0,10729706.911598928,0.9319919064322151,0.240505482019131
+Opportunity,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",4620000.0,12049706.911598928,0.8298957039672142,0.30715836643638655
+Opportunity,Carbon Fixation Path,municipal share 50 % of 800 t/d,400.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),6982800.0,14412506.911598928,0.6938418181747534,0.40122039400318504
+Opportunity,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,0.0,0 (no fee),0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",198000.0,7627706.911598928,1.3110099949951786,0.018645646252232057
+Opportunity,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,8.0,8 (submitted Conservative),1584000.0,9013706.911598928,1.109421473104689,0.13194391329130278
+Opportunity,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",2613600.0,10043306.911598928,0.9956879828546399,0.20051092911161925
+Opportunity,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,15.0,15 (submitted Base),2970000.0,10399706.911598928,0.9615655599723556,0.2217890828448357
+Opportunity,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",3682800.0000000005,11112506.911598928,0.899886954361511,0.26111924712754386
+Opportunity,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,25.0,25 (submitted Opportunity),4950000.0,12379706.911598928,0.8077735661601724,0.3220328858143058
+Opportunity,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",6930000.0,14359706.911598928,0.6963930435044317,0.39939828696391605
+Opportunity,Carbon Fixation Path,municipal share 75 % of 800 t/d,600.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),10474200.0,17903906.91159893,0.5585373097266031,0.5012705976575837
+Opportunity,Carbon Fixation Path,full intake 800 t/d,800.0,0.0,0 (no fee),0.0,7429706.911598928,1.3459481132948117,0.0
+Opportunity,Carbon Fixation Path,full intake 800 t/d,800.0,1.0,"1.0 (Nairobi tipping fee KES 100/t, ACC 2022)",264000.0,7693706.911598928,1.2997635749451457,0.02470730047480911
+Opportunity,Carbon Fixation Path,full intake 800 t/d,800.0,8.0,8 (submitted Conservative),2112000.0,9541706.911598928,1.0480305141047634,0.16851376262692433
+Opportunity,Carbon Fixation Path,full intake 800 t/d,800.0,13.2,"13.2 (Nairobi CCN disposal cost 2009, 1,020 KShs/t)",3484800.0,10914506.911598928,0.9162117978387943,0.2505986494691034
+Opportunity,Carbon Fixation Path,full intake 800 t/d,800.0,15.0,15 (submitted Base),3960000.0,11389706.911598928,0.877985717948221,0.27536139348885774
+Opportunity,Carbon Fixation Path,full intake 800 t/d,800.0,18.6,"18.6 (Nairobi cost KES 1,850/t, ACC 2022)",4910400.0,12340106.911598928,0.8103657506079324,0.3202817527847749
+Opportunity,Carbon Fixation Path,full intake 800 t/d,800.0,25.0,25 (submitted Opportunity),6600000.0,14029706.911598928,0.7127732648308279,0.38775400109908087
+Opportunity,Carbon Fixation Path,full intake 800 t/d,800.0,35.0,"35 (WaW 2.0 low-income operating cost, to be verified)",9240000.0,16669706.911598928,0.5998905711438701,0.4699635091251731
+Opportunity,Carbon Fixation Path,full intake 800 t/d,800.0,52.9,52.9 (Nairobi Ruai landfill estimate 2009),13965600.0,21395306.91159893,0.4673922202339968,0.5726727868368051

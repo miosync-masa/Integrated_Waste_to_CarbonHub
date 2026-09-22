@@ -1,0 +1,107 @@
+P4 solar basis — derived numbers
+        section                                                               item         value        unit                                                                              note
+        1 basis             code LHV used (Workflow_cantera.solar_h2_kmol_per_day)     33.333333      kWh/kg                                                            LHV=120e6 J/kg in code
+        1 basis                                                           AFDC LHV     33.329642      kWh/kg                                                                     51,585 Btu/lb
+        1 basis                                                           AFDC HHV     39.421177      kWh/kg                                                                     61,013 Btu/lb
+        1 basis                                               H2 produced in model          2.52         t/d                                                         1250.0 kmol/d, 105.0 kg/h
+        1 basis                             specific consumption implied (LHV/eff)     47.613774   kWh/kg H2                                                                      eff 0.70 LHV
+        1 basis                                  continuous power, eff 0.70 on LHV    4999.44625          kW                                                              = submitted 5,000 kW
+        1 basis                                  continuous power, eff 0.70 on HHV   5913.176583          kW                              if 0.70 were HHV-based, the same H2 needs this power
+        1 basis                           LHV-equivalent efficiency if 0.70 is HHV      0.827936           -                                           0.70 HHV = 0.83 LHV (implausible today)
+        1 basis                              HHV-equivalent efficiency of 0.70 LHV      0.591833           -                                                                                  
+        1 basis                                 IRENA 2020 system efficiency (LHV)          0.65           -                                                                       51.2 kWh/kg
+        1 basis                                            IRENA 2050 target (LHV)          0.76           -                                                                       43.8 kWh/kg
+        1 basis                   power at IRENA 2020 efficiency (LHV) for same H2        5376.0          kW                                                                                  
+        1 basis                   power at IRENA 2050 efficiency (LHV) for same H2        4599.0          kW                                                                                  
+        1 basis                                       daily electricity, LHV basis     119.98671       MWh/d                                                                                  
+        1 basis                                       daily electricity, HHV basis    141.916238       MWh/d                                                                                  
+           2 PV             equatorial dry belt PVOUT avg range (country averages)     4.50-4.94 kWh/kWp/day Sudan, Eritrea, Chad, Niger, Djibouti, Somalia, Mauritania, Ethiopia, Mali, Kenya
+           2 PV                    equatorial dry belt PVOUT 90th-percentile sites     4.81-5.25 kWh/kWp/day                                                best decile of each country's area
+           2 PV                                 equatorial dry belt specific yield     1644-1916  kWh/kWp/yr                                                                        avg to p90
+           2 PV                                equatorial dry belt capacity factor   0.188-0.219           -                                                                        PVOUT/24 h
+           2 PV                        PV capacity for 5 MW continuous (LHV), belt     22.9-26.6         MWp                                                                 120 MWh/d / PVOUT
+           2 PV PV capacity, Kenya (avg / best-decile sites e.g. Turkana-Marsabit)   26.6 / 24.4         MWp                                                                                  
+           2 PV                                       PV capacity, HHV basis, belt     27.0-31.5         MWp                                                                                  
+           2 PV                                           land at 1-2 ha/MWp, belt         24-53          ha                                                                       0.2-0.5 km2
+           2 PV                              ratio PV nameplate / continuous power       4.9-5.3           -                                                                            = 1/CF
+3a PV-following              intra-day H2 buffer, sin2 bell (6 PSH, 12 h daylight)       1534.67          kg                                                         peak/mean production 4.00
+3a PV-following   electrolyser peak / continuous, sin2 bell (6 PSH, 12 h daylight)     19997.785          kW                                            electrolyser capacity if it follows PV
+3a PV-following                           intra-day H2 buffer, half-sine (7.6 PSH)   1388.781135          kg                                                         peak/mean production 3.14
+3a PV-following                electrolyser peak / continuous, half-sine (7.6 PSH)   15706.24853          kW                                            electrolyser capacity if it follows PV
+3a PV-following                               intra-day H2 buffer, 6 h rectangular       1888.25          kg                                                         peak/mean production 3.99
+3a PV-following                    electrolyser peak / continuous, 6 h rectangular  19942.389474          kW                                            electrolyser capacity if it follows PV
+3a PV-following                                         cloudy-day autonomy, 1 day        2520.0          kg                                                    adds one day of Stage 2 demand
+3a PV-following            electrolyser capacity factor if sized to PV peak (sin2)          0.25           -                                                                    = 6 PSH / 24 h
+3a PV-following                         H2 buffer volume at 30 bar / 200 bar (2 t)     833 / 138          m3                                           densities ~2.4 and ~14.5 kg/m3 at 300 K
+    3b baseload                                              electrolyser capacity      5262.575          kW                                              5 MW continuous at 95 % availability
+    3b baseload              Kenya geothermal installed capacity 2023 (IRENA 2025)         985.0          MW                                    IRENA Renewable Capacity Statistics 2025, p.57
+    3b baseload              Kenya geothermal installed capacity 2024 (IRENA 2025)         940.0          MW       same table; EPRA FY2023/24 reports 943.7 MW as at June 2024 (to be checked)
+    3b baseload                           5 MW as share of Kenya geothermal (2024)      0.005319           -                                                                                  
+       4 annual                   annual electricity, 365 d continuous (LHV basis)     43.795149      GWh/yr                                                               process-model basis
+       4 annual                 annual electricity, 330 operating days (LHV basis)     39.595614      GWh/yr                                   = screening TEA basis (5,000 kW x 24 h x 330 d)
+       4 annual                                           annual H2, 365 d / 330 d     920 / 832        t/yr                                                                                  
+       4 annual                               annual electricity, 330 d, HHV basis     46.832359      GWh/yr                                                                                  
+
+PVOUT by country (Solargis/World Bank 2020, Level 1, kWh/kWp/day)
+ISO_A3      Country or region  GHI_avg  PVOUT_p10  PVOUT_avg  PVOUT_p90  PVOUT_avg_kWh_kWp_yr  capacity_factor_avg  PV_MWp_for_5MW_cont_LHV_avg  PV_MWp_for_5MW_cont_LHV_p90site
+   NAM                Namibia      6.4       5.12       5.38       5.58              1.96e+03                0.224                         22.3                             21.5
+   EGY Arab Republic of Egypt     6.26       4.88       5.25       5.47              1.92e+03                0.219                         22.9                             21.9
+   SAU           Saudi Arabia     6.21        4.9       5.16       5.38              1.88e+03                0.215                         23.3                             22.3
+   SDN                  Sudan     6.32       4.71       4.94        5.2               1.8e+03                0.206                         24.3                             23.1
+   ERI                Eritrea     6.07        4.5       4.89       5.14              1.79e+03                0.204                         24.5                             23.3
+   TCD                   Chad     6.26       4.64       4.84       5.16              1.77e+03                0.202                         24.8                             23.2
+   NER                  Niger     6.26       4.67       4.84       5.07              1.77e+03                0.202                         24.8                             23.7
+   DJI               Djibouti     6.06       4.56        4.8       4.97              1.75e+03                  0.2                           25                             24.1
+   SOM                Somalia     6.03       4.32       4.76       5.25              1.74e+03                0.198                         25.2                             22.9
+   MRT             Mauritania     6.04       4.63       4.75       4.94              1.73e+03                0.198                         25.3                             24.3
+   AUS              Australia     5.76       4.26       4.71       5.16              1.72e+03                0.196                         25.5                             23.2
+   ETH               Ethiopia     5.85        4.3        4.7       5.03              1.71e+03                0.196                         25.6                             23.9
+   MLI                   Mali     6.02       4.55       4.68       4.81              1.71e+03                0.195                         25.7                             24.9
+   KEN                  Kenya     5.78       4.19        4.5       4.92              1.64e+03                0.188                         26.6                             24.4
+   JPN                  Japan     3.61       3.05       3.45        3.8              1.26e+03                0.144                         34.8                             31.6
+   DEU                Germany     2.98        2.8       2.96       3.17              1.08e+03                0.123                         40.5                             37.9
+
+Occurrences of 5 MW / 5,000 kW / solar_power_kW in code and notes
+                                        file  line                                                                                                                                         text
+            submitted_v1/Workflow_cantera.py    38                                                                                                                    solar_power_kW   = 5000.0
+            submitted_v1/Workflow_cantera.py   693                                                                     rf,h2s=build_rwgs_feed(s1,CO2_total_tpd,solar_power_kW,electrolyzer_eff)
+    submitted_v1/validation/screening_tea.py    52                                                                                                     tech["onsite_electric_load_kW"] = 5000.0
+    submitted_v1/validation/screening_tea.py   181                                         tech["onsite_electric_load_kW"] * 24.0 * OPERATING_DAYS_PER_YEAR * econ.electricity_cost_usd_per_kWh
+    submitted_v1/validation/screening_tea.py   225                                                                                "Onsite electric load [kW]": tech["onsite_electric_load_kW"],
+                       revision/E7_TEA_X4.py    25               SUB-once     : submitted configuration (electrolysis 5 MW, DAC 10 t/d, once-through equilibrium 36.3 t/d) with the same method
+                       revision/E7_TEA_X4.py    83                                                              "Opportunity":  dict(cprice=700.0, fee=25.0, water=1.50, h2=5000.0, elec=0.04)}
+                       revision/E7_TEA_X4.py   130                                           H2_fired=h2f, Q_fired_kW=qh, aux_kW=float(aux_kW("submitted eq recycle h=0.35")) + 5000.0, y=0.60,
+                       revision/E7_TEA_X4.py   243                                                           add("H2 price (2 / 5 USD/kg)", "2", e(ov=dict(h2=2000)), "5", e(ov=dict(h2=5000)))
+                       revision/E7_TEA_X4.py   255                                                                                                                         lo, hi = 0.0, 5000.0
+           revision/E9_gate_fee_scenarios.py    64                                                                      heat_kW=max(0.0, BASE["Q1"] + BASE["Q2"] + BASE["Q3"]), elec_kW=5000.0)
+              revision/F1_full_biogas_CO2.py    52                                          SOLAR_H2_SUBMITTED = W.solar_h2_kmol_per_day(W.solar_power_kW, W.electrolyzer_eff)   # 1,250 kmol/d
+              revision/F1_full_biogas_CO2.py   164                                                                                                                      for it in range(50000):
+  revision/K3_stage2_extent_decomposition.py    67                                                       rf, h2s = W.build_rwgs_feed(s1, W.CO2_total_tpd, W.solar_power_kW, W.electrolyzer_eff)
+  revision/K3_stage2_extent_decomposition.py    74                                                       rf, h2s = W.build_rwgs_feed(s1, W.CO2_total_tpd, W.solar_power_kW, W.electrolyzer_eff)
+  revision/K3_stage2_two_reaction_kinetic.py   101                                                        fa, _ = W.build_rwgs_feed(s1a, W.CO2_total_tpd, W.solar_power_kW, W.electrolyzer_eff)
+  revision/K3_stage2_two_reaction_kinetic.py   104                                                        fb, _ = W.build_rwgs_feed(s1b, W.CO2_total_tpd, W.solar_power_kW, W.electrolyzer_eff)
+           revision/KIN_chain_design_case.py   164                                                       rf, h2s = W.build_rwgs_feed(s1, W.CO2_total_tpd, W.solar_power_kW, W.electrolyzer_eff)
+           revision/KIN_chain_design_case.py   237                                                       rfA, _ = W.build_rwgs_feed(s1e, W.CO2_total_tpd, W.solar_power_kW, W.electrolyzer_eff)
+             revision/P1_recycle_analysis.py   108                                                           SOLAR_H2 = W.solar_h2_kmol_per_day(W.solar_power_kW, W.electrolyzer_eff)    # 1250
+             revision/P1_recycle_analysis.py   144                                                       rfA, _ = W.build_rwgs_feed(s1e, W.CO2_total_tpd, W.solar_power_kW, W.electrolyzer_eff)
+             revision/P1_recycle_analysis.py   306                                                                                                                      for it in range(50000):
+              revision/P3_auxiliary_power.py    44                                            Note on T3 section 4: the split-pressure compression (0.74-1.05 MW) is NOT part of X4 (all stages
+            revision/T3_pressure_analysis.py   193                                                     terms["W_compression_share_of_5MW"] = terms["W_compression_total_kW"] / W.solar_power_kW
+            revision/T3_pressure_analysis.py   233                                                    feedA2, _ = W.build_rwgs_feed(s1e, W.CO2_total_tpd, W.solar_power_kW, W.electrolyzer_eff)
+       revision/notes/E9_gate_fee_summary.md    64                                                                                                | 電力（5,000 kW × 330 d × $0.06） | −2,376,000 |
+revision/notes/F1_full_biogas_CO2_summary.md   114 | 電力費 | −2.38 M$/y（Base $0.06/kWh）、−3.17（Conservative $0.08）、−1.58（Opportunity $0.04） | 投稿版 TEA の 5,000 kW × 24 h × 330 d（E9・P4）。補機（圧縮 0〜0.7
+revision/notes/F1_full_biogas_CO2_summary.md   130                                                                                                    - **P4**: 電解を外すなら 5 MW の議論は「オプション構成」に格下げ。
+       revision/notes/F1b_heat_H2_balance.md    15                                           | 高温熱需要の定義 | (i) **Q1 のみ**（指示どおり）、(ii) **Q1 + Q2⁺**（新構成では Stage 2 が吸熱側 +0.3〜1.5 MW になるため、推奨はこちら） |
+       revision/notes/F1b_heat_H2_balance.md    40                                           | 投稿版 | 0.35 | 4,118 / −283 / −1,755 | 2,038 | 3.49 | 10.73 | 7.24 / 7.67 / 8.10 | ✓（電解 5 MW あり） |
+       revision/notes/F1b_heat_H2_balance.md    77       - 投稿版構成は電解 5 MW の外部電力を前提に H2 7.2〜8.1 t/d を排出していた。新構成では外部電力を使わずに固定 CO2 を倍増させる代わりに、排出 H2 は 1〜3 t/d に縮む。「H2 の輸出」ではなく「CO2 の固定」に価値を置く構成になる。
+revision/notes/P3_auxiliary_power_summary.md    76                                          - **T3 §4 との重複整理**: T3 の段別昇圧（0.74〜1.05 MW）は X4 では採らない（全段 1 atm）。X4 で残る圧縮は膜駆動力（136 kW）と送風機（86 kW）のみ。
+    revision/notes/T1_carbon_form_summary.md    35 - **Stage 3 の直接析出は ΔG = 5 kJ/mol で既に 0**（650 K では exp(−5000/RT) = 0.40 の Kp 低下で析出窓が閉じる）。graphite 以外の炭素形態を想定する限り「CFR で直接析出」は成立しない → X1 の撤回をさら
+    revision/notes/T1_carbon_form_summary.md    53                                             - 代償は **Stage 1 の負荷**: 入口 CH4 が 1.36 → 1.58 倍（反応器容積）、Q1 が +0.85 MW（析出熱 ΔH = ΔG の分 ≈ 0.9 MW を含む）。
+    revision/notes/T1_carbon_form_summary.md    77 3. **リサイクル（X1 の構成）**では未転化 CH4 が戻るため炭素合計は 47.4 → 46.7 t/d（−1.3 %）、CO2 由来炭素は 99.7 → 94.8 % に留まる。代わりに Stage 1 の入口 CH4 が 1.36 → 1.58 倍、吸熱が +0.85
+    revision/notes/T1_carbon_form_summary.md    89                                                                                               - **T4**: Q1 が最大 +0.85 MW 増える分、熱カスケードの要求量が増える。
+    revision/notes/T1_carbon_form_summary.md    96 > **Sensitivity to the solid-carbon phase.** The baseline treats the solid product as graphite. Non-graphitic carbons formed by pyrolysis or
+       revision/notes/T3_pressure_summary.md    81                                                                          | 配置 | 圧縮対象 | 段数 | 動力 [kW] | 5 MW 太陽光電力に対する比 | H2 換算（47.6 kWh/kg） |
+       revision/notes/T3_pressure_summary.md    95 **「5 MW に対する比」の定義（P4 で確定）**: 分母の 5,000 kW は電解槽への**連続平均電力（LHV 基準、η = 0.70）**であり、PV 設備容量（23〜27 MWp、`P4_solar_basis_summary.md`）ではない。圧縮機は連続運転なの
+       revision/notes/T3_pressure_summary.md   101 **1 文**: 「熱分解は低圧、メタネーションは高圧」の段別配置（S1 = 1 bar、S2 = S3 = 5〜10 bar）は、**平衡では CO2 由来固体炭素を増やさず**（11.42 → 11.43 t/d、1 bar で既に 99.7 %）、圧縮動力 0.74〜1.0
+       revision/notes/T3_pressure_summary.md   154                                 4. 圧縮動力 0.74〜1.05 MW（§4）に見合う増分は、n ≤ 1 の現実的な範囲では +0.3〜+3 t/d であり、平衡側（増分ゼロ）と併せて **段別昇圧は「較正後に判断する選択肢」** に位置づける。
+   revision/notes/T4_heat_cascade_summary.md   117                                  3. 残る 650 K の 1.5 MW（X4 では 3.2 MW）は熱としては行き場がなく、**発電（η_el 0.20〜0.25）に回して補機を賄うのが唯一の使い道**。これが X4 の自立条件になる（§3）。

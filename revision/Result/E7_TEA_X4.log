@@ -1,0 +1,122 @@
+E7 TEA (wall 80 s). Class 5 screening. Yields: equilibrium (upper bound) and kinetic design case (uncalibrated).
+
+--- CAPEX, X4-grid, equilibrium ---
+                                                  item  purchased_MUSD                                        basis                                source
+Stage 1 pyrolysis furnace + reactor (H2-fired, 1200 K)            2.08                 4.16 MW fired x 0.50 MUSD/MW       assumption (fired-heater class)
+                      Stage 2 reactor (950 K, tau 3 s)            1.44                           29 m3 x 50 kUSD/m3                            assumption
+                      Stage 3 reactor (650 K, tau 3 s)            0.25                            6 m3 x 40 kUSD/m3                            assumption
+                         H2 membrane (vacuum permeate)            3.97           9,914 Nm3/h feed x 400 USD/(Nm3/h)                            assumption
+                      CH4 separation at Stage 3 outlet            3.66              2,439 Nm3/h x 1,500 USD/(Nm3/h) assumption (SGC 2013:270 Fig.5 order)
+                                Heat exchanger network            1.00 1,670 m2 (T4 area target, U=50) x 600 USD/m2                            assumption
+                                 Air-cooled condensers            0.52                        5,152 kW x 100 USD/kW                            assumption
+                                 Blowers / vacuum pump            0.33                        222 kW x 1,500 USD/kW                            assumption
+                                 Solid carbon handling            0.60                                     lump sum                            assumption
+                    H2 export compression, purge/flare            0.30                                     lump sum                            assumption
+
+--- Totals (Lang 3.63); kinetic rows use the equilibrium-sized plant ---
+      config yield_basis  purchased_MUSD  FCI_MUSD
+     X4-grid equilibrium           14.14     51.35
+     X4-grid     kinetic           14.14     51.35
+      X4-ORC equilibrium           16.52     59.98
+      X4-ORC     kinetic           16.52     59.98
+    X4-PVaux equilibrium           18.56     67.36
+    X4-PVaux     kinetic           18.56     67.36
+X4-upgrading equilibrium           21.13     76.70
+X4-upgrading     kinetic           21.13     76.70
+    SUB-once equilibrium           19.34     70.20
+ SUB-recycle equilibrium           21.47     77.94
+
+--- For information: CAPEX the kinetic loop 'as modelled' would imply (CO recycle inflates separation equipment) ---
+      config  purchased_MUSD  FCI_MUSD
+     X4-grid           94.09    341.56
+      X4-ORC           94.18    341.88
+    X4-PVaux           98.06    355.97
+X4-upgrading          101.08    366.91
+
+--- Economics, gate 50 % ---
+      config yield_basis     scenario  C_tpd  carbon_revenue  gate_revenue  water_revenue  H2_export_tpd    H2_revenue  electricity_cost   dac_opex     fixed_OM  catalyst_membrane_replacement  annual_cash_flow  FCI_MUSD  NPV_MUSD  IRR  discounted_payback_y
+     X4-grid equilibrium Conservative  58.65    3,483,703.76  1,056,000.00       6,740.37           0.90    597,034.80        621,230.06       0.00 2,053,823.17                     569,729.38      1,898,696.31     51.35    -32.70 0.00                   NaN
+     X4-grid equilibrium         Base  58.65    6,773,868.42  1,980,000.00      16,850.93           0.90    895,552.19        465,922.54       0.00 2,053,823.17                     569,729.38      6,576,796.44     51.35     13.23 0.11                 12.74
+     X4-grid equilibrium  Opportunity  58.65   13,547,736.84  3,300,000.00      33,701.86           0.90  1,492,586.99        310,615.03       0.00 2,053,823.17                     569,729.38     15,439,858.10     51.35    100.25 0.30                  4.02
+     X4-grid     kinetic Conservative  36.64    2,176,217.09  1,056,000.00       2,770.62           5.78  3,814,550.13        559,107.05       0.00 2,053,823.17                     569,729.38      3,866,878.24     51.35    -13.38 0.04                   NaN
+     X4-grid     kinetic         Base  36.64    4,231,533.24  1,980,000.00       6,926.54           5.78  5,721,825.19        419,330.29       0.00 2,053,823.17                     569,729.38      8,897,402.14     51.35     36.01 0.17                  8.05
+     X4-grid     kinetic  Opportunity  36.64    8,463,066.48  3,300,000.00      13,853.09           5.78  9,536,375.32        279,553.53       0.00 2,053,823.17                     569,729.38     18,410,188.81     51.35    129.41 0.36                  3.29
+      X4-ORC equilibrium Conservative  58.65    3,483,703.76  1,056,000.00       6,740.37           0.90    597,034.80        118,943.66       0.00 2,399,253.97                     569,729.38      2,055,551.91     59.98    -39.80 0.00                   NaN
+      X4-ORC equilibrium         Base  58.65    6,773,868.42  1,980,000.00      16,850.93           0.90    895,552.19         89,207.74       0.00 2,399,253.97                     569,729.38      6,608,080.44     59.98      4.90 0.09                 16.83
+      X4-ORC equilibrium  Opportunity  58.65   13,547,736.84  3,300,000.00      33,701.86           0.90  1,492,586.99         59,471.83       0.00 2,399,253.97                     569,729.38     15,345,570.50     59.98     90.68 0.25                  4.88
+      X4-ORC     kinetic Conservative  36.64    2,176,217.09  1,056,000.00       2,770.62           5.78  3,814,550.13        540,105.05       0.00 2,399,253.97                     569,729.38      3,540,449.44     59.98    -25.22 0.02                   NaN
+      X4-ORC     kinetic         Base  36.64    4,231,533.24  1,980,000.00       6,926.54           5.78  5,721,825.19        405,078.78       0.00 2,399,253.97                     569,729.38      8,566,222.84     59.98     24.12 0.13                 10.68
+      X4-ORC     kinetic  Opportunity  36.64    8,463,066.48  3,300,000.00      13,853.09           5.78  9,536,375.32        270,052.52       0.00 2,399,253.97                     569,729.38     18,074,259.02     59.98    117.47 0.30                  4.01
+    X4-PVaux equilibrium Conservative  58.65    3,483,703.76  1,056,000.00       6,740.37           0.90    597,034.80              0.00       0.00 2,694,466.67                     569,729.38      1,879,282.87     67.36    -48.91 0.00                   NaN
+    X4-PVaux equilibrium         Base  58.65    6,773,868.42  1,980,000.00      16,850.93           0.90    895,552.19              0.00       0.00 2,694,466.67                     569,729.38      6,402,075.49     67.36     -4.51 0.07                 23.96
+    X4-PVaux equilibrium  Opportunity  58.65   13,547,736.84  3,300,000.00      33,701.86           0.90  1,492,586.99              0.00       0.00 2,694,466.67                     569,729.38     15,109,829.63     67.36     80.99 0.22                  5.74
+    X4-PVaux     kinetic Conservative  36.64    2,176,217.09  1,056,000.00       2,770.62           5.78  3,814,550.13              0.00       0.00 2,694,466.67                     569,729.38      3,785,341.79     67.36    -30.20 0.01                   NaN
+    X4-PVaux     kinetic         Base  36.64    4,231,533.24  1,980,000.00       6,926.54           5.78  5,721,825.19              0.00       0.00 2,694,466.67                     569,729.38      8,676,088.93     67.36     17.82 0.11                 12.62
+    X4-PVaux     kinetic  Opportunity  36.64    8,463,066.48  3,300,000.00      13,853.09           5.78  9,536,375.32              0.00       0.00 2,694,466.67                     569,729.38     18,049,098.84     67.36    109.85 0.27                  4.62
+X4-upgrading equilibrium Conservative  58.65    3,483,703.76  1,056,000.00       6,740.37           0.90    597,034.80      1,358,909.55       0.00 3,068,132.46                     919,009.44       -202,572.53     76.70    -78.69  NaN                   NaN
+X4-upgrading equilibrium         Base  58.65    6,773,868.42  1,980,000.00      16,850.93           0.90    895,552.19      1,019,182.16       0.00 3,068,132.46                     919,009.44      4,659,947.48     76.70    -30.95 0.02                   NaN
+X4-upgrading equilibrium  Opportunity  58.65   13,547,736.84  3,300,000.00      33,701.86           0.90  1,492,586.99        679,454.77       0.00 3,068,132.46                     919,009.44     13,707,429.01     76.70     57.88 0.17                  7.72
+X4-upgrading     kinetic Conservative  36.64    2,176,217.09  1,056,000.00       2,770.62           5.78  3,814,550.13        559,107.05       0.00 3,068,132.46                     919,009.44      2,503,288.88     76.70    -52.13 0.00                   NaN
+X4-upgrading     kinetic         Base  36.64    4,231,533.24  1,980,000.00       6,926.54           5.78  5,721,825.19        419,330.29       0.00 3,068,132.46                     919,009.44      7,533,812.78     76.70     -2.74 0.08                 21.89
+X4-upgrading     kinetic  Opportunity  36.64    8,463,066.48  3,300,000.00      13,853.09           5.78  9,536,375.32        279,553.53       0.00 3,068,132.46                     919,009.44     17,046,599.46     76.70     90.66 0.22                  5.80
+    SUB-once equilibrium Conservative  36.33    2,157,863.28  1,056,000.00       2,931.28           5.32  3,514,110.58      3,754,838.48 990,000.00 2,807,947.91                     395,448.71     -1,217,329.96     70.20    -82.15  NaN                   NaN
+    SUB-once equilibrium         Base  36.33    4,195,845.27  1,980,000.00       7,328.20           5.32  5,271,165.87      2,816,128.86 990,000.00 2,807,947.91                     395,448.71      4,444,813.86     70.20    -26.56 0.02                   NaN
+    SUB-once equilibrium  Opportunity  36.33    8,391,690.53  3,300,000.00      14,656.40           5.32  8,785,276.45      1,877,419.24 990,000.00 2,807,947.91                     395,448.71     14,420,807.52     70.20     71.39 0.20                  6.42
+ SUB-recycle equilibrium Conservative  47.36    2,812,991.96  1,056,000.00       3,397.68           7.17  4,733,797.11      3,754,838.48 990,000.00 3,117,499.54                     493,643.62        250,205.10     77.94    -75.48 0.00                   NaN
+ SUB-recycle equilibrium         Base  47.36    5,469,706.59  1,980,000.00       8,494.19           7.17  7,100,695.67      2,816,128.86 990,000.00 3,117,499.54                     493,643.62      7,141,624.43     77.94     -7.82 0.07                 26.82
+ SUB-recycle equilibrium  Opportunity  47.36   10,939,413.18  3,300,000.00      16,988.39           7.17 11,834,492.78      1,877,419.24 990,000.00 3,117,499.54                     493,643.62     19,612,331.95     77.94    114.62 0.25                  4.97
+
+--- X4-grid, all gate shares ---
+yield_basis     scenario  gate_share  credits  annual_cash_flow  NPV_MUSD  IRR  discounted_payback_y
+equilibrium Conservative        0.00    False        842,696.31    -43.07 0.00                   NaN
+equilibrium Conservative        0.50    False      1,898,696.31    -32.70 0.00                   NaN
+equilibrium Conservative        1.00    False      2,954,696.31    -22.34 0.01                   NaN
+equilibrium         Base        0.00    False      4,596,796.44     -6.21 0.06                 29.12
+equilibrium         Base        0.50    False      6,576,796.44     13.23 0.11                 12.74
+equilibrium         Base        1.00    False      8,556,796.44     32.67 0.16                  8.51
+equilibrium  Opportunity        0.00    False     12,139,858.10     67.85 0.23                  5.38
+equilibrium  Opportunity        0.00     True     13,238,468.77     78.63 0.26                  4.83
+equilibrium  Opportunity        0.50    False     15,439,858.10    100.25 0.30                  4.02
+equilibrium  Opportunity        0.50     True     16,538,468.77    111.03 0.32                  3.72
+equilibrium  Opportunity        1.00    False     18,739,858.10    132.65 0.36                  3.22
+equilibrium  Opportunity        1.00     True     19,838,468.77    143.43 0.39                  3.02
+    kinetic Conservative        0.00    False      2,810,878.24    -23.75 0.01                   NaN
+    kinetic Conservative        0.50    False      3,866,878.24    -13.38 0.04                   NaN
+    kinetic Conservative        1.00    False      4,922,878.24     -3.01 0.07                 23.37
+    kinetic         Base        0.00    False      6,917,402.14     16.57 0.12                 11.71
+    kinetic         Base        0.50    False      8,897,402.14     36.01 0.17                  8.05
+    kinetic         Base        1.00    False     10,877,402.14     55.45 0.21                  6.17
+    kinetic  Opportunity        0.00    False     15,110,188.81     97.01 0.29                  4.13
+    kinetic  Opportunity        0.00     True     15,144,719.96     97.35 0.29                  4.11
+    kinetic  Opportunity        0.50    False     18,410,188.81    129.41 0.36                  3.29
+    kinetic  Opportunity        0.50     True     18,444,719.96    129.75 0.36                  3.28
+    kinetic  Opportunity        1.00    False     21,710,188.81    161.81 0.42                  2.73
+    kinetic  Opportunity        1.00     True     21,744,719.96    162.15 0.42                  2.73
+
+--- Tornado ---
+                                          parameter       low_case  NPV_low          high_case  NPV_high  base  swing
+            Electricity price (0.08 / 0.04 USD/kWh)           0.08    11.70               0.04     14.75 13.23   3.05
+                            H2 price (2 / 5 USD/kg)              2    10.30                  5     19.09 13.23   8.79
+                       Fixed O&M (5 % / 3 % of FCI)            5 %     8.19                3 %     18.27 13.23  10.08
+          Yield (kinetic design case / equilibrium) kinetic 36 t/d    36.01 equilibrium 59 t/d     13.23 13.23  22.78
+                         Discount rate (10 % / 5 %)           10 %     4.65                5 %     30.62 13.23  25.97
+                           CAPEX (Lang 3.10 / 4.74)           3.10    23.67               4.74     -8.64 13.23  32.31
+                Biogas CH4 fraction y (0.55 / 0.65)           0.55    -7.13               0.65     25.34 13.23  32.47
+Gate fee basis (0 % / 100 % of 800 t/d at 15 USD/t)            0 %    -6.21              100 %     32.67 13.23  38.88
+              Carbon price (245 / 455 USD/t, ±30 %)            245    -6.73                455     33.18 13.23  39.90
+
+--- Break-even carbon price ---
+ config yield_basis gate_share  breakeven_carbon_price_USD_per_t
+X4-grid equilibrium        0 %                            382.70
+X4-grid equilibrium       50 %                            280.39
+X4-grid equilibrium      100 %                            178.09
+X4-grid     kinetic        0 %                            210.40
+X4-grid     kinetic       50 %                             46.63
+X4-grid     kinetic      100 %                              0.00
+
+--- Kinetic X4 cases (h = 0.50) ---
+                              case  C_total_tpd  C_from_CO2_total_tpd  water_total_tpd  H2_net_exportable_tpd    Q1_kW  Q2_kW  Q3_kW  Q_fired_kW
+  2b_y0.60 kin recycle phi=0 h=0.5        36.35                  0.43            27.54                   8.98 3,140.80 609.44 -71.52    3,750.24
+2b_y0.60 kin recycle phi=0.1 h=0.5        36.38                  0.46            27.58                   8.97 3,143.33 603.17 -71.46    3,746.50
+  2b_y0.60 kin recycle phi=1 h=0.5        36.64                  0.71            27.99                   8.93 3,165.88 547.22 -70.88    3,713.10
+Saved: <repo>/revision/Result/E7_kinetic_X4.csv <repo>/revision/Result/E7_capex.csv <repo>/revision/Result/E7_annual.csv <repo>/revision/Result/E7_economics.csv <repo>/revision/Result/E7_tornado.csv <repo>/revision/Result/E7_tornado.png <repo>/revision/Result/E7_breakeven.csv <repo>/revision/Result/E7_summary.txt

@@ -1,0 +1,39 @@
+K3 Stage 2 two-reaction reduced kinetic model: tau sweep at 950 K, 1 atm
+Kp1(RWGS) = 0.5582, Kp2(CO2 methanation) = 8.7378e-02; dH1 = +35.27, dH2 = -189.22 kJ/mol (950 K, GRI-3.0)
+k1 = 0.05 m3/mol/s (submitted value, uncalibrated). k2 set via phi = r2,fwd/r1,fwd at inlet; UNCALIBRATED.
+Kinetic values unless marked Gibbs/equilibrium.
+
+===== Feed A_eq_chain =====
+feed [kmol/d]: CO2 954.4, H2 7053.3, CH4 90.3
+Gibbs equilibrium reference : X_CO2 = 0.8137, Q2 = -196.4 kW, CH4_out = 287.9, CO_out = 579.0 kmol/d
+RWGS-only equilibrium (plateau of submitted 1-rxn model): X_CO2 = 0.8177
+phi =   0.0: tau=3 s -> X_CO2 0.7211, Q2  +280.9 kW, CH4_out    90.3 | tau=100 s -> X_CO2 0.8177 (X/X_Gibbs 1.0049), Q2  +318.6 kW, CH4_out    90.3
+phi =  0.01: tau=3 s -> X_CO2 0.7230, Q2  +264.6 kW, CH4_out    96.9 | tau=100 s -> X_CO2 0.8158 (X/X_Gibbs 1.0025), Q2  +183.1 kW, CH4_out   142.1
+phi =   0.1: tau=3 s -> X_CO2 0.7387, Q2  +130.2 kW, CH4_out   151.0 | tau=100 s -> X_CO2 0.8139 (X/X_Gibbs 1.0002), Q2  -183.7 kW, CH4_out   283.0
+phi =   1.0: tau=3 s -> X_CO2 0.7697, Q2  -412.4 kW, CH4_out   364.4 | tau=100 s -> X_CO2 0.8137 (X/X_Gibbs 1.0000), Q2  -196.4 kW, CH4_out   287.9
+phi =  10.0: tau=3 s -> X_CO2 0.7303, Q2  -475.6 kW, CH4_out   382.8 | tau=100 s -> X_CO2 0.8137 (X/X_Gibbs 1.0000), Q2  -196.4 kW, CH4_out   287.9
+
+===== Feed B_kin_chain =====
+feed [kmol/d]: CO2 954.4, H2 4740.4, CH4 1246.8
+Gibbs equilibrium reference : X_CO2 = 0.8183, Q2 = +1234.6 kW, CH4_out = 894.3, CO_out = 1133.4 kmol/d
+RWGS-only equilibrium (plateau of submitted 1-rxn model): X_CO2 = 0.7565
+phi =   0.0: tau=3 s -> X_CO2 0.6341, Q2  +247.0 kW, CH4_out  1246.8 | tau=100 s -> X_CO2 0.7565 (X/X_Gibbs 0.9245), Q2  +294.7 kW, CH4_out  1246.8
+phi =  0.01: tau=3 s -> X_CO2 0.6340, Q2  +241.0 kW, CH4_out  1249.1 | tau=100 s -> X_CO2 0.7755 (X/X_Gibbs 0.9477), Q2  +694.8 kW, CH4_out  1095.6
+phi =   0.1: tau=3 s -> X_CO2 0.6297, Q2  +205.3 kW, CH4_out  1262.2 | tau=100 s -> X_CO2 0.8142 (X/X_Gibbs 0.9950), Q2 +1196.3 kW, CH4_out   908.4
+phi =   1.0: tau=3 s -> X_CO2 0.5761, Q2  +258.0 kW, CH4_out  1233.9 | tau=100 s -> X_CO2 0.8183 (X/X_Gibbs 1.0000), Q2 +1234.6 kW, CH4_out   894.3
+phi =  10.0: tau=3 s -> X_CO2 0.5552, Q2  +335.3 kW, CH4_out  1201.0 | tau=100 s -> X_CO2 0.8183 (X/X_Gibbs 1.0000), Q2 +1234.6 kW, CH4_out   894.3
+
+===== Verification: phi = 0 (1 reaction) on Feed B vs submitted CanteraResult/validation_stage2_rwgs_950K.csv =====
+tau_s   X_submitted(Euler,400 steps)   X_this(BDF)   diff        Q_submitted   Q_this   diff_kW
+  0.1   0.042667                     0.042665    -2.75e-06      16.62      16.62   -0.001
+  0.3   0.121477                     0.121454    -2.25e-05      47.32      47.32   -0.009
+  0.5   0.192193                     0.192136    -5.65e-05      74.87      74.85   -0.022
+  1.0   0.338110                     0.337936    -1.74e-04     131.72     131.65   -0.068
+  2.0   0.529451                     0.529052    -4.00e-04     206.26     206.11   -0.156
+  3.0   0.634641                     0.634141    -5.00e-04     247.24     247.05   -0.195
+  5.0   0.721988                     0.721577    -4.11e-04     281.27     281.11   -0.160
+ 10.0   0.755080                     0.755009    -7.12e-05     294.16     294.13   -0.028
+ 30.0   0.756498                     0.756498    -1.79e-09     294.71     294.71   -0.000
+100.0   0.756498                     0.756498    -4.21e-14     294.71     294.71   -0.000
+max |dX| = 5.00e-04 (integration-scheme difference only; same rate law and k1)
+

@@ -1,0 +1,68 @@
+E9 gate-fee basis — summary (screening TEA engine reproduced exactly; max |diff| = 0.00e+00 USD/y)
+
+--- Reproduction of submitted TEA ---
+    Scenario                 Case  submitted_annual_value    reproduced  diff  submitted_gate_revenue  reproduced_gate
+Conservative  Carbon Product Path           -2,812,979.07 -2,812,979.07  0.00              264,000.00       264,000.00
+Conservative Carbon Fixation Path           -2,812,979.07 -2,812,979.07  0.00              264,000.00       264,000.00
+        Base  Carbon Product Path              625,647.25    625,647.25  0.00              495,000.00       495,000.00
+        Base Carbon Fixation Path              625,647.25    625,647.25  0.00              495,000.00       495,000.00
+ Opportunity  Carbon Product Path            6,233,519.03  6,233,519.03  0.00              825,000.00       825,000.00
+ Opportunity Carbon Fixation Path            8,254,706.91  8,254,706.91  0.00              825,000.00       825,000.00
+
+--- Feedstock boundary check ---
+                                           item   value               unit                                                                                                                             note
+                           organic waste intake 800.000                t/d                                                                                                manuscript boundary (not in code)
+                                 CH4 to Stage 1  48.000                t/d                                                                                           = 66,964 Nm3/d = 60 kg CH4 per t waste
+                          biogas CO2 to Stage 2  32.000                t/d                                                                                           = 16,188 Nm3/d = 40 kg CO2 per t waste
+                          CH4 yield per t waste  83.705    Nm3 CH4/t waste                                                                       83.7; plausible for food-rich organic waste (order 50-100)
+CH4 fraction if 48+32 t/d were the whole biogas   0.805       vol fraction                                                                                0.80 - higher than typical raw biogas (0.55-0.65)
+                      biogas CO2 at 60 vol% CH4  88.250                t/d 88 t/d -> the 32 t/d routed to Stage 2 is ~36 % of biogas CO2; the rest must be vented/used elsewhere - manuscript should say so
+                    total biogas at 60 vol% CH4 139.509 Nm3 biogas/t waste                                                                139 Nm3/t; high end for mixed organic MSW, typical for food waste
+
+--- Annual value [USD/y], Carbon Product Path, by chargeable basis x fee ---
+fee_usd_per_t                                        0.0        1.0        8.0        13.2       15.0       18.6       25.0       35.0       52.9
+scenario     charge_basis                                                                                                                        
+Base         full intake 800 t/d                  130,647    394,647  2,242,647  3,615,447  4,090,647  5,041,047  6,730,647  9,370,647 14,096,247
+             municipal share 25 % of 800 t/d      130,647    196,647    658,647  1,001,847  1,120,647  1,358,247  1,780,647  2,440,647  3,622,047
+             municipal share 50 % of 800 t/d      130,647    262,647  1,186,647  1,873,047  2,110,647  2,585,847  3,430,647  4,750,647  7,113,447
+             municipal share 75 % of 800 t/d      130,647    328,647  1,714,647  2,744,247  3,100,647  3,813,447  5,080,647  7,060,647 10,604,847
+             no gate fee (0 t/d)                  130,647    130,647    130,647    130,647    130,647    130,647    130,647    130,647    130,647
+             submitted (100 t/d, undocumented)    130,647    163,647    394,647    566,247    625,647    744,447    955,647  1,285,647  1,876,347
+Conservative full intake 800 t/d               -3,076,979 -2,812,979   -964,979    407,821    883,021  1,833,421  3,523,021  6,163,021 10,888,621
+             municipal share 25 % of 800 t/d   -3,076,979 -3,010,979 -2,548,979 -2,205,779 -2,086,979 -1,849,379 -1,426,979   -766,979    414,421
+             municipal share 50 % of 800 t/d   -3,076,979 -2,944,979 -2,020,979 -1,334,579 -1,096,979   -621,779    223,021  1,543,021  3,905,821
+             municipal share 75 % of 800 t/d   -3,076,979 -2,878,979 -1,492,979   -463,379   -106,979    605,821  1,873,021  3,853,021  7,397,221
+             no gate fee (0 t/d)               -3,076,979 -3,076,979 -3,076,979 -3,076,979 -3,076,979 -3,076,979 -3,076,979 -3,076,979 -3,076,979
+             submitted (100 t/d, undocumented) -3,076,979 -3,043,979 -2,812,979 -2,641,379 -2,581,979 -2,463,179 -2,251,979 -1,921,979 -1,331,279
+Opportunity  full intake 800 t/d                5,408,519  5,672,519  7,520,519  8,893,319  9,368,519 10,318,919 12,008,519 14,648,519 19,374,119
+             municipal share 25 % of 800 t/d    5,408,519  5,474,519  5,936,519  6,279,719  6,398,519  6,636,119  7,058,519  7,718,519  8,899,919
+             municipal share 50 % of 800 t/d    5,408,519  5,540,519  6,464,519  7,150,919  7,388,519  7,863,719  8,708,519 10,028,519 12,391,319
+             municipal share 75 % of 800 t/d    5,408,519  5,606,519  6,992,519  8,022,119  8,378,519  9,091,319 10,358,519 12,338,519 15,882,719
+             no gate fee (0 t/d)                5,408,519  5,408,519  5,408,519  5,408,519  5,408,519  5,408,519  5,408,519  5,408,519  5,408,519
+             submitted (100 t/d, undocumented)  5,408,519  5,441,519  5,672,519  5,844,119  5,903,519  6,022,319  6,233,519  6,563,519  7,154,219
+
+--- Simple payback [y], Base, Carbon Product Path ---
+fee_usd_per_t                      0.0   1.0   8.0   13.2  15.0  18.6  25.0  35.0  52.9
+charge_basis                                                                           
+full intake 800 t/d                91.9  30.4   5.4   3.3   2.9   2.4   1.8   1.3   0.9
+municipal share 25 % of 800 t/d    91.9  61.0  18.2  12.0  10.7   8.8   6.7   4.9   3.3
+municipal share 50 % of 800 t/d    91.9  45.7  10.1   6.4   5.7   4.6   3.5   2.5   1.7
+municipal share 75 % of 800 t/d    91.9  36.5   7.0   4.4   3.9   3.1   2.4   1.7   1.1
+no gate fee (0 t/d)                91.9  91.9  91.9  91.9  91.9  91.9  91.9  91.9  91.9
+submitted (100 t/d, undocumented)  91.9  73.3  30.4  21.2  19.2  16.1  12.6   9.3   6.4
+
+--- Base, product path, gate fee = 0: components [USD/y] ---
+  carbon_revenue          4,195,830
+  water_value                 4,126
+  electricity_cost        2,376,000
+  heat_cost                 193,309
+  fixed_opex              1,500,000
+  annual_value              130,647
+  payback at gate 0: 91.9 y; carbon price for zero annual value at gate 0: 339 USD/t; for 10-y payback: 439 USD/t
+
+--- Break-even gate fee [USD/t], Base, product path ---
+                   charge_basis  chargeable_tpd  fee_for_zero_annual_value  fee_for_payback_10y  fee_for_payback_5y
+municipal share 25 % of 800 t/d          200.00                       0.00                16.20               34.38
+municipal share 50 % of 800 t/d          400.00                       0.00                 8.10               17.19
+municipal share 75 % of 800 t/d          600.00                       0.00                 5.40               11.46
+            full intake 800 t/d          800.00                       0.00                 4.05                8.60

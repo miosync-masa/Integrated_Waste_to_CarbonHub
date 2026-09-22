@@ -9,11 +9,6 @@ M. Iizumi, Miosync Inc.
 
 ---
 
-> **Revision (2026).** The code and outputs of the submitted version are preserved unchanged in [`submitted_v1/`](submitted_v1/).
-> The additional analyses made for the Major Revision (two-reaction Stage 2 model, kinetic design case, converged recycle with
-> carbon-origin tracking, pressure and carbon-form sensitivities, heat cascade, auxiliary power, revised TEA, validation design)
-> are in [`revision/`](revision/) — see [`revision/README.md`](revision/README.md). Paths below refer to `submitted_v1/`.
-
 ## Overview
 
 This repository contains two self-contained Python scripts that reproduce all computational results reported in the paper and Supplementary Information.

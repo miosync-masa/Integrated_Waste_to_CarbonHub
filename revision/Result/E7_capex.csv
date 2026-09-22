@@ -1,0 +1,111 @@
+config,item,purchased_MUSD,basis,source,yield_basis,note
+X4-grid,"Stage 1 pyrolysis furnace + reactor (H2-fired, 1200 K)",2.0817757011678157,4.16 MW fired x 0.50 MUSD/MW,assumption (fired-heater class),equilibrium,
+X4-grid,"Stage 2 reactor (950 K, tau 3 s)",1.436653884450541,29 m3 x 50 kUSD/m3,assumption,equilibrium,
+X4-grid,"Stage 3 reactor (650 K, tau 3 s)",0.25154491813614827,6 m3 x 40 kUSD/m3,assumption,equilibrium,
+X4-grid,H2 membrane (vacuum permeate),3.965527665222722,"9,914 Nm3/h feed x 400 USD/(Nm3/h)",assumption,equilibrium,
+X4-grid,CH4 separation at Stage 3 outlet,3.6590855,"2,439 Nm3/h x 1,500 USD/(Nm3/h)",assumption (SGC 2013:270 Fig.5 order),equilibrium,
+X4-grid,Heat exchanger network,1.002,"1,670 m2 (T4 area target, U=50) x 600 USD/m2",assumption,equilibrium,
+X4-grid,Air-cooled condensers,0.5152,"5,152 kW x 100 USD/kW",assumption,equilibrium,
+X4-grid,Blowers / vacuum pump,0.333,"222 kW x 1,500 USD/kW",assumption,equilibrium,
+X4-grid,Solid carbon handling,0.6,lump sum,assumption,equilibrium,
+X4-grid,"H2 export compression, purge/flare",0.3,lump sum,assumption,equilibrium,
+X4-grid,"Stage 1 pyrolysis furnace + reactor (H2-fired, 1200 K)",1.856549863078573,3.71 MW fired x 0.50 MUSD/MW,assumption (fired-heater class),kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-grid,"Stage 2 reactor (950 K, tau 3 s)",6.663815180159884,133 m3 x 50 kUSD/m3,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-grid,"Stage 3 reactor (650 K, tau 3 s)",4.1762209068325635,104 m3 x 40 kUSD/m3,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-grid,H2 membrane (vacuum permeate),18.393813387392054,"45,985 Nm3/h feed x 400 USD/(Nm3/h)",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-grid,CH4 separation at Stage 3 outlet,60.74918737462621,"40,499 Nm3/h x 1,500 USD/(Nm3/h)",assumption (SGC 2013:270 Fig.5 order),kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-grid,Heat exchanger network,0.72,"1,200 m2 (T4 area target, U=50) x 600 USD/m2",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-grid,Air-cooled condensers,0.3,"3,000 kW x 100 USD/kW",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-grid,Blowers / vacuum pump,0.333,"222 kW x 1,500 USD/kW",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-grid,Solid carbon handling,0.6,lump sum,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-grid,"H2 export compression, purge/flare",0.3,lump sum,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-ORC,"Stage 1 pyrolysis furnace + reactor (H2-fired, 1200 K)",2.0817757011678157,4.16 MW fired x 0.50 MUSD/MW,assumption (fired-heater class),equilibrium,
+X4-ORC,"Stage 2 reactor (950 K, tau 3 s)",1.436653884450541,29 m3 x 50 kUSD/m3,assumption,equilibrium,
+X4-ORC,"Stage 3 reactor (650 K, tau 3 s)",0.25154491813614827,6 m3 x 40 kUSD/m3,assumption,equilibrium,
+X4-ORC,H2 membrane (vacuum permeate),3.965527665222722,"9,914 Nm3/h feed x 400 USD/(Nm3/h)",assumption,equilibrium,
+X4-ORC,CH4 separation at Stage 3 outlet,3.6590855,"2,439 Nm3/h x 1,500 USD/(Nm3/h)",assumption (SGC 2013:270 Fig.5 order),equilibrium,
+X4-ORC,Heat exchanger network,1.002,"1,670 m2 (T4 area target, U=50) x 600 USD/m2",assumption,equilibrium,
+X4-ORC,Air-cooled condensers,0.5152,"5,152 kW x 100 USD/kW",assumption,equilibrium,
+X4-ORC,Blowers / vacuum pump,0.333,"222 kW x 1,500 USD/kW",assumption,equilibrium,
+X4-ORC,Solid carbon handling,0.6,lump sum,assumption,equilibrium,
+X4-ORC,"H2 export compression, purge/flare",0.3,lump sum,assumption,equilibrium,
+X4-ORC,Bottoming ORC on 650 K exotherm,2.379,"793 kWe x 3,000 USD/kWe",Quoilin et al. 2013 range; assumption,equilibrium,
+X4-ORC,"Stage 1 pyrolysis furnace + reactor (H2-fired, 1200 K)",1.856549863078573,3.71 MW fired x 0.50 MUSD/MW,assumption (fired-heater class),kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-ORC,"Stage 2 reactor (950 K, tau 3 s)",6.663815180159884,133 m3 x 50 kUSD/m3,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-ORC,"Stage 3 reactor (650 K, tau 3 s)",4.1762209068325635,104 m3 x 40 kUSD/m3,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-ORC,H2 membrane (vacuum permeate),18.393813387392054,"45,985 Nm3/h feed x 400 USD/(Nm3/h)",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-ORC,CH4 separation at Stage 3 outlet,60.74918737462621,"40,499 Nm3/h x 1,500 USD/(Nm3/h)",assumption (SGC 2013:270 Fig.5 order),kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-ORC,Heat exchanger network,0.72,"1,200 m2 (T4 area target, U=50) x 600 USD/m2",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-ORC,Air-cooled condensers,0.3,"3,000 kW x 100 USD/kW",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-ORC,Blowers / vacuum pump,0.333,"222 kW x 1,500 USD/kW",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-ORC,Solid carbon handling,0.6,lump sum,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-ORC,"H2 export compression, purge/flare",0.3,lump sum,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-ORC,Bottoming ORC on 650 K exotherm,0.09,"30 kWe x 3,000 USD/kWe",Quoilin et al. 2013 range; assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-PVaux,"Stage 1 pyrolysis furnace + reactor (H2-fired, 1200 K)",2.0817757011678157,4.16 MW fired x 0.50 MUSD/MW,assumption (fired-heater class),equilibrium,
+X4-PVaux,"Stage 2 reactor (950 K, tau 3 s)",1.436653884450541,29 m3 x 50 kUSD/m3,assumption,equilibrium,
+X4-PVaux,"Stage 3 reactor (650 K, tau 3 s)",0.25154491813614827,6 m3 x 40 kUSD/m3,assumption,equilibrium,
+X4-PVaux,H2 membrane (vacuum permeate),3.965527665222722,"9,914 Nm3/h feed x 400 USD/(Nm3/h)",assumption,equilibrium,
+X4-PVaux,CH4 separation at Stage 3 outlet,3.6590855,"2,439 Nm3/h x 1,500 USD/(Nm3/h)",assumption (SGC 2013:270 Fig.5 order),equilibrium,
+X4-PVaux,Heat exchanger network,1.002,"1,670 m2 (T4 area target, U=50) x 600 USD/m2",assumption,equilibrium,
+X4-PVaux,Air-cooled condensers,0.5152,"5,152 kW x 100 USD/kW",assumption,equilibrium,
+X4-PVaux,Blowers / vacuum pump,0.333,"222 kW x 1,500 USD/kW",assumption,equilibrium,
+X4-PVaux,Solid carbon handling,0.6,lump sum,assumption,equilibrium,
+X4-PVaux,"H2 export compression, purge/flare",0.3,lump sum,assumption,equilibrium,
+X4-PVaux,PV for auxiliaries (no storage),4.412145308230502,"4,902 kWp (CF 0.20, P4) x 900 USD/kWp",assumption; backup not costed,equilibrium,
+X4-PVaux,"Stage 1 pyrolysis furnace + reactor (H2-fired, 1200 K)",1.856549863078573,3.71 MW fired x 0.50 MUSD/MW,assumption (fired-heater class),kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-PVaux,"Stage 2 reactor (950 K, tau 3 s)",6.663815180159884,133 m3 x 50 kUSD/m3,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-PVaux,"Stage 3 reactor (650 K, tau 3 s)",4.1762209068325635,104 m3 x 40 kUSD/m3,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-PVaux,H2 membrane (vacuum permeate),18.393813387392054,"45,985 Nm3/h feed x 400 USD/(Nm3/h)",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-PVaux,CH4 separation at Stage 3 outlet,60.74918737462621,"40,499 Nm3/h x 1,500 USD/(Nm3/h)",assumption (SGC 2013:270 Fig.5 order),kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-PVaux,Heat exchanger network,0.72,"1,200 m2 (T4 area target, U=50) x 600 USD/m2",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-PVaux,Air-cooled condensers,0.3,"3,000 kW x 100 USD/kW",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-PVaux,Blowers / vacuum pump,0.333,"222 kW x 1,500 USD/kW",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-PVaux,Solid carbon handling,0.6,lump sum,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-PVaux,"H2 export compression, purge/flare",0.3,lump sum,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-PVaux,PV for auxiliaries (no storage),3.970930777407452,"4,412 kWp (CF 0.20, P4) x 900 USD/kWp",assumption; backup not costed,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-upgrading,"Stage 1 pyrolysis furnace + reactor (H2-fired, 1200 K)",2.0817757011678157,4.16 MW fired x 0.50 MUSD/MW,assumption (fired-heater class),equilibrium,
+X4-upgrading,"Stage 2 reactor (950 K, tau 3 s)",1.436653884450541,29 m3 x 50 kUSD/m3,assumption,equilibrium,
+X4-upgrading,"Stage 3 reactor (650 K, tau 3 s)",0.25154491813614827,6 m3 x 40 kUSD/m3,assumption,equilibrium,
+X4-upgrading,H2 membrane (vacuum permeate),3.965527665222722,"9,914 Nm3/h feed x 400 USD/(Nm3/h)",assumption,equilibrium,
+X4-upgrading,CH4 separation at Stage 3 outlet,3.6590855,"2,439 Nm3/h x 1,500 USD/(Nm3/h)",assumption (SGC 2013:270 Fig.5 order),equilibrium,
+X4-upgrading,Heat exchanger network,1.002,"1,670 m2 (T4 area target, U=50) x 600 USD/m2",assumption,equilibrium,
+X4-upgrading,Air-cooled condensers,0.5152,"5,152 kW x 100 USD/kW",assumption,equilibrium,
+X4-upgrading,Blowers / vacuum pump,0.333,"222 kW x 1,500 USD/kW",assumption,equilibrium,
+X4-upgrading,Solid carbon handling,0.6,lump sum,assumption,equilibrium,
+X4-upgrading,"H2 export compression, purge/flare",0.3,lump sum,assumption,equilibrium,
+X4-upgrading,"Biogas upgrading (membrane), inside boundary",6.985601196783646,"4,657 Nm3/h raw x 1,500 USD/(Nm3/h)",assumption (SGC 2013:270 Fig.5 order),equilibrium,
+X4-upgrading,"Stage 1 pyrolysis furnace + reactor (H2-fired, 1200 K)",1.856549863078573,3.71 MW fired x 0.50 MUSD/MW,assumption (fired-heater class),kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-upgrading,"Stage 2 reactor (950 K, tau 3 s)",6.663815180159884,133 m3 x 50 kUSD/m3,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-upgrading,"Stage 3 reactor (650 K, tau 3 s)",4.1762209068325635,104 m3 x 40 kUSD/m3,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-upgrading,H2 membrane (vacuum permeate),18.393813387392054,"45,985 Nm3/h feed x 400 USD/(Nm3/h)",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-upgrading,CH4 separation at Stage 3 outlet,60.74918737462621,"40,499 Nm3/h x 1,500 USD/(Nm3/h)",assumption (SGC 2013:270 Fig.5 order),kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-upgrading,Heat exchanger network,0.72,"1,200 m2 (T4 area target, U=50) x 600 USD/m2",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-upgrading,Air-cooled condensers,0.3,"3,000 kW x 100 USD/kW",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-upgrading,Blowers / vacuum pump,0.333,"222 kW x 1,500 USD/kW",assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-upgrading,Solid carbon handling,0.6,lump sum,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-upgrading,"H2 export compression, purge/flare",0.3,lump sum,assumption,kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+X4-upgrading,"Biogas upgrading (membrane), inside boundary",6.985601196783646,"4,657 Nm3/h raw x 1,500 USD/(Nm3/h)",assumption (SGC 2013:270 Fig.5 order),kinetic,as-modelled kinetic loop (information only; TEA uses equilibrium-sized plant)
+SUB-once,"Stage 1 pyrolysis furnace + reactor (H2-fired, 1200 K)",1.5435254309800528,3.09 MW fired x 0.50 MUSD/MW,assumption (fired-heater class),equilibrium,
+SUB-once,"Stage 2 reactor (950 K, tau 3 s)",1.095959250162721,22 m3 x 50 kUSD/m3,assumption,equilibrium,
+SUB-once,"Stage 3 reactor (650 K, tau 3 s)",0.14436512294831902,4 m3 x 40 kUSD/m3,assumption,equilibrium,
+SUB-once,H2 membrane (vacuum permeate),3.0251244043649406,"7,563 Nm3/h feed x 400 USD/(Nm3/h)",assumption,equilibrium,
+SUB-once,CH4 separation at Stage 3 outlet,2.1,"1,400 Nm3/h x 1,500 USD/(Nm3/h)",assumption (SGC 2013:270 Fig.5 order),equilibrium,
+SUB-once,Heat exchanger network,0.522,"870 m2 (T4 area target, U=50) x 600 USD/m2",assumption,equilibrium,
+SUB-once,Air-cooled condensers,0.37,"3,700 kW x 100 USD/kW",assumption,equilibrium,
+SUB-once,Blowers / vacuum pump,0.585,"390 kW x 1,500 USD/kW",assumption,equilibrium,
+SUB-once,Solid carbon handling,0.6,lump sum,assumption,equilibrium,
+SUB-once,"H2 export compression, purge/flare",0.3,lump sum,assumption,equilibrium,
+SUB-once,Electrolyser 5.3 MW,4.05251,"5,263 kW x 770 USD/kW",IRENA 2020 (today average),equilibrium,
+SUB-once,DAC 10 t/d,5.0,10 t/d x 0.5 MUSD/(t/d),"assumption, TO BE VERIFIED",equilibrium,
+SUB-recycle,"Stage 1 pyrolysis furnace + reactor (H2-fired, 1200 K)",2.0973601775672166,4.19 MW fired x 0.50 MUSD/MW,assumption (fired-heater class),equilibrium,
+SUB-recycle,"Stage 2 reactor (950 K, tau 3 s)",1.4709509523403883,29 m3 x 50 kUSD/m3,assumption,equilibrium,
+SUB-recycle,"Stage 3 reactor (650 K, tau 3 s)",0.14436512294831902,4 m3 x 40 kUSD/m3,assumption,equilibrium,
+SUB-recycle,H2 membrane (vacuum permeate),4.060196237121116,"10,150 Nm3/h feed x 400 USD/(Nm3/h)",assumption,equilibrium,
+SUB-recycle,CH4 separation at Stage 3 outlet,2.1,"1,400 Nm3/h x 1,500 USD/(Nm3/h)",assumption (SGC 2013:270 Fig.5 order),equilibrium,
+SUB-recycle,Heat exchanger network,0.69,"1,150 m2 (T4 area target, U=50) x 600 USD/m2",assumption,equilibrium,
+SUB-recycle,Air-cooled condensers,0.37,"3,700 kW x 100 USD/kW",assumption,equilibrium,
+SUB-recycle,Blowers / vacuum pump,0.585,"390 kW x 1,500 USD/kW",assumption,equilibrium,
+SUB-recycle,Solid carbon handling,0.6,lump sum,assumption,equilibrium,
+SUB-recycle,"H2 export compression, purge/flare",0.3,lump sum,assumption,equilibrium,
+SUB-recycle,Electrolyser 5.3 MW,4.05251,"5,263 kW x 770 USD/kW",IRENA 2020 (today average),equilibrium,
+SUB-recycle,DAC 10 t/d,5.0,10 t/d x 0.5 MUSD/(t/d),"assumption, TO BE VERIFIED",equilibrium,

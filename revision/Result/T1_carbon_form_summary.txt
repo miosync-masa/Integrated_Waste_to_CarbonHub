@@ -1,0 +1,23 @@
+T1 carbon-form sensitivity. Parts A/B EQUILIBRIUM, Part C KINETIC (uncalibrated). dG = Gibbs energy of the solid carbon phase above graphite.
+dG = 0 kJ/mol: offset check (dG, dH) at 650/950/1200 K = (0.000, 0.000), (0.000, 0.000), (0.000, 0.000)
+  Part A eq once-through: X_CH4 0.9698, C1 34.85, C3 1.476, total 36.33 t/d, Q1 3031 kW, Kp 63.276
+  Part B eq recycle p=0.05: C_total 47.36, CO2-derived 11.42 t/d, S1 X 0.9698, S1 inlet CH4 x1.359, loop 656 kmol/d, Q1 4118 kW, H2 out 10.73, water 34.3, it 29
+  Part B eq recycle p=0.2: C_total 47.22, CO2-derived 11.30 t/d, S1 X 0.9698, S1 inlet CH4 x1.355, loop 526 kmol/d, Q1 4107 kW, H2 out 10.70, water 34.1, it 24
+  Part C kinetic: X_eq 0.9698; at tau 8.905 s X_kin 0.8729 (approach 0.900, C1 31.37 t/d); new tau* 8.905 s -> X 0.8729, C1 31.37 t/d; once-through design chain total 31.37 t/d
+dG = 5 kJ/mol: offset check (dG, dH) at 650/950/1200 K = (5.000, 5.000), (5.000, 5.000), (5.000, 5.000)
+  Part A eq once-through: X_CH4 0.9516, C1 34.20, C3 0.000, total 34.20 t/d, Q1 3139 kW, Kp 38.335
+  Part B eq recycle p=0.05: C_total 47.34, CO2-derived 11.41 t/d, S1 X 0.9516, S1 inlet CH4 x1.384, loop 585 kmol/d, Q1 4345 kW, H2 out 10.73, water 34.3, it 38
+  Part B eq recycle p=0.2: C_total 47.17, CO2-derived 11.25 t/d, S1 X 0.9516, S1 inlet CH4 x1.379, loop 482 kmol/d, Q1 4329 kW, H2 out 10.72, water 34.0, it 29
+  Part C kinetic: X_eq 0.9516; at tau 8.905 s X_kin 0.8625 (approach 0.906, C1 31.00 t/d); new tau* 8.615 s -> X 0.8564, C1 30.78 t/d; once-through design chain total 31.00 t/d
+dG = 10 kJ/mol: offset check (dG, dH) at 650/950/1200 K = (10.000, 10.000), (10.000, 10.000), (10.000, 10.000)
+  Part A eq once-through: X_CH4 0.9236, C1 33.19, C3 0.000, total 33.19 t/d, Q1 3206 kW, Kp 23.225
+  Part B eq recycle p=0.05: C_total 47.29, CO2-derived 11.36 t/d, S1 X 0.9236, S1 inlet CH4 x1.425, loop 566 kmol/d, Q1 4568 kW, H2 out 10.75, water 34.1, it 62
+  Part B eq recycle p=0.2: C_total 47.01, CO2-derived 11.11 t/d, S1 X 0.9236, S1 inlet CH4 x1.416, loop 468 kmol/d, Q1 4542 kW, H2 out 10.76, water 33.5, it 38
+  Part C kinetic: X_eq 0.9236; at tau 8.905 s X_kin 0.8460 (approach 0.916, C1 30.40 t/d); new tau* 8.183 s -> X 0.8313, C1 29.87 t/d; once-through design chain total 30.40 t/d
+dG = 20 kJ/mol: offset check (dG, dH) at 650/950/1200 K = (20.000, 20.000), (20.000, 20.000), (20.000, 20.000)
+  Part A eq once-through: X_CH4 0.8250, C1 29.64, C3 0.000, total 29.64 t/d, Q1 3150 kW, Kp 8.525
+  Part B eq recycle p=0.05: C_total 46.73, CO2-derived 10.86 t/d, S1 X 0.8250, S1 inlet CH4 x1.577, loop 1291 kmol/d, Q1 4966 kW, H2 out 10.92, water 32.5, it 142
+  Part B eq recycle p=0.2: C_total 46.04, CO2-derived 10.22 t/d, S1 X 0.8250, S1 inlet CH4 x1.553, loop 707 kmol/d, Q1 4892 kW, H2 out 11.05, water 30.8, it 50
+  Part C kinetic: X_eq 0.8250; at tau 8.905 s X_kin 0.7813 (approach 0.947, C1 28.08 t/d); new tau* 6.763 s -> X 0.7426, C1 26.69 t/d; once-through design chain total 28.08 t/d
+
+wall 89 s; unconverged: 0; max |closure C| 2.2e-09
