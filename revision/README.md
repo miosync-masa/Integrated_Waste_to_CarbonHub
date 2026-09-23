@@ -12,7 +12,7 @@ or a **kinetic** value (reduced models with **uncalibrated** rate constants). Th
 
 | Path | Content |
 |---|---|
-| `*.py` | 17 self-contained scripts (flat, same style as `submitted_v1/validation/`); each docstring states purpose, assumptions, sources and outputs |
+| `*.py` | 19 self-contained scripts (flat, same style as `submitted_v1/validation/`); each docstring states purpose, assumptions, sources and outputs |
 | `_paths.py` | shared paths (`BASE` = `submitted_v1/`, `RESULT` = `Result/`) |
 | `run_all.sh` | re-runs everything in dependency order (about 80 min on a 12-core laptop) |
 | `Result/` | all CSV / TXT / PNG outputs, plus one `.log` per script from the last `run_all.sh` |
@@ -34,6 +34,8 @@ or a **kinetic** value (reduced models with **uncalibrated** rate constants). Th
 | T4 | `T4_heat_cascade.py`, `T4b_surplus_heat_use.py` | R2-2 | Pinch analysis (composite and grand composite curves); use of the 650 K surplus heat | `T4_*.csv`, `T4_composite_curves.png`, `T4b_*.csv` |
 | E7/E11 | `E7_TEA_X4.py` | R1-6, R2-7, R4-4 | Screening TEA (AACE Class 5) of the revised configuration: CAPEX build-up, NPV/IRR, tornado, break-even | `E7_*.csv`, `E7_tornado.png` |
 | K2 | `K2_validation_design.py` | R2-1 | Identifiability (Fisher information) and a minimal multi-temperature validation design | `K2_*.csv` |
+| Fig. 1 / §2 | `X4_fig1_streams.py` | R4 m8, X4 | Every inter-stage stream, duty, solid, water and purge for the X4 base configuration, equilibrium and kinetic design case side by side | `X4_fig1_*.csv`, `X4_fig1_summary.txt` |
+| §3 (T1/T3 on X4) | `X4_sensitivity_dG_pressure.py` | R1-2, X4 | Once-through reference for the X4 feed, carbon-phase Gibbs offset (0–20 kJ/mol) and uniform pressure (1 atm–20 bar) with converged recycle | `X4S_*.csv`, `X4S_summary.txt` |
 
 Dependency order: K3 → KIN → P1 → T3 → T3b → T1 → P4 → E9 → F1 → F1b → P3 → T4 → T4b → E7 → K2 (as in `run_all.sh`).
 

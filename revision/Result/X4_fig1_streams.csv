@@ -1,0 +1,229 @@
+case,value_type,stream,species,kmol_d,t_d
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 fresh CH4 (waste),CH4,2991.959109892165,48.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 fresh CH4 (waste),CO2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 fresh CH4 (waste),CO,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 fresh CH4 (waste),H2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 fresh CH4 (waste),H2O,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 fresh CH4 (waste),other,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 fresh CH4 (waste),total,2991.959109892165,48.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 recycled CH4 (from S3 outlet),CH4,241.20421431455947,3.8696392102484776
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 recycled CH4 (from S3 outlet),CO2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 recycled CH4 (from S3 outlet),CO,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 recycled CH4 (from S3 outlet),H2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 recycled CH4 (from S3 outlet),H2O,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 recycled CH4 (from S3 outlet),other,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 recycled CH4 (from S3 outlet),total,241.20421431455947,3.8696392102484776
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 inlet,CH4,3233.1633242067246,51.86963921024848
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 inlet,CO2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 inlet,CO,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 inlet,H2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 inlet,H2O,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 inlet,other,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 inlet,total,3233.1633242067246,51.86963921024848
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 outlet gas,CH4,97.58945592780826,1.565627641449828
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 outlet gas,CO2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 outlet gas,CO,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 outlet gas,H2,6271.126941234001,12.642591913527745
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 outlet gas,H2O,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 outlet gas,other,0.01116236923008292,0.00027566161028984347
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 outlet gas,total,6368.727559531039,14.208495216587863
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 fresh CO2 (biogas),CH4,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 fresh CO2 (biogas),CO2,1994.639406594777,87.78208564482954
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 fresh CO2 (biogas),CO,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 fresh CO2 (biogas),H2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 fresh CO2 (biogas),H2O,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 fresh CO2 (biogas),other,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 fresh CO2 (biogas),total,1994.639406594777,87.78208564482954
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 recycle from S3 outlet,CH4,12.060210715727992,0.19348196051242417
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 recycle from S3 outlet,CO2,1944.5026721783283,85.57561809989605
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 recycle from S3 outlet,CO,14.183290121106827,0.39727395629220225
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 recycle from S3 outlet,H2,195.29400029166476,0.3937127045879961
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 recycle from S3 outlet,H2O,85.90671214259277,1.5476094192488088
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 recycle from S3 outlet,other,0.000513396774222046,1.543875878878882e-05
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 recycle from S3 outlet,total,2251.947398846195,88.10771157929625
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 inlet,CH4,109.64966664353625,1.7591096019622519
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 inlet,CO2,3939.1420787731054,173.3577037447256
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 inlet,CO,14.183290121106827,0.39727395629220225
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 inlet,H2,6466.4209415256655,13.036304618115743
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 inlet,H2O,85.90671214259277,1.5476094192488088
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 inlet,other,0.011675766004304965,0.00029110036907863227
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 inlet,total,10615.314364972011,190.09829244071366
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 outlet gas,CH4,112.46359703104753,1.8042534871690954
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 outlet gas,CO2,1858.1671686801103,81.77607892644298
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 outlet gas,CO,2092.363359537284,58.60709770063932
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 outlet gas,H2,4377.044441991516,8.824121595054896
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 outlet gas,H2O,2169.675945411892,39.08671215659523
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 outlet gas,other,0.0009610943421378203,2.8574812491440787e-05
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 outlet gas,total,10609.715473746191,190.09829244071398
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 condensed water,CH4,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 condensed water,CO2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 condensed water,CO,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 condensed water,H2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 condensed water,H2O,2061.1921481412974,37.13237654876547
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 condensed water,other,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 condensed water,total,2061.1921481412974,37.13237654876547
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 dry gas to membrane,CH4,112.46359703104753,1.8042534871690954
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 dry gas to membrane,CO2,1858.1671686801103,81.77607892644298
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 dry gas to membrane,CO,2092.363359537284,58.60709770063932
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 dry gas to membrane,H2,4377.044441991516,8.824121595054896
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 dry gas to membrane,H2O,108.48379727059455,1.954335607829761
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 dry gas to membrane,other,0.0009610943421378203,2.8574812491440787e-05
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S2 dry gas to membrane,total,8548.523325604894,152.9659158919485
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,membrane permeate (H2 export),CH4,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,membrane permeate (H2 export),CO2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,membrane permeate (H2 export),CO,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,membrane permeate (H2 export),H2,2188.522220995758,4.412060797527448
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,membrane permeate (H2 export),H2O,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,membrane permeate (H2 export),other,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,membrane permeate (H2 export),total,2188.522220995758,4.412060797527448
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 inlet (membrane retentate),CH4,112.46359703104753,1.8042534871690954
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 inlet (membrane retentate),CO2,1858.1671686801103,81.77607892644298
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 inlet (membrane retentate),CO,2092.363359537284,58.60709770063932
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 inlet (membrane retentate),H2,2188.522220995758,4.412060797527448
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 inlet (membrane retentate),H2O,108.48379727059455,1.954335607829761
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 inlet (membrane retentate),other,0.0009610943421378203,2.8574812491440787e-05
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 inlet (membrane retentate),total,6360.001104609137,148.55385509442107
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 outlet gas,CH4,253.89917047264083,4.073304391892576
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 outlet gas,CO2,2046.844936201754,90.07959879730299
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 outlet gas,CO,14.929779165386602,0.4181831144224787
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 outlet gas,H2,205.57263121465195,0.4144344245287383
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 outlet gas,H2O,1808.5623600331876,32.58125091599788
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 outlet gas,other,0.0005404176482591443,1.6251324775706072e-05
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 outlet gas,total,4329.809417505269,127.56678789546946
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 condensed water,CH4,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 condensed water,CO2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 condensed water,CO,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 condensed water,H2,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 condensed water,H2O,1718.1342420315282,30.952188370197984
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 condensed water,other,0.0,0.0
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 condensed water,total,1718.1342420315282,30.952188370197984
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 dry gas,CH4,253.89917047264083,4.073304391892576
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 dry gas,CO2,2046.844936201754,90.07959879730299
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 dry gas,CO,14.929779165386602,0.4181831144224787
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 dry gas,H2,205.57263121465195,0.4144344245287383
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 dry gas,H2O,90.42811800165941,1.6290625457998944
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 dry gas,other,0.0005404176482591443,1.6251324775706072e-05
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 dry gas,total,2611.675175473741,96.61459952527147
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,purge,CH4,0.6347479324067365,0.010183261079601274
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,purge,CO2,102.34224590412255,4.50397989999453
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,purge,CO,0.7464889537424647,0.020909155594326434
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,purge,H2,10.278631594298147,0.020721721294105065
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,purge,H2O,4.521405902241725,0.08145312732888467
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,purge,other,2.7020882847974575e-05,8.125662518879747e-07
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,purge,total,118.52354730769447,4.637247977857698
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S1 solid carbon,C(s),3135.5544079311007,37.66114399366045
+"X4 equilibrium (2b, y=0.60, h=0.50, eq recycle)",equilibrium,S3 solid carbon,C(s),1747.3205560695944,20.987067198951895
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 fresh CH4 (waste),CH4,2991.959109892165,48.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 fresh CH4 (waste),CO2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 fresh CH4 (waste),CO,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 fresh CH4 (waste),H2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 fresh CH4 (waste),H2O,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 fresh CH4 (waste),other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 fresh CH4 (waste),total,2991.959109892165,48.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 recycled CH4 (from S3 outlet),CH4,480.2709177117264,7.704986332849225
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 recycled CH4 (from S3 outlet),CO2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 recycled CH4 (from S3 outlet),CO,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 recycled CH4 (from S3 outlet),H2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 recycled CH4 (from S3 outlet),H2O,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 recycled CH4 (from S3 outlet),other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 recycled CH4 (from S3 outlet),total,480.2709177117264,7.704986332849225
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 inlet,CH4,3472.2300276038914,55.70498633284923
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 inlet,CO2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 inlet,CO,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 inlet,H2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 inlet,H2O,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 inlet,other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 inlet,total,3472.2300276038914,55.70498633284923
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 outlet gas,CH4,441.3875089314434,7.081179805787146
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 outlet gas,CO2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 outlet gas,CO,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 outlet gas,H2,6061.685037344897,12.220357035287313
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 outlet gas,H2O,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 outlet gas,other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 outlet gas,total,6503.07254627634,19.30153684107446
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 fresh CO2 (biogas),CH4,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 fresh CO2 (biogas),CO2,1994.639406594777,87.78208564482954
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 fresh CO2 (biogas),CO,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 fresh CO2 (biogas),H2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 fresh CO2 (biogas),H2O,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 fresh CO2 (biogas),other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 fresh CO2 (biogas),total,1994.639406594777,87.78208564482954
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 recycle from S3 outlet,CH4,24.013545885586357,0.3852493166424619
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 recycle from S3 outlet,CO2,9508.317178912328,418.45153072675265
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 recycle from S3 outlet,CO,27258.128023576937,763.5001659403899
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 recycle from S3 outlet,H2,3944.895425028286,7.952909176857024
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 recycle from S3 outlet,H2O,5.302895030436251,0.09553165397330907
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 recycle from S3 outlet,other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 recycle from S3 outlet,total,40740.657068433575,1190.3853868146152
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 inlet,CH4,465.4010548170298,7.466429122429608
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 inlet,CO2,11502.956585507105,506.23361637158223
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 inlet,CO,27258.128023576937,763.5001659403899
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 inlet,H2,10006.580462373182,20.173266212144334
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 inlet,H2O,5.302895030436251,0.09553165397330907
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 inlet,other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 inlet,total,49238.369021304694,1297.4690093005195
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 outlet gas,CH4,489.5389037741429,7.853672633248574
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 outlet gas,CO2,10008.789387499208,440.47681215445266
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 outlet gas,CO,28728.15737262773,804.6756880073027
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 outlet gas,H2,8439.99971749395,17.015039430467805
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 outlet gas,H2O,1523.6079419954376,27.44779707504781
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 outlet gas,other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 outlet gas,total,49190.09332339047,1297.4690093005197
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 condensed water,CH4,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 condensed water,CO2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 condensed water,CO,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 condensed water,H2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 condensed water,H2O,1447.4275448956657,26.07540722129542
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 condensed water,other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 condensed water,total,1447.4275448956657,26.07540722129542
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 dry gas to membrane,CH4,489.5389037741429,7.853672633248574
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 dry gas to membrane,CO2,10008.789387499208,440.47681215445266
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 dry gas to membrane,CO,28728.15737262773,804.6756880073027
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 dry gas to membrane,H2,8439.99971749395,17.015039430467805
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 dry gas to membrane,H2O,76.18039709977188,1.3723898537523906
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 dry gas to membrane,other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S2 dry gas to membrane,total,47742.665778494804,1271.3936020792241
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,membrane permeate (H2 export),CH4,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,membrane permeate (H2 export),CO2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,membrane permeate (H2 export),CO,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,membrane permeate (H2 export),H2,4219.999858746975,8.507519715233903
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,membrane permeate (H2 export),H2O,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,membrane permeate (H2 export),other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,membrane permeate (H2 export),total,4219.999858746975,8.507519715233903
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 inlet (membrane retentate),CH4,489.5389037741429,7.853672633248574
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 inlet (membrane retentate),CO2,10008.789387499208,440.47681215445266
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 inlet (membrane retentate),CO,28728.15737262773,804.6756880073027
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 inlet (membrane retentate),H2,4219.999858746975,8.507519715233903
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 inlet (membrane retentate),H2O,76.18039709977188,1.3723898537523906
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 inlet (membrane retentate),other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 inlet (membrane retentate),total,43522.66591974783,1262.8860823639902
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 outlet gas,CH4,505.54833360381184,8.110511916005953
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 outlet gas,CO2,10008.755015758512,440.4752994885163
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 outlet gas,CO,28692.766617818528,803.6843929650969
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 outlet gas,H2,4152.521500796987,8.371483345606727
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 outlet gas,H2O,111.63989539042447,2.0111927154584968
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 outlet gas,other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 outlet gas,total,43471.231363368264,1262.6528804306845
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 condensed water,CH4,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 condensed water,CO2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 condensed water,CO,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 condensed water,H2,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 condensed water,H2O,106.05790062090324,1.9106330796855717
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 condensed water,other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 condensed water,total,106.05790062090324,1.9106330796855717
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 dry gas,CH4,505.54833360381184,8.110511916005953
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 dry gas,CO2,10008.755015758512,440.4752994885163
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 dry gas,CO,28692.766617818528,803.6843929650969
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 dry gas,H2,4152.521500796987,8.371483345606727
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 dry gas,H2O,5.581994769521231,0.10055963577292498
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 dry gas,other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 dry gas,total,43365.17346274736,1260.742247350999
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,purge,CH4,1.2638708360834927,0.020276279823287474
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,purge,CO2,500.4377462585436,22.023764775092243
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,purge,CO,1434.6383170303652,40.18421926002053
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,purge,H2,207.62607500148874,0.41857416720300133
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,purge,H2O,0.2790997384440132,0.005027981788068897
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,purge,other,0.0,0.0
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,purge,total,2144.245108864925,62.651862463927124
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S1 solid carbon,C(s),3030.8425186724485,36.40344949177478
+"X4 kinetic design case (2b, y=0.60, h=0.50, tau1*=8.9 s, phi=1, 1 atm)",kinetic,S3 solid carbon,C(s),19.415696720276664,0.233201933307243
