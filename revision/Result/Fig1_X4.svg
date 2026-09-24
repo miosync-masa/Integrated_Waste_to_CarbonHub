@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170mm" height="100.37234042553192mm" viewBox="0 0 1880 1110">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="20" y="170" width="225" height="460" rx="12" fill="#ffffff" stroke="#747c82" stroke-width="2.5" stroke-dasharray="3 6"/>
+<text x="132" y="205" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#22272b">Outside system</text>
+<text x="132" y="234" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#22272b">boundary</text>
+<rect x="40" y="260" width="185" height="80" rx="12" fill="#f8f9fa" stroke="#a9afb4" stroke-width="2.5"/>
+<text x="132" y="293" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#22272b">Organic Waste</text>
+<text x="132" y="323" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" text-anchor="middle" fill="#22272b">800 t/d</text>
+<polyline points="132,340 132,386" fill="none" stroke="#22272b" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="132,386 139.48,369.0 124.52,369.0" fill="#22272b"/>
+<rect x="40" y="386" width="185" height="105" rx="12" fill="#f8f9fa" stroke="#a9afb4" stroke-width="2.5"/>
+<text x="132" y="417" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#22272b">Anaerobic</text>
+<text x="132" y="447" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#22272b">Digestion</text>
+<text x="132" y="478" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#22272b">(35–55 °C)</text>
+<polyline points="132,491 132,550" fill="none" stroke="#22272b" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="132,550 139.48,533.0 124.52,533.0" fill="#22272b"/>
+<text x="151" y="528" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#22272b">Biogas</text>
+<rect x="40" y="550" width="185" height="66" rx="12" fill="#f8f9fa" stroke="#a9afb4" stroke-width="2.5"/>
+<text x="132" y="577" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#22272b">Biogas</text>
+<text x="132" y="605" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#22272b">Upgrading</text>
+<polyline points="225,580 335,580 335,390 350,390" fill="none" stroke="#22272b" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="350,390 333.0,382.52 333.0,397.48" fill="#22272b"/>
+<text x="287" y="478" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#22272b">CH<tspan baseline-shift="sub" font-size="72%">4</tspan></text>
+<text x="287" y="508" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#22272b">48.0 t/d</text>
+<polyline points="132,616 132,727 815,727 815,510" fill="none" stroke="#22272b" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="815,510 807.52,527.0 822.48,527.0" fill="#22272b"/>
+<text x="415" y="712" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#22272b">CO<tspan baseline-shift="sub" font-size="72%">2</tspan> 87.8 t/d</text>
+<polyline points="1760,390 1760,80 482,80 482,275" fill="none" stroke="#747c82" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="482,275 489.92,257.0 474.08,257.0" fill="#747c82"/>
+<text x="1110" y="62" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#747c82">CH<tspan baseline-shift="sub" font-size="72%">4</tspan> recycle → Stage 1</text>
+<text x="495" y="175" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" text-anchor="start" fill="#747c82">CH<tspan baseline-shift="sub" font-size="72%">4</tspan> 3.9 t/d</text>
+<polyline points="1760,390 1760,788 875,788 875,510" fill="none" stroke="#747c82" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="875,510 867.08,528.0 882.92,528.0" fill="#747c82"/>
+<text x="1300" y="774" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#747c82">CO/CO<tspan baseline-shift="sub" font-size="72%">2</tspan> recycle → Stage 2</text>
+<polyline points="1760,390 1830,460 1830,625" fill="none" stroke="#747c82" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1830,625 1837.48,608.0 1822.52,608.0" fill="#747c82"/>
+<text x="1820" y="662" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#22272b">Purge</text>
+<text x="1820" y="693" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#22272b">(CO<tspan baseline-shift="sub" font-size="72%">2</tspan></text>
+<text x="1820" y="721" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#22272b">4.5 t/d)</text>
+<rect x="350" y="275" width="265" height="235" rx="12" fill="#fff3ee" stroke="#d78773" stroke-width="2.5"/>
+<text x="482" y="312" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">Stage 1:</text>
+<text x="482" y="345" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">CH<tspan baseline-shift="sub" font-size="72%">4</tspan> Pyrolysis</text>
+<text x="482" y="380" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">1200 K</text>
+<text x="482" y="427" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" text-anchor="middle" fill="#22272b">CH<tspan baseline-shift="sub" font-size="72%">4</tspan> → C(s) + 2H<tspan baseline-shift="sub" font-size="72%">2</tspan></text>
+<text x="482" y="475" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">+3275 kW</text>
+<text x="482" y="501" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#22272b">(endothermic)</text>
+<rect x="725" y="275" width="270" height="235" rx="12" fill="#eff7fc" stroke="#72a8cb" stroke-width="2.5"/>
+<text x="860" y="312" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">Stage 2: RWGS</text>
+<text x="860" y="350" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">950 K</text>
+<text x="860" y="412" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#22272b">CO<tspan baseline-shift="sub" font-size="72%">2</tspan> + H<tspan baseline-shift="sub" font-size="72%">2</tspan> → CO + H<tspan baseline-shift="sub" font-size="72%">2</tspan>O</text>
+<text x="860" y="475" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">+842 kW</text>
+<text x="860" y="501" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#22272b">(endothermic)</text>
+<polyline points="615,390 725,390" fill="none" stroke="#22272b" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="725,390 708.0,382.52 708.0,397.48" fill="#22272b"/>
+<text x="670" y="304" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#22272b">H<tspan baseline-shift="sub" font-size="72%">2</tspan> +</text>
+<text x="670" y="332" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#22272b">residual</text>
+<text x="670" y="360" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#22272b">CH<tspan baseline-shift="sub" font-size="72%">4</tspan></text>
+<polyline points="995,390 1070,390" fill="none" stroke="#22272b" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1070,390 1053.0,382.52 1053.0,397.48" fill="#22272b"/>
+<text x="1167" y="306" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#22272b">Mixed gas stream</text>
+<rect x="1070" y="348" width="195" height="84" rx="12" fill="#f8f9fa" stroke="#a9afb4" stroke-width="2.5"/>
+<text x="1167" y="381" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">Water</text>
+<text x="1167" y="415" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">Condenser</text>
+<polyline points="1265,390 1315,390 1315,543 1265,543" fill="none" stroke="#22272b" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1265,543 1282.0,550.48 1282.0,535.52" fill="#22272b"/>
+<text x="1367" y="310" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#22272b">Dehydrated</text>
+<text x="1367" y="338" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#22272b">gas</text>
+<rect x="1070" y="502" width="195" height="84" rx="12" fill="#f8f9fa" stroke="#a9afb4" stroke-width="2.5"/>
+<text x="1167" y="535" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">Membrane</text>
+<text x="1167" y="568" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">Separator</text>
+<polyline points="1070,543 1040,543 1040,402" fill="none" stroke="#9b87bb" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="1040,378 1040,202 1650,202" fill="none" stroke="#9b87bb" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1650,202 1633.0,194.52 1633.0,209.48" fill="#9b87bb"/>
+<path d="M 1040 402 C 1063 402 1063 378 1040 378" fill="none" stroke="white" stroke-width="9"/><path d="M 1040 402 C 1063 402 1063 378 1040 378" fill="none" stroke="#9b87bb" stroke-width="4"/>
+<text x="1290" y="183" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400" text-anchor="middle" fill="#9b87bb">H<tspan baseline-shift="sub" font-size="72%">2</tspan> permeate 4.4 t/d</text>
+<text x="1625" y="245" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#9b87bb">H<tspan baseline-shift="sub" font-size="72%">2</tspan> export</text>
+<polyline points="1265,565 1400,565 1400,390 1470,390" fill="none" stroke="#22272b" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1470,390 1453.0,382.52 1453.0,397.48" fill="#22272b"/>
+<text x="1370" y="607" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#22272b">Retentate</text>
+<text x="1370" y="636" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#22272b">(CO, CO<tspan baseline-shift="sub" font-size="72%">2</tspan>, CH<tspan baseline-shift="sub" font-size="72%">4</tspan>, 50 % H<tspan baseline-shift="sub" font-size="72%">2</tspan>)</text>
+<rect x="1470" y="275" width="260" height="300" rx="12" fill="#f1f8ef" stroke="#80a779" stroke-width="2.5"/>
+<text x="1600" y="310" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">Stage 3:</text>
+<text x="1600" y="342" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">Carbon Recovery</text>
+<text x="1600" y="376" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">650 K</text>
+<text x="1600" y="422" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#22272b">2CO → C(s) + CO<tspan baseline-shift="sub" font-size="72%">2</tspan></text>
+<text x="1600" y="456" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#22272b">CO + H<tspan baseline-shift="sub" font-size="72%">2</tspan> → C(s) + H<tspan baseline-shift="sub" font-size="72%">2</tspan>O</text>
+<text x="1600" y="490" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#22272b">CO<tspan baseline-shift="sub" font-size="72%">2</tspan> + 4H<tspan baseline-shift="sub" font-size="72%">2</tspan> → CH<tspan baseline-shift="sub" font-size="72%">4</tspan> + 2H<tspan baseline-shift="sub" font-size="72%">2</tspan>O</text>
+<text x="1600" y="535" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">−3171 kW</text>
+<text x="1600" y="565" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#22272b">(exothermic)</text>
+<polyline points="1730,390 1760,390" fill="none" stroke="#747c82" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="1760,390 1743.0,382.52 1743.0,397.48" fill="#747c82"/>
+<text x="1772" y="332" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#22272b">Exhaust</text>
+<text x="1772" y="359" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#22272b">gas</text>
+<polyline points="482,510 482,588" fill="none" stroke="#22272b" stroke-width="7" stroke-linejoin="round"/>
+<polygon points="482,588 490.8,568.0 473.2,568.0" fill="#22272b"/>
+<rect x="475" y="598" width="14" height="14" fill="#22272b"/>
+<text x="482" y="647" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#22272b">C(s) 37.7 t/d</text>
+<polyline points="1120,432 1120,464" fill="none" stroke="#49a7d3" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="1120,464 1127.92,446.0 1112.08,446.0" fill="#49a7d3"/>
+<polygon points="1138,440 1130,453 1131,461 1138,464 1145,461 1146,453 1138,440" fill="#49a7d3"/>
+<text x="1152" y="460" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#287da5">H<tspan baseline-shift="sub" font-size="72%">2</tspan>O 37.1 t/d</text>
+<polyline points="1520,575 1520,674" fill="none" stroke="#22272b" stroke-width="7" stroke-linejoin="round"/>
+<polygon points="1520,674 1528.8,654.0 1511.2,654.0" fill="#22272b"/>
+<rect x="1513" y="683" width="14" height="14" fill="#22272b"/>
+<text x="1505" y="728" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#22272b">C(s) 21.0 t/d</text>
+<polyline points="1675,575 1675,674" fill="none" stroke="#49a7d3" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="1675,674 1682.92,656.0 1667.08,656.0" fill="#49a7d3"/>
+<polygon points="1675,677 1667,690 1668,698 1675,701 1682,698 1683,690 1675,677" fill="#49a7d3"/>
+<text x="1677" y="728" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#287da5">H<tspan baseline-shift="sub" font-size="72%">2</tspan>O 31.0 t/d</text>
+<text x="1130" y="835" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" text-anchor="middle" fill="#22272b">Methanation or direct deposition, depending on H<tspan baseline-shift="sub" font-size="72%">2</tspan> split h</text>
+<polyline points="45,879 99,879" fill="none" stroke="#22272b" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="99,879 82.0,871.52 82.0,886.48" fill="#22272b"/>
+<text x="111" y="887" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#22272b">Material flow</text>
+<rect x="333" y="872" width="14" height="14" fill="#22272b"/>
+<text x="360" y="887" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#22272b">Solid carbon</text>
+<polygon points="575,866 567,879 568,887 575,890 582,887 583,879 575,866" fill="#49a7d3"/>
+<text x="594" y="887" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#22272b">Water</text>
+<polyline points="700,879 753,879" fill="none" stroke="#9b87bb" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="753,879 736.0,871.52 736.0,886.48" fill="#9b87bb"/>
+<text x="768" y="887" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#22272b">H<tspan baseline-shift="sub" font-size="72%">2</tspan></text>
+<polyline points="850,879 903,879" fill="none" stroke="#747c82" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="903,879 886.0,871.52 886.0,886.48" fill="#747c82"/>
+<text x="918" y="887" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#22272b">Recycle</text>
+<text x="1840" y="887" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" text-anchor="end" fill="#22272b">All stream values are equilibrium results.</text>
+<rect x="30" y="909" width="1665" height="46" rx="12" fill="#ffffff" stroke="#747c82" stroke-width="2.5"/>
+<text x="50" y="940" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#22272b">Kinetic design case (uncalibrated): C(s) 36.6 t/d, CO<tspan baseline-shift="sub" font-size="72%">2</tspan> fixation 3.0 %, H<tspan baseline-shift="sub" font-size="72%">2</tspan> 8.9 t/d</text>
+<rect x="270" y="981" width="730" height="105" rx="12" fill="#faf8f4" stroke="#b0aaa1" stroke-width="2.5"/>
+<text x="635" y="1020" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="middle" fill="#22272b">Total Solid Carbon: 58.65 t/d</text>
+<text x="635" y="1063" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" text-anchor="middle" fill="#22272b">(kinetic design case, uncalibrated: 36.6 t/d)</text>
+<rect x="1030" y="981" width="580" height="105" rx="12" fill="#f1f8fc" stroke="#8db7cc" stroke-width="2.5"/>
+<text x="1320" y="1020" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="middle" fill="#22272b">Recovered Water: 68.1 t/d</text>
+<text x="1320" y="1063" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" text-anchor="middle" fill="#22272b">Agricultural / community use</text>
+</svg>
