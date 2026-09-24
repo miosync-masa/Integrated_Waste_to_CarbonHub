@@ -1,0 +1,100 @@
+K2c: D-optimal validation temperatures with the X4 inlets (wall 30 s). sigma = 0.02; KINETIC reduced models, UNCALIBRATED.
+Inlets [kmol/d]: S3 kinetic-loop inlet (X4, H2/CO2 0.42): CH4 490, CO2 10,009, CO 28,728, H2 4,220, H2O 76 | S3 equilibrium-loop inlet (X4, H2/CO2 1.18): CH4 112, CO2 1,858, CO 2,092, H2 2,189, H2O 108 | S2 equilibrium-loop inlet (X4, H2/CO2 1.64): CH4 110, CO2 3,939, CO 14, H2 6,466, H2O 86 | S2 kinetic-loop inlet (X4, H2/CO2 0.87): CH4 465, CO2 11,503, CO 27,258, H2 10,007, H2O 5
+
+=== S3 kinetic-loop inlet (X4, H2/CO2 0.42): per-temperature outputs and Fisher diagonal
+ T_K  Y_CH4_min  X_COx_min  Y_Csolid_min  Y_CH4_max  X_COx_max  Y_Csolid_max  trace_F  F_k_meth  F_Ea_meth  F_k_carb  F_Ea_carb  F_k_crack  F_Ea_crack     F_n  X_CO2_min  X_CO2_max  F_k1_ref  F_Ea1  F_k2_ref  F_Ea2
+ 600   4.11e-05    5.2e-05      1.09e-05    0.00223    0.00279      0.000566    0.282  0.000472    0.00112    0.0351      0.101     0.0202       0.123 0.00121        NaN        NaN       NaN    NaN       NaN    NaN
+ 625   7.81e-05   0.000131      5.26e-05    0.00404    0.00664        0.0026    0.497   0.00166   0.000908     0.203      0.135     0.0632      0.0886 0.00423        NaN        NaN       NaN    NaN       NaN    NaN
+ 650   0.000139   0.000306      0.000167    0.00646     0.0142       0.00776     1.12   0.00368          0     0.941          0      0.161           0 0.00939        NaN        NaN       NaN    NaN       NaN    NaN
+ 675   0.000232   0.000674      0.000442    0.00882     0.0272        0.0184     5.99   0.00522    0.00245      3.34        1.9      0.335       0.403  0.0133        NaN        NaN       NaN    NaN       NaN    NaN
+ 700    0.00036     0.0014       0.00104    0.00989     0.0459         0.036     29.8   0.00928     0.0162      8.56       18.1      0.567        2.53  0.0237        NaN        NaN       NaN    NaN       NaN    NaN
+ 725   0.000505    0.00277       0.00226    0.00854     0.0677        0.0592     90.8    0.0259      0.095      15.4       68.3      0.663        6.22  0.0661        NaN        NaN       NaN    NaN       NaN    NaN
+ 750   0.000607    0.00519       0.00458    0.00694     0.0882         0.084      188    0.0487      0.297      21.7        160      0.334        5.21   0.124        NaN        NaN       NaN    NaN       NaN    NaN
+ 775   -0.00258    0.00929       0.00877    0.00507      0.107         0.109      341    0.0484      0.431      27.9        300      0.536        12.2   0.123        NaN        NaN       NaN    NaN       NaN    NaN
+ 800   -0.00956     0.0158        0.0159    0.00423      0.123         0.133      487    0.0417      0.502      29.4        428      0.908        27.9   0.106        NaN        NaN       NaN    NaN       NaN    NaN
+ 825    -0.0124     0.0256        0.0272    0.00139      0.131         0.143      511    0.0319      0.492      24.6        458      0.682        26.9  0.0814        NaN        NaN       NaN    NaN       NaN    NaN
+ 850    -0.0126     0.0389        0.0431   -0.00374       0.13         0.143      464    0.0626       1.19      18.3        419      0.513        24.8   0.159        NaN        NaN       NaN    NaN       NaN    NaN
+
+=== S3 kinetic-loop inlet (X4, H2/CO2 0.42): D-optimal sets vs reference designs
+                           kind                parameter_set  n_T    temperatures  n_points  logdet_F  cond_number  rel_se_k_meth  rel_se_Ea_meth  rel_se_n  rel_se_k_carb  rel_se_Ea_carb  rel_se_k_crack  rel_se_Ea_crack
+                      D-optimal      P3 (k_meth, Ea_meth, n)    2         750/850        12     -14.1     9.12e+04            188             3.2       117            NaN             NaN             NaN              NaN
+                      D-optimal      P3 (k_meth, Ea_meth, n)    3     725/750/850        18     -13.4     9.77e+04            186            2.56       116            NaN             NaN             NaN              NaN
+                      D-optimal      P3 (k_meth, Ea_meth, n)    4 725/750/825/850        24       -13     1.12e+05            175            2.46       109            NaN             NaN             NaN              NaN
+        K2 a priori 600/650/700      P3 (k_meth, Ea_meth, n)    3     600/650/700        18     -23.1     2.36e+05        1.7e+03            11.6  1.06e+03            NaN             NaN             NaN              NaN
+    K2b (old inlet) 600/725/800      P3 (k_meth, Ea_meth, n)    3     600/725/800        18       -18     5.98e+05            722            4.57       452            NaN             NaN             NaN              NaN
+K2b (old inlet) 600/700/800/825      P3 (k_meth, Ea_meth, n)    4 600/700/800/825        24     -16.5     3.29e+05            427            4.06       267            NaN             NaN             NaN              NaN
+                      D-optimal P7 (all three reactions + n)    2         700/850        12     -8.84     2.41e+07            193            6.62       119           1.04           0.246            5.74             0.95
+                      D-optimal P7 (all three reactions + n)    3     675/775/850        18     -4.77     3.74e+07            186             3.4       116          0.621           0.167            2.34            0.444
+                      D-optimal P7 (all three reactions + n)    4 700/775/800/850        24     -3.28     5.79e+07            182            3.63       114          0.558           0.149             2.5            0.472
+        K2 a priori 600/650/700 P7 (all three reactions + n)    3     600/650/700        18     -25.8     2.22e+08       2.34e+03              27  1.46e+03           3.23            2.05            7.08             2.91
+    K2b (old inlet) 600/725/800 P7 (all three reactions + n)    3     600/725/800        18       -12     5.09e+08            824            6.63       515           1.03            0.31             5.2            0.962
+K2b (old inlet) 600/700/800/825 P7 (all three reactions + n)    4 600/700/800/825        24     -7.89     2.51e+08            431            5.73       269          0.798            0.21            3.73             0.66
+
+=== S3 equilibrium-loop inlet (X4, H2/CO2 1.18): per-temperature outputs and Fisher diagonal
+ T_K  Y_CH4_min  X_COx_min  Y_Csolid_min  Y_CH4_max  X_COx_max  Y_Csolid_max  trace_F  F_k_meth  F_Ea_meth  F_k_carb  F_Ea_carb  F_k_crack  F_Ea_crack   F_n  X_CO2_min  X_CO2_max  F_k1_ref  F_Ea1  F_k2_ref  F_Ea2
+ 600   9.03e-05   9.03e-05             0     0.0399     0.0399             0     24.3       3.4       8.09     0.556        1.6      0.282        1.72  8.67        NaN        NaN       NaN    NaN       NaN    NaN
+ 625   0.000241   0.000241             0      0.067      0.067             0       34      5.93       3.25      3.32        2.2       1.74        2.44  15.1        NaN        NaN       NaN    NaN       NaN    NaN
+ 650   0.000614   0.000614             0     0.0919     0.0919      6.35e-06     28.8      7.14          0      4.34          0       1.47           0  15.8        NaN        NaN       NaN    NaN       NaN    NaN
+ 675    0.00152    0.00152             0      0.113      0.117       0.00406     33.7      4.78       2.32      7.09       4.12       1.59        1.89  11.9        NaN        NaN       NaN    NaN       NaN    NaN
+ 700    0.00372    0.00372             0       0.12      0.144        0.0244      139      3.87       6.64      15.4       32.8       12.4        57.7  9.66        NaN        NaN       NaN    NaN       NaN    NaN
+ 725    0.00635    0.00635      1.24e-06      0.113      0.178         0.065      428       1.8       6.52        64        279       8.37        63.3  4.36        NaN        NaN       NaN    NaN       NaN    NaN
+ 750     0.0128     0.0128             0      0.109      0.227         0.137 1.11e+03     0.755       5.17       111        845       6.85         138  2.11        NaN        NaN       NaN    NaN       NaN    NaN
+ 775     0.0239     0.0245      0.000576      0.101      0.303         0.252 3.01e+03     0.431       3.93       234   2.52e+03       10.3         237  0.92        NaN        NaN       NaN    NaN       NaN    NaN
+ 800     0.0164     0.0414        0.0102     0.0934      0.389         0.372 5.19e+03     0.239       2.88       318   4.62e+03       7.75         238 0.352        NaN        NaN       NaN    NaN       NaN    NaN
+ 825     0.0147     0.0655        0.0309     0.0719      0.417         0.402 5.73e+03     0.412       6.35       280   5.21e+03       5.91         232 0.845        NaN        NaN       NaN    NaN       NaN    NaN
+ 850    0.00319     0.0967        0.0652     0.0433      0.392         0.363 5.11e+03     0.145       2.76       208   4.75e+03       2.93         142   0.2        NaN        NaN       NaN    NaN       NaN    NaN
+
+=== S3 equilibrium-loop inlet (X4, H2/CO2 1.18): D-optimal sets vs reference designs
+                           kind                parameter_set  n_T    temperatures  n_points  logdet_F  cond_number  rel_se_k_meth  rel_se_Ea_meth  rel_se_n  rel_se_k_carb  rel_se_Ea_carb  rel_se_k_crack  rel_se_Ea_crack
+                      D-optimal      P3 (k_meth, Ea_meth, n)    2         625/725        12      2.99          358           3.06           0.325      1.93            NaN             NaN             NaN              NaN
+                      D-optimal      P3 (k_meth, Ea_meth, n)    3     600/700/725        18      4.17          340           2.67           0.224      1.68            NaN             NaN             NaN              NaN
+                      D-optimal      P3 (k_meth, Ea_meth, n)    4 600/650/700/725        24      4.97          435           2.35            0.22      1.52            NaN             NaN             NaN              NaN
+        K2 a priori 600/650/700      P3 (k_meth, Ea_meth, n)    3     600/650/700        18      3.57          973           3.76           0.261      2.44            NaN             NaN             NaN              NaN
+    K2b (old inlet) 600/725/800      P3 (k_meth, Ea_meth, n)    3     600/725/800        18       3.8          148           2.26            0.25      1.45            NaN             NaN             NaN              NaN
+K2b (old inlet) 600/700/800/825      P3 (k_meth, Ea_meth, n)    4 600/700/800/825        24      4.49          211           2.27           0.217      1.44            NaN             NaN             NaN              NaN
+                      D-optimal P7 (all three reactions + n)    2         700/825        12      16.5     2.23e+05           5.55            0.82         3          0.726           0.166           0.919            0.196
+                      D-optimal P7 (all three reactions + n)    3     700/775/825        18      20.2     1.52e+05           3.74           0.608       2.1          0.311          0.0793           0.603            0.137
+                      D-optimal P7 (all three reactions + n)    4 625/700/775/825        24        23     1.09e+05           3.05           0.247      1.96          0.309          0.0786           0.561            0.124
+        K2 a priori 600/650/700 P7 (all three reactions + n)    3     600/650/700        18      7.61     4.43e+03           5.46            0.52      3.32           1.32           0.885            2.55             1.21
+    K2b (old inlet) 600/725/800 P7 (all three reactions + n)    3     600/725/800        18      18.7     7.94e+04           3.31           0.283         2          0.627           0.165            1.42            0.271
+K2b (old inlet) 600/700/800/825 P7 (all three reactions + n)    4 600/700/800/825        24      22.4     1.24e+05            2.9           0.218      1.85          0.472           0.115           0.631            0.128
+
+=== S2 equilibrium-loop inlet (X4, H2/CO2 1.64): per-temperature outputs and Fisher diagonal
+     T_K  Y_CH4_min  X_COx_min  Y_Csolid_min  Y_CH4_max  X_COx_max  Y_Csolid_max  trace_F  F_k_meth  F_Ea_meth  F_k_carb  F_Ea_carb  F_k_crack  F_Ea_crack  F_n  X_CO2_min  X_CO2_max  F_k1_ref  F_Ea1  F_k2_ref  F_Ea2
+     850     0.0202        NaN           NaN      0.065        NaN           NaN      241       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.135      0.429      84.9    121        11   24.3
+     875     0.0283        NaN           NaN     0.0712        NaN           NaN      185       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.175      0.449      90.5   68.2      11.8   13.9
+     900     0.0376        NaN           NaN     0.0612        NaN           NaN      134       NaN        NaN       NaN        NaN        NaN         NaN  NaN       0.22      0.468      91.9   29.1      8.99   4.45
+     925     0.0317        NaN           NaN     0.0556        NaN           NaN      107       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.267      0.494      92.6   6.94      6.34  0.742
+     950    0.00258        NaN           NaN     0.0528        NaN           NaN     99.8       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.311      0.525      95.9      0      3.83      0
+     975    -0.0128        NaN           NaN     0.0467        NaN           NaN      108       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.347       0.55       100   6.75     0.801 0.0844
+   1e+03    -0.0202        NaN           NaN     0.0245        NaN           NaN      129       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.375       0.57       102   26.2     0.624   0.25
+1.02e+03    -0.0239        NaN           NaN   -0.00205        NaN           NaN      169       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.408      0.587       108   59.5     0.307  0.263
+1.05e+03    -0.0258        NaN           NaN    -0.0186        NaN           NaN      225       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.453      0.602       116    108    0.0142 0.0206
+
+=== S2 equilibrium-loop inlet (X4, H2/CO2 1.64): D-optimal sets vs reference designs
+                    kind         parameter_set  n_T     temperatures  n_points  logdet_F  cond_number  rel_se_k1_ref  rel_se_Ea1  rel_se_k2_ref  rel_se_Ea2
+               D-optimal P4 (k1, Ea1, k2, Ea2)    2          850/950         6      13.9          101          0.102       0.126          0.511         0.4
+               D-optimal P4 (k1, Ea1, k2, Ea2)    3     850/925/1050         9      15.6          129         0.0587      0.0657           0.52       0.433
+               D-optimal P4 (k1, Ea1, k2, Ea2)    4 850/875/950/1050        12      16.7          156          0.052      0.0596          0.475       0.397
+K2 a priori 900/950/1000 P4 (k1, Ea1, k2, Ea2)    3     900/950/1000         9      12.9          193          0.061        0.14          0.435       0.734
+       K2 two T 900/1000 P4 (k1, Ea1, k2, Ea2)    2         900/1000         6      11.1          422         0.0827       0.153          0.859        1.23
+
+=== S2 kinetic-loop inlet (X4, H2/CO2 0.87): per-temperature outputs and Fisher diagonal
+     T_K  Y_CH4_min  X_COx_min  Y_Csolid_min  Y_CH4_max  X_COx_max  Y_Csolid_max  trace_F  F_k_meth  F_Ea_meth  F_k_carb  F_Ea_carb  F_k_crack  F_Ea_crack  F_n  X_CO2_min  X_CO2_max  F_k1_ref  F_Ea1  F_k2_ref   F_Ea2
+     850     0.0003        NaN           NaN    0.00214        NaN           NaN     10.7       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0354      0.091       4.4   6.25    0.0181  0.0402
+     875   0.000446        NaN           NaN      0.003        NaN           NaN     9.45       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0456      0.102      5.34   4.02    0.0376  0.0443
+     900   0.000643        NaN           NaN    0.00393        NaN           NaN     8.27       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0574      0.113       6.2   1.96     0.068  0.0336
+     925   0.000892        NaN           NaN    0.00451        NaN           NaN     7.61       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0706      0.124      6.98  0.523    0.0941   0.011
+     950    0.00117        NaN           NaN    0.00343        NaN           NaN     7.76       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0851      0.136       7.7      0    0.0624       0
+     975   -0.00223        NaN           NaN    0.00137        NaN           NaN        9       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.101      0.153       8.4  0.567    0.0286 0.00301
+   1e+03    -0.0153        NaN           NaN    0.00114        NaN           NaN     12.1       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.116      0.177      9.16   2.35     0.444   0.178
+1.02e+03    -0.0306        NaN           NaN  -0.000464        NaN           NaN     16.8       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.132      0.206      10.1   5.57     0.575   0.494
+1.05e+03    -0.0371        NaN           NaN   -0.00529        NaN           NaN     24.3       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.148      0.225      11.7   10.9     0.692    1.01
+
+=== S2 kinetic-loop inlet (X4, H2/CO2 0.87): D-optimal sets vs reference designs
+                    kind         parameter_set  n_T      temperatures  n_points  logdet_F  cond_number  rel_se_k1_ref  rel_se_Ea1  rel_se_k2_ref  rel_se_Ea2
+               D-optimal P4 (k1, Ea1, k2, Ea2)    2          900/1050         6      3.27          235          0.278       0.331           2.47        2.12
+               D-optimal P4 (k1, Ea1, k2, Ea2)    3      875/900/1050         9      4.67          136          0.214       0.253           1.88        1.62
+               D-optimal P4 (k1, Ea1, k2, Ea2)    4 875/900/1025/1050        12      5.75          208           0.19       0.232           1.73        1.61
+K2 a priori 900/950/1000 P4 (k1, Ea1, k2, Ea2)    3      900/950/1000         9      1.88          238           0.21       0.486           1.78        2.93
+       K2 two T 900/1000 P4 (k1, Ea1, k2, Ea2)    2          900/1000         6      1.24          184          0.258       0.487           1.98        3.08

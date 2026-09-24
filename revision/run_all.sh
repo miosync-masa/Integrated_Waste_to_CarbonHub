@@ -10,6 +10,7 @@ run() { echo "== $1  ($(date +%H:%M:%S))"; $PY "$1" > "Result/${1%.py}.log" 2>&1
 run K3_stage2_extent_decomposition.py      # K3: Stage 2 extent decomposition and heat apportionment
 run K3_stage2_two_reaction_kinetic.py      # K3: two-reaction Stage 2 reduced model, tau sweep
 run KIN_chain_design_case.py               # KIN: Stage 1 design residence time tau* and kinetic chain
+run KIN_cfr_window_origin.py               # R4 Major 3: origin of Stage 3 carbon across the 750-850 K window
 run P1_recycle_analysis.py                 # P1/P2: recycle analysis with carbon-origin tracking (long)
 run P1_recycle_plot.py
 run T3_pressure_analysis.py                # T3: pressure effects, per-stage
@@ -21,6 +22,7 @@ run F1_full_biogas_CO2.py                  # F1: all biogas CO2, no DAC (X3/X4)
 run F1b_heat_H2_balance.py                 # F1b: heat and H2 balance
 run X4_fig1_streams.py                     # X4: full stream table for the new Fig. 1 (eq + kinetic design case)
 run X4_sensitivity_dG_pressure.py          # X4: once-through reference, carbon-form and pressure sensitivities
+run X4_T3_sensitivity.py                   # X4: Stage 3 temperature 650-850 K, equilibrium and kinetic design case
 run X4_fig2_fixation.py                    # X4: Fig. 2, CO2-carbon fixation bars (eq once-through / eq recycle / kinetic)
 run P3_auxiliary_power.py                  # P3: auxiliary power
 run T4_heat_cascade.py                     # T4: pinch analysis
@@ -28,4 +30,7 @@ run T4b_surplus_heat_use.py                # T4b: use of the 650 K surplus heat
 run X4_exergy_heat.py                      # X4: heat exergy of the T4 streams (independent check of the pinch conclusion)
 run E7_TEA_X4.py                           # E7/E11: screening TEA
 run K2_validation_design.py                # K2: identifiability and validation design
+run K2b_stage3_design_600_850.py           # K2b: D-optimal re-selection of the Stage 3 validation temperatures over 600-850 K
+run K2c_design_X4_inlets.py                # K2c: K2b repeated with the X4 Stage 3 / Stage 2 inlets (+ Stage 2 850-1050 K re-selection)
+run K2d_design_composition.py              # K2d: feed composition (H2/CO2, CO/CO2) as a design variable, two synthetic-feed series
 echo "== all done ($(date +%H:%M:%S))"

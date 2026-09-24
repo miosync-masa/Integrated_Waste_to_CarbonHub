@@ -1,18 +1,19 @@
 # Integrated Waste-to-Solid-Carbon System
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15_kDIGbXsrWM8ixbpGA8rqWov2XR4zH7)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Companion code for:**  
-*Mass-Balance-Consistent Carbon Management: Thermodynamic Design of an Integrated Waste-to-Solid-Carbon System*  
+*Mass-Balance-Consistent Carbon Management: Thermodynamic and Kinetic Design of an Integrated Waste-to-Solid-Carbon System*  
 M. Iizumi, Miosync Inc.
 
 ---
 
 > **Revision (2026).** The code and outputs of the submitted version are preserved unchanged in [`submitted_v1/`](submitted_v1/).
 > The additional analyses made for the Major Revision (two-reaction Stage 2 model, kinetic design case, converged recycle with
-> carbon-origin tracking, pressure and carbon-form sensitivities, heat cascade, auxiliary power, revised TEA, validation design)
-> are in [`revision/`](revision/) — see [`revision/README.md`](revision/README.md). Paths below refer to `submitted_v1/`.
+> carbon-origin tracking, the revised base configuration X4 with all biogas CO2 and no DAC/electrolysis, its stream tables and
+> figures, pressure, carbon-form and Stage 3 temperature sensitivities, heat cascade and heat exergy, auxiliary power, revised TEA,
+> and the Fisher-information validation design) are in [`revision/`](revision/) — see [`revision/README.md`](revision/README.md)
+> for the script ↔ reviewer-comment map. Paths below refer to `submitted_v1/`.
 
 ## Overview
 
@@ -123,7 +124,7 @@ Sensitivity analysis: ±30% perturbation of each parameter around Base scenario.
 
 ## Citation
 
-If you use this code, please cite the accompanying paper (submitted to Resources, Conservation and Recycling).
+If you use this code, please cite the accompanying paper (under revision at *Fuel Processing Technology*, manuscript FUPROC-D-26-00269).
 
 ## License
 
