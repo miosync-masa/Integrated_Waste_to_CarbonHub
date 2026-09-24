@@ -21,9 +21,11 @@ run F1_full_biogas_CO2.py                  # F1: all biogas CO2, no DAC (X3/X4)
 run F1b_heat_H2_balance.py                 # F1b: heat and H2 balance
 run X4_fig1_streams.py                     # X4: full stream table for the new Fig. 1 (eq + kinetic design case)
 run X4_sensitivity_dG_pressure.py          # X4: once-through reference, carbon-form and pressure sensitivities
+run X4_fig2_fixation.py                    # X4: Fig. 2, CO2-carbon fixation bars (eq once-through / eq recycle / kinetic)
 run P3_auxiliary_power.py                  # P3: auxiliary power
 run T4_heat_cascade.py                     # T4: pinch analysis
 run T4b_surplus_heat_use.py                # T4b: use of the 650 K surplus heat
+run X4_exergy_heat.py                      # X4: heat exergy of the T4 streams (independent check of the pinch conclusion)
 run E7_TEA_X4.py                           # E7/E11: screening TEA
 run K2_validation_design.py                # K2: identifiability and validation design
 echo "== all done ($(date +%H:%M:%S))"

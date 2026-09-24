@@ -73,4 +73,4 @@ option
 ref: upgrading outside boundary                                                                                    -3.90          -3.22          -0.86          -0.51          +0.85          +1.12
 ref: upgrading outside boundary, bottoming eta 0.20                                                                -2.50          -2.11          +0.28          +0.41          +1.82          +1.90
 ref: upgrading outside boundary, bottoming eta 0.25                                                                -2.15          -1.83          +0.57          +0.63          +2.06          +2.10
-Saved: <repo>/revision/Result/T4b_surplus_heat_use.csv <repo>/revision/Result/T4b_summary.txt
+Saved: /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/T4b_surplus_heat_use.csv /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/T4b_summary.txt

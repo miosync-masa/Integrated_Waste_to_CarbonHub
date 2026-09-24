@@ -21,4 +21,4 @@ dG = 20 kJ/mol: offset check (dG, dH) at 650/950/1200 K = (20.000, 20.000), (20.
   Part C kinetic: X_eq 0.8250; at tau 8.905 s X_kin 0.7813 (approach 0.947, C1 28.08 t/d); new tau* 6.763 s -> X 0.7426, C1 26.69 t/d; once-through design chain total 28.08 t/d
 
 wall 89 s; unconverged: 0; max |closure C| 2.2e-09
-Saved: <repo>/revision/Result/T1_carbon_form_sensitivity.csv <repo>/revision/Result/T1_carbon_form_summary.txt
+Saved: /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/T1_carbon_form_sensitivity.csv /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/T1_carbon_form_summary.txt

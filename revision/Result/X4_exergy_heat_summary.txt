@@ -1,0 +1,43 @@
+X4 heat exergy (wall 0 s). EQUILIBRIUM streams (X4 representative: 2b, y = 0.60, h = 0.50). T0 = 298.15 K. Heat exergy only.
+max |duty - T4 duty| = 0.00 kW
+
+kind                              stream  T_in_K  T_out_K  duty_kW  duty_T4_kW  T_lm_K  Ex_lm_kW  Ex_integral_kW  Ex_over_Q  sensible_kW  latent_kW  Ex_sensible_kW  Ex_latent_kW  T_eff_latent_K
+ hot             Stage 1 gas 1200->950 K 1,200.0    950.0    574.9       574.9 1,070.1     414.7           414.9      0.722        574.9      0.000           414.9         0.000             NaN
+ hot         Stage 1 solid C 1200->313 K 1,200.0    313.1    584.1       584.1   660.2     320.3           342.5      0.586        584.1      0.000           342.5         0.000             NaN
+ hot Stage 2 gas 950->313 K (condensing)   950.0    313.1  3,463.3     3,463.3   573.9   1,663.9         1,384.7      0.400      2,706.2      757.1         1,321.3          63.4           325.4
+ hot             Stage 3 exotherm @650 K   650.0    650.0  3,170.8     3,170.8   650.0   1,716.4         1,716.4      0.541          NaN        NaN             NaN           NaN             NaN
+ hot Stage 3 gas 650->313 K (condensing)   650.0    313.1  1,475.5     1,475.5   461.3     521.7           336.5      0.228        667.0      808.5           240.9          95.6           338.1
+ hot          Stage 3 solid C 650->313 K   650.0    313.1     94.6        94.6   461.3      33.4            35.8      0.378         94.6      0.000            35.8         0.000             NaN
+cold               fresh CH4 298->1200 K   298.1  1,200.0  1,876.2     1,876.2   647.7   1,012.5         1,091.0      0.582      1,876.2      0.000         1,091.0         0.000             NaN
+cold            recycled CH4 313->1200 K   313.1  1,200.0    149.7       149.7   660.2      82.1            87.9      0.587        149.7      0.000            87.9         0.000             NaN
+cold           Stage 1 endotherm @1200 K 1,200.0  1,200.0  3,275.3     3,275.3 1,200.0   2,461.5         2,461.5      0.752          NaN        NaN             NaN           NaN             NaN
+cold                fresh CO2 298->950 K   298.1    950.0    708.7       708.7   562.5     333.0           345.7      0.488        708.7      0.000           345.7         0.000             NaN
+cold       recycle to Stage 2 313->950 K   313.1    950.0    751.9       751.9   573.9     361.3           372.6      0.495        751.9      0.000           372.6         0.000             NaN
+cold            Stage 2 endotherm @950 K   950.0    950.0    842.2       842.2   950.0     577.9           577.9      0.686          NaN        NaN             NaN           NaN             NaN
+cold                 CFR feed 313->650 K   313.1    650.0    844.5       844.5   461.3     298.6           302.6      0.358        844.5      0.000           302.6         0.000             NaN
+
+                                        value
+hot_duty_kW                         9,363.151
+hot_Ex_kW                           4,230.723
+hot_Ex_lm_kW                        4,670.513
+cold_duty_kW                        8,448.530
+cold_Ex_kW                          5,239.253
+cold_Ex_lm_kW                       5,126.922
+hot_Ex_excl_S3_exotherm_kW          2,514.331
+hot_Ex_below_650K_incl_kW           2,088.641
+S3_exotherm_Q_kW                    3,170.826
+S3_exotherm_Ex_kW                   1,716.392
+S3_carnot_factor                        0.541
+S1_endotherm_Q_kW                   3,275.283
+S1_endotherm_Ex_kW                  2,461.511
+S1_carnot_factor                        0.752
+Q_ratio_S3_over_S1                      0.968
+Ex_ratio_S3_over_S1                     0.697
+S3_heat_as_1200K_heat_reversible_kW 2,283.829
+S3_heat_needed_for_S1_reversible_kW 4,547.342
+ORC_eta0.20_power_kW                  634.165
+ORC_eta0.20_exergy_efficiency           0.369
+ORC_eta0.20_over_carnot                 0.369
+ORC_eta0.25_power_kW                  792.706
+ORC_eta0.25_exergy_efficiency           0.462
+ORC_eta0.25_over_carnot                 0.462

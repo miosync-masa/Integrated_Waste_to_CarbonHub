@@ -106,4 +106,4 @@ revision/notes/P3_auxiliary_power_summary.md    76                              
        revision/notes/T3_pressure_summary.md   154                                 4. 圧縮動力 0.74〜1.05 MW（§4）に見合う増分は、n ≤ 1 の現実的な範囲では +0.3〜+3 t/d であり、平衡側（増分ゼロ）と併せて **段別昇圧は「較正後に判断する選択肢」** に位置づける。
    revision/notes/T4_heat_cascade_summary.md   117                                  3. 残る 650 K の 1.5 MW（X4 では 3.2 MW）は熱としては行き場がなく、**発電（η_el 0.20〜0.25）に回して補機を賄うのが唯一の使い道**。これが X4 の自立条件になる（§3）。
 
-Saved: <repo>/revision/Result/P4_solar_basis.csv <repo>/revision/Result/P4_pvout_countries.csv <repo>/revision/Result/P4_solar_basis_summary.txt
+Saved: /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/P4_solar_basis.csv /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/P4_pvout_countries.csv /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/P4_solar_basis_summary.txt

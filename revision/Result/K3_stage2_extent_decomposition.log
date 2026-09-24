@@ -28,6 +28,6 @@ Element-closure residuals dn - dn_pred [kmol/d]: CO2 -0.0439, H2 -0.1491, H2O +0
 dH(950 K): RWGS +35.27 kJ/mol ; CO2 methanation -189.22 kJ/mol
 Q_RWGS = +462.7 kW ; Q_meth = +772.0 kW ; sum = +1234.6 kW ; direct Q2 = +1234.6 kW ; difference +0.070 kW
 
-Saved: <repo>/revision/Result/K3_extent_decomposition.csv
-       <repo>/revision/Result/K3_heat_apportionment.csv
-       <repo>/revision/Result/K3_extent_summary.txt
+Saved: /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/K3_extent_decomposition.csv
+       /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/K3_heat_apportionment.csv
+       /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/K3_extent_summary.txt

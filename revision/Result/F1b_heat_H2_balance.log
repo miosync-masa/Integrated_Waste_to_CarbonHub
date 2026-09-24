@@ -73,4 +73,4 @@ config    P2_bar
           5.00000       6.23  6.27  6.31
 submitted 1.01325       9.81  9.83  9.84
           5.00000       9.49  9.56  9.62
-Saved: <repo>/revision/Result/F1b_heat_H2_balance.csv <repo>/revision/Result/F1b_stoichiometric_reference.csv <repo>/revision/Result/F1b_summary.txt
+Saved: /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/F1b_heat_H2_balance.csv /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/F1b_stoichiometric_reference.csv /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/F1b_summary.txt

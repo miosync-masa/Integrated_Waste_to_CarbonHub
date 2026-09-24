@@ -32,7 +32,7 @@ kin_tau1-taustar_phi-0.1_T3-800                   380.3                       46
                 eq_FeedA_T3-650                   90.31                       197.6                           197.6        0.8137                     -196.4         34.85         1.476        36.33              0.04063                       16.67                  7.94   3031 -196.4  -1479        1356                  1.241e-14
                 eq_FeedA_T3-800                   90.31                       197.6                           197.6        0.8137                     -196.4         34.85         3.475        38.33              0.09068                       16.67                 9.373   3031 -196.4  -1073        1761                  1.241e-14
 
-Saved: <repo>/revision/Result/KIN_chain_cases.csv
-       <repo>/revision/Result/KIN_chain_streams.csv
-       <repo>/revision/Result/KIN_chain_tau_star.csv
-       <repo>/revision/Result/KIN_chain_summary.txt
+Saved: /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/KIN_chain_cases.csv
+       /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/KIN_chain_streams.csv
+       /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/KIN_chain_tau_star.csv
+       /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/KIN_chain_summary.txt

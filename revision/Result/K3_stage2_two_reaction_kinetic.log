@@ -37,7 +37,7 @@ tau_s   X_submitted(Euler,400 steps)   X_this(BDF)   diff        Q_submitted   Q
 100.0   0.756498                     0.756498    -4.21e-14     294.71     294.71   -0.000
 max |dX| = 5.00e-04 (integration-scheme difference only; same rate law and k1)
 
-Saved: <repo>/revision/Result/K3_stage2_2rxn_tau_sweep.csv
-       <repo>/revision/Result/K3_stage2_2rxn_tau3s_table.csv
-       <repo>/revision/Result/K3_stage2_2rxn_summary.txt
-       <repo>/revision/Result/K3_stage2_2rxn_tau_sweep.png
+Saved: /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/K3_stage2_2rxn_tau_sweep.csv
+       /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/K3_stage2_2rxn_tau3s_table.csv
+       /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/K3_stage2_2rxn_summary.txt
+       /Users/iizumimamichi/Integrated_Waste_to_CarbonHub-main/revision/Result/K3_stage2_2rxn_tau_sweep.png
