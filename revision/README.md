@@ -25,7 +25,7 @@ Scripts whose names start with `X4_`, and the TEA (`E7_TEA_X4.py`), refer to the
 | Item | Value |
 |---|---|
 | Feed | waste CH4 48 t/d (as submitted) + **all** CO2 of a 60 vol% CH4 biogas (87.8 t/d CO2, 24.0 t C/d); no DAC, no electrolysis (configuration "2b", y_CH4 = 0.60) |
-| Stage temperatures / pressure | 1200 / 950 / 650 K, 1 atm (Stage 3 = methanation–recycle reactor, "carbon recovery" in the manuscript) |
+| Stage temperatures / pressure | 1200 / 950 / 650 K, 1 atm (Stage 3 = carbon recovery stage: methanation with recycle, or direct deposition, depending on h) |
 | Recycle | Stage 3 outlet: water removal 0.95 → CH4 separation r_CH4 = 0.95 back to Stage 1 → purge p = 0.05 → rest to Stage 2; membrane H2 split to Stage 3 h = 0.50 |
 | Kinetic design case | Stage 1 τ1* = 8.905 s (approach 0.90), Stage 2 two-reaction model φ = 1 (τ2 = 3 s), Stage 3 reduced 3-reaction model (τ3 = 3 s); all rate constants uncalibrated |
 | Representative numbers (equilibrium) | solid carbon 58.6 t/d (Stage 1 37.7, Stage 3 21.0), 94.8 % of the biogas-CO2 carbon fixed, Q1/Q2/Q3 = +3,275 / +842 / −3,171 kW, purge CO2 4.5 t/d (`X4_fig1_summary.txt`) |
@@ -56,9 +56,9 @@ Rows follow the execution order of `run_all.sh`.
 | §5.2 | `X4_exergy_heat.py` | R2-2 | Heat exergy (T0 = 298.15 K) of the 13 T4 streams of the X4 case, log-mean and curve-integral values, condensing streams split sensible/latent, ORC exergy efficiency | `X4_exergy_heat_*.csv`, `X4_exergy_heat_summary.txt` |
 | E7/E11 | `E7_TEA_X4.py` | R1-6, R2-7, R4-4 | Screening TEA (AACE Class 5) of the revised configuration: CAPEX build-up, NPV/IRR, tornado, break-even | `E7_*.csv`, `E7_tornado.png` |
 | K2 | `K2_validation_design.py` | R2-1 | Identifiability (Fisher information) and a minimal multi-temperature validation design | `K2_*.csv` |
-| K2b | `K2b_stage3_design_600_850.py` | R2-1 | Stage 3 validation temperatures chosen by exhaustive D-optimal selection over a 600–850 K candidate set (K2 parameter set and the full three-reaction set) | `K2b_*.csv`, `K2b_summary.txt` |
-| K2c | `K2c_design_X4_inlets.py` | R2-1 | K2b repeated with the X4 Stage 3 inlets (kinetic loop and equilibrium loop) and D-optimal Stage 2 temperatures (850–1050 K) with the X4 Stage 2 inlet | `K2c_*.csv`, `K2c_summary.txt` |
-| K2d | `K2d_design_composition.py` | R2-1 | Validation design with feed composition as a design variable: two synthetic-feed series per stage, D-optimal and minimax over temperatures and H2/CO2 (Stage 3 also CO/CO2) | `K2d_*.csv`, `K2d_summary.txt` |
+| K2b | `K2b_stage3_design_600_850.py` | R2-1 | Intermediate step: Stage 3 validation temperatures chosen by exhaustive D-optimal selection over a 600–850 K candidate set, submitted-case inlet (K2 parameter set and the full three-reaction set) | `K2b_*.csv`, `K2b_summary.txt` |
+| K2c | `K2c_design_X4_inlets.py` | R2-1 | Intermediate step: K2b repeated with the X4 Stage 3 inlets (kinetic loop and equilibrium loop) and D-optimal Stage 2 temperatures (850–1050 K) with the X4 Stage 2 inlet; shows that the process inlet compositions are unsuitable as calibration feeds | `K2c_*.csv`, `K2c_summary.txt` |
+| K2d | `K2d_design_composition.py` | R2-1 | **Recommended validation programme (supersedes K2b/K2c).** Feed composition as a design variable: two synthetic-feed series per stage, D-optimal and minimax over temperatures and H2/CO2 (Stage 3 also CO/CO2) | `K2d_*.csv`, `K2d_summary.txt` |
 
 Dependency order (as in `run_all.sh`): K3 → KIN → KIN_cfr_window_origin → P1 → T3 → T3b → T1 → P4 → E9 → F1 → F1b → X4_fig1 → X4_sensitivity_dG_pressure → X4_T3_sensitivity → X4_fig2 → P3 → T4 → T4b → X4_exergy_heat → E7 → K2 → K2b → K2c → K2d.
 Scripts that need a previous result read it from `Result/` (for example `X4_exergy_heat.py` uses the streams written by `X4_fig1_streams.py`; `K2c`/`K2d` import `K2`/`K2b`). Two scripts cache expensive kinetic solves (`E7_kinetic_X4.csv`, `X4_fig2_kinetic_cases.csv`); delete the cache file to force a re-solve.
@@ -67,7 +67,7 @@ Scripts that need a previous result read it from `Result/` (for example `X4_exer
 
 * **Kinetic loop "as modelled".** With the uncalibrated reduced kinetics the converged recycle of the kinetic design case circulates about 40,700 kmol/d of CO-rich gas (Stage 3 inlet H2/CO2 = 0.42). Its yields and duties are reported (`X4_fig1_*`, `X4_T3_sensitivity.csv`), but the TEA sizes the plant on the equilibrium loop and `K2c` shows that this composition is unsuitable as a calibration feed.
 * **CO-free feeds freeze the reduced Stage 3 model.** `run_stage3_cfr_kinetic` in the submitted code floors every activity at `TRACE`, so with exactly zero CO the CO-hydrogenation step has a small positive rate while the CO inventory is zero; the negativity limiter then sets the whole integration step to zero and no reaction proceeds. `K2d` therefore uses a 1 % CO trace for its CO-lean series. This does not affect any process case (CO is always present after Stage 2).
-* **Stage 3 temperature.** The 650 K design value is a thermodynamic optimum for the equilibrium loop; the reduced kinetics need 800–850 K to reach comparable fixation (`X4_T3_sensitivity.csv`). Validation temperatures were therefore re-selected over 600–850 K (`K2b`–`K2d`).
+* **Stage 3 temperature.** At equilibrium, fixation decreases as T3 is raised above 650 K; with the uncalibrated reduced kinetics, fixation rises to 53–76 % at 800–850 K (`X4_T3_sensitivity.csv`). The design temperature cannot be chosen until the kinetics are calibrated, which is why the validation temperatures were re-selected over 600–850 K (`K2b`–`K2d`).
 * **Logs.** `Result/*.log` are the stdout of the last full run; the local repository path is replaced by `<repo>`.
 
 ## Environment
