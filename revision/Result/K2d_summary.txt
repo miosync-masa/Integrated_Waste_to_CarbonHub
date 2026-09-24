@@ -1,4 +1,4 @@
-K2d composition-aware D-optimal design (wall 129 s, enumeration 12 s). sigma = 0.02. KINETIC reduced models, UNCALIBRATED.
+K2d composition-aware D-optimal design (wall 125 s, enumeration 11 s). sigma = 0.02. KINETIC reduced models, UNCALIBRATED.
 Stage 3: 8 synthetic feeds x 11 T x 3 tau x 2 P; designs = 1 or 2 feed series x 3-4 T each (all tau x P per T).
 Stage 2: 4 synthetic feeds x 9 T x 3 tau x 1 atm; same design rule.
 
@@ -17,32 +17,32 @@ stage                  feed  Y_CH4_max  X_COx_max  Y_Csolid_max  X_CO2_max  X_CO
    S3 H2/CO2=4, CO/CO2=0.01      0.857      0.857      7.25e-23        NaN        NaN
    S3    H2/CO2=4, CO/CO2=1      0.466      0.628         0.221        NaN        NaN
 
-=== Stage 3: top designs (D-optimal and minimax over k_meth, Ea_meth, n, k_carb, Ea_carb, Ea_crack)
+=== Stage 3: top designs (D-optimal and minimax over all seven parameters)
  criterion  rank              series_1             T_1           series_2             T_2  n_points  logdet_F  max_rel_se  rel_se_k_meth  rel_se_Ea_meth  rel_se_k_carb  rel_se_Ea_carb  rel_se_k_crack  rel_se_Ea_crack  rel_se_n
- D-optimal     1 H2/CO2=4, CO/CO2=0.01 600/700/725/800 H2/CO2=2, CO/CO2=1 775/800/825/850        48      43.3       0.241         0.0963           0.028          0.241          0.0599           0.303           0.0632    0.0764
- D-optimal     2 H2/CO2=4, CO/CO2=0.01 600/675/725/800 H2/CO2=2, CO/CO2=1 775/800/825/850        48      43.3       0.241          0.103          0.0295          0.241          0.0599           0.303           0.0632    0.0796
- D-optimal     3 H2/CO2=4, CO/CO2=0.01 600/700/725/800 H2/CO2=2, CO/CO2=1 750/775/800/850        48      43.3       0.188         0.0957          0.0279          0.188          0.0496           0.279           0.0655    0.0757
- D-optimal     4 H2/CO2=4, CO/CO2=0.01 600/675/700/800 H2/CO2=2, CO/CO2=1 775/800/825/850        48      43.2       0.241          0.106          0.0295          0.241          0.0599           0.303           0.0632    0.0798
- D-optimal     5 H2/CO2=4, CO/CO2=0.01 600/675/725/800 H2/CO2=2, CO/CO2=1 750/775/800/850        48      43.2       0.188          0.102          0.0293          0.188          0.0496           0.279           0.0655    0.0789
- D-optimal     6 H2/CO2=4, CO/CO2=0.01 600/700/725/825 H2/CO2=2, CO/CO2=1 775/800/825/850        48      43.2       0.241            0.1          0.0265          0.241            0.06           0.303           0.0632    0.0779
- D-optimal     7 H2/CO2=4, CO/CO2=0.01 600/675/700/800 H2/CO2=2, CO/CO2=1 750/775/800/850        48      43.2       0.188          0.105          0.0293          0.188          0.0496           0.279           0.0655    0.0791
- D-optimal     8 H2/CO2=4, CO/CO2=0.01 600/650/725/800 H2/CO2=2, CO/CO2=1 775/800/825/850        48      43.2       0.241          0.113          0.0326          0.241          0.0599           0.303           0.0632    0.0877
-minimax SE     1 H2/CO2=2, CO/CO2=0.01 600/750/775/850 H2/CO2=2, CO/CO2=1 725/750/775/850        48      38.8       0.181           0.18          0.0499          0.181          0.0479           0.411           0.0742     0.149
-minimax SE     2 H2/CO2=2, CO/CO2=0.01 600/675/750/775 H2/CO2=2, CO/CO2=1 725/750/775/850        48      38.3       0.181          0.166          0.0522          0.181          0.0481           0.413           0.0787     0.127
-minimax SE     3 H2/CO2=2, CO/CO2=0.01 600/700/750/775 H2/CO2=2, CO/CO2=1 725/750/775/850        48      38.4       0.181          0.159          0.0503          0.181          0.0481           0.413           0.0787     0.124
-minimax SE     4 H2/CO2=2, CO/CO2=0.01 600/650/750/775 H2/CO2=2, CO/CO2=1 725/750/775/850        48      38.3       0.181          0.177           0.056          0.181          0.0481           0.414           0.0787     0.136
-minimax SE     5 H2/CO2=2, CO/CO2=0.01 600/675/700/775 H2/CO2=2, CO/CO2=1 725/750/775/850        48      38.1       0.182          0.174          0.0534          0.182          0.0481           0.414           0.0787      0.13
-minimax SE     6 H2/CO2=2, CO/CO2=0.01 600/725/750/775 H2/CO2=2, CO/CO2=1 725/750/775/850        48      38.4       0.182          0.156          0.0505          0.182          0.0481           0.413           0.0787     0.126
-minimax SE     7 H2/CO2=2, CO/CO2=0.01 600/675/725/775 H2/CO2=2, CO/CO2=1 725/750/775/850        48      38.1       0.182           0.17          0.0536          0.182          0.0481           0.414           0.0787      0.13
-minimax SE     8 H2/CO2=2, CO/CO2=0.01 600/700/725/775 H2/CO2=2, CO/CO2=1 725/750/775/850        48      38.2       0.182          0.162          0.0516          0.182          0.0481           0.414           0.0787     0.127
+ D-optimal     1 H2/CO2=4, CO/CO2=0.01 600/700/725/800 H2/CO2=2, CO/CO2=1 775/800/825/850        48      43.3       0.303         0.0963           0.028          0.241          0.0599           0.303           0.0632    0.0764
+ D-optimal     2 H2/CO2=4, CO/CO2=0.01 600/675/725/800 H2/CO2=2, CO/CO2=1 775/800/825/850        48      43.3       0.303          0.103          0.0295          0.241          0.0599           0.303           0.0632    0.0796
+ D-optimal     3 H2/CO2=4, CO/CO2=0.01 600/700/725/800 H2/CO2=2, CO/CO2=1 750/775/800/850        48      43.3       0.279         0.0957          0.0279          0.188          0.0496           0.279           0.0655    0.0757
+ D-optimal     4 H2/CO2=4, CO/CO2=0.01 600/675/700/800 H2/CO2=2, CO/CO2=1 775/800/825/850        48      43.2       0.303          0.106          0.0295          0.241          0.0599           0.303           0.0632    0.0798
+ D-optimal     5 H2/CO2=4, CO/CO2=0.01 600/675/725/800 H2/CO2=2, CO/CO2=1 750/775/800/850        48      43.2       0.279          0.102          0.0293          0.188          0.0496           0.279           0.0655    0.0789
+ D-optimal     6 H2/CO2=4, CO/CO2=0.01 600/700/725/825 H2/CO2=2, CO/CO2=1 775/800/825/850        48      43.2       0.303            0.1          0.0265          0.241            0.06           0.303           0.0632    0.0779
+ D-optimal     7 H2/CO2=4, CO/CO2=0.01 600/675/700/800 H2/CO2=2, CO/CO2=1 750/775/800/850        48      43.2       0.279          0.105          0.0293          0.188          0.0496           0.279           0.0655    0.0791
+ D-optimal     8 H2/CO2=4, CO/CO2=0.01 600/650/725/800 H2/CO2=2, CO/CO2=1 775/800/825/850        48      43.2       0.303          0.113          0.0326          0.241          0.0599           0.303           0.0632    0.0877
+minimax SE     1    H2/CO2=2, CO/CO2=1 750/775/800/850 H2/CO2=4, CO/CO2=1 625/700/725/750        48        38       0.247           0.24          0.0713          0.147          0.0392           0.247           0.0583     0.149
+minimax SE     2    H2/CO2=2, CO/CO2=1 750/775/800/850 H2/CO2=4, CO/CO2=1 600/700/725/750        48      38.4       0.247          0.224          0.0563          0.148          0.0393           0.247           0.0584     0.147
+minimax SE     3    H2/CO2=2, CO/CO2=1 750/775/800/850 H2/CO2=4, CO/CO2=1 600/675/725/750        48      38.4       0.248          0.232           0.058          0.151          0.0401           0.248           0.0581     0.151
+minimax SE     4    H2/CO2=2, CO/CO2=1 750/775/800/850 H2/CO2=4, CO/CO2=1 625/700/725/775        48      38.6       0.248          0.246          0.0701          0.153          0.0405           0.248           0.0532     0.155
+minimax SE     5    H2/CO2=2, CO/CO2=1 750/775/800/850 H2/CO2=4, CO/CO2=1 600/675/700/775        48      38.9       0.248          0.245          0.0567          0.162          0.0427           0.248           0.0534      0.16
+minimax SE     6    H2/CO2=2, CO/CO2=1 750/775/800/850 H2/CO2=4, CO/CO2=1 600/675/700/750        48      38.2       0.248          0.248          0.0572          0.154          0.0408           0.246           0.0587     0.158
+minimax SE     7    H2/CO2=2, CO/CO2=1 750/775/800/850 H2/CO2=4, CO/CO2=1 600/700/725/775        48        39       0.249          0.223          0.0557          0.153          0.0406           0.249           0.0532     0.152
+minimax SE     8    H2/CO2=2, CO/CO2=1 750/775/800/825 H2/CO2=4, CO/CO2=1 600/700/725/850        48      39.2       0.249          0.247          0.0543          0.153           0.041           0.249           0.0509      0.17
 
 === Stage 3: comparison with K2b (old inlet) and K2c (X4 inlets)
-                                                       source                                                                         design  n_points  rel_se_k_meth  rel_se_Ea_meth  rel_se_n  rel_se_k_carb  rel_se_Ea_carb  rel_se_Ea_crack  max_rel_se_6
-K2b, old inlet (submitted design case, H2/CO2 ~3, CO/CO2 1.7)                                                                600/700/800/825        24          0.425          0.0719     0.289          0.185          0.0475           0.0625         0.425
-                 K2c, S3 kinetic-loop inlet (X4, H2/CO2 0.42)                                                                700/775/800/850        24            182            3.63       114          0.558           0.149            0.472           182
-             K2c, S3 equilibrium-loop inlet (X4, H2/CO2 1.18)                                                                625/700/775/825        24           3.05           0.247      1.96          0.309          0.0786            0.124          3.05
-                                   K2d D-optimal (two series) H2/CO2=4, CO/CO2=0.01 @ 600/700/725/800 + H2/CO2=2, CO/CO2=1 @ 775/800/825/850        48         0.0963           0.028    0.0764          0.241          0.0599           0.0632         0.241
-                                  K2d minimax SE (two series) H2/CO2=2, CO/CO2=0.01 @ 600/750/775/850 + H2/CO2=2, CO/CO2=1 @ 725/750/775/850        48           0.18          0.0499     0.149          0.181          0.0479           0.0742         0.181
+                                                       source                                                                         design  n_points  rel_se_k_meth  rel_se_Ea_meth  rel_se_n  rel_se_k_carb  rel_se_Ea_carb  rel_se_k_crack  rel_se_Ea_crack  max_rel_se_6
+K2b, old inlet (submitted design case, H2/CO2 ~3, CO/CO2 1.7)                                                                600/700/800/825        24          0.425          0.0719     0.289          0.185          0.0475           0.306           0.0625         0.425
+                 K2c, S3 kinetic-loop inlet (X4, H2/CO2 0.42)                                                                700/775/800/850        24            182            3.63       114          0.558           0.149             2.5            0.472           182
+             K2c, S3 equilibrium-loop inlet (X4, H2/CO2 1.18)                                                                625/700/775/825        24           3.05           0.247      1.96          0.309          0.0786           0.561            0.124          3.05
+                                   K2d D-optimal (two series) H2/CO2=4, CO/CO2=0.01 @ 600/700/725/800 + H2/CO2=2, CO/CO2=1 @ 775/800/825/850        48         0.0963           0.028    0.0764          0.241          0.0599           0.303           0.0632         0.303
+                                  K2d minimax SE (two series)    H2/CO2=2, CO/CO2=1 @ 750/775/800/850 + H2/CO2=4, CO/CO2=1 @ 625/700/725/750        48           0.24          0.0713     0.149          0.147          0.0392           0.247           0.0583         0.247
 
 === Stage 2: top designs
  criterion  rank series_1               T_1 series_2              T_2  n_points  logdet_F  max_rel_se  rel_se_k1_ref  rel_se_Ea1  rel_se_k2_ref  rel_se_Ea2

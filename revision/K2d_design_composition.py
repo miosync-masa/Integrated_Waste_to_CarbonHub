@@ -13,7 +13,7 @@ Stage 3 (reduced 3-reaction model; parameters ln k_meth, Ea_meth, ln k_carb, Ea_
   designs         : two feed series (distinct compositions), each measured at its own set of 3 or 4 temperatures
                     (all tau x P at each T); exhaustive over feeds and temperature subsets; single-series designs
                     listed for comparison. Criteria: D-optimal (max log det F) and minimax (min of the largest
-                    relative SE among k_meth, Ea_meth, n, k_carb, Ea_carb, Ea_crack).
+                    relative SE among all seven parameters).
 Stage 2 (two-reaction model; ln k1, Ea1 (RWGS), ln k2, Ea2 (CO2 methanation, k2 from phi = 1))
   candidate feeds : CO2 : H2 = 1 : r, r in {1.5, 2, 3, 4} (no CO: RWGS product); T 850-1050 K step 25 x tau 1/3/10 s x 1 atm
   designs         : one or two feed series x 3-4 temperatures each; question: does any design bring all four
@@ -37,7 +37,7 @@ T3_CAND, TAU3, P3 = K2c.T3_CAND, K2c.TAU3, K2c.P3; T2_CAND, TAU2, P2 = K2c.T2_CA
 BASIS = 1000.0  # kmol/d CO2 (intensive results; absolute flow irrelevant at fixed tau)
 FEEDS3 = {f"H2/CO2={rh:g}, CO/CO2={rc:g}": {"CO2": BASIS, "H2": rh * BASIS, **({"CO": rc * BASIS} if rc > 0 else {})} for rc in (0.01, 1.0) for rh in (1.0, 2.0, 3.0, 4.0)}
 FEEDS2 = {f"H2/CO2={r:g}": {"CO2": BASIS, "H2": r * BASIS} for r in (1.5, 2.0, 3.0, 4.0)}
-SE6 = ["k_meth", "Ea_meth", "n", "k_carb", "Ea_carb", "Ea_crack"]
+SE6 = ["k_meth", "Ea_meth", "n", "k_carb", "Ea_carb", "k_crack", "Ea_crack"]   # all seven parameters
 
 def subset_sums(Fbig, cand, sizes):
     """List of (temperature tuple, summed Fisher matrix) for all subsets of the given sizes."""
@@ -124,7 +124,7 @@ def main():
          f"Stage 3: {len(FEEDS3)} synthetic feeds x {len(T3_CAND)} T x {len(TAU3)} tau x {len(P3)} P; designs = 1 or 2 feed series x 3-4 T each (all tau x P per T).",
          f"Stage 2: {len(FEEDS2)} synthetic feeds x {len(T2_CAND)} T x {len(TAU2)} tau x 1 atm; same design rule.", "",
          "=== conversion ranges per feed (max over T, tau, P)", rng.to_string(index=False, float_format=ff), "",
-         "=== Stage 3: top designs (D-optimal and minimax over k_meth, Ea_meth, n, k_carb, Ea_carb, Ea_crack)",
+         "=== Stage 3: top designs (D-optimal and minimax over all seven parameters)",
          D3.groupby("criterion").head(8).to_string(index=False, float_format=ff), "",
          "=== Stage 3: comparison with K2b (old inlet) and K2c (X4 inlets)", COMP.to_string(index=False, float_format=ff), "",
          "=== Stage 2: top designs", D2.groupby("criterion").head(8).to_string(index=False, float_format=ff), "",
