@@ -1,4 +1,4 @@
-C1 refrigerated dewatering (wall 101 s). Water removal 95 % kept (mass balance unchanged). COP = 0.45 x T_evap/(T_cond - T_evap), T_evap = T_req - 5 K, T_cond = 318.15 K.
+C1 refrigerated dewatering (wall 83 s). Water removal 95 % kept (mass balance unchanged). COP = 0.45 x T_evap/(T_cond - T_evap), T_evap = T_req - 5 K, T_cond = 318.15 K.
 
 --- condenser outlet temperatures and refrigeration ---
                             case  S2_T_required_K  S2_removal_at_313K  S2_refrigeration_below_313_kW  S2_COP  S2_chiller_kW  S3_T_required_K  S3_removal_at_313K  S3_refrigeration_below_313_kW  S3_COP  S3_chiller_kW  chiller_power_total_kW  chiller_power_etaII_035_kW  chiller_power_etaII_055_kW  below_freezing

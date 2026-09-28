@@ -124,13 +124,15 @@ def process_data(config, basis, kin=None, y=0.60):
         else:
             r = kin[kin.phi == 1.0].iloc[0]; qh = float(r.Q_fired_kW); h2f = qh / ETA_FURNACE * 24 / LHV / 1000
         aux_eq = float(c1.aux_incl_upgrading_kW if config == "X4-upgrading" else c1.aux_excl_upgrading_kW)
+        ck = c1_row("2b_y0.60 kin recycle phi=1 h=0.5") if basis == "kinetic" else None   # kinetic loop 'as modelled' (information rows only)
         d.update(C_tpd=float(r.C_total_tpd), water_tpd=float(r.water_total_tpd), CO2_fixed_tpd=float(r.CO2_fixed_as_CO2_tpd), H2_export_raw=float(r.H2_net_exportable_tpd),
                  H2_fired=h2f, Q_fired_kW=qh, aux_kW=(aux_eq if basis == "equilibrium" else aux_eq * 0.9), y=y,
                  raw_biogas_Nm3h=FRESH_CH4 * NM3_PER_KMOL / y / 24, S2_feed_Nm3h=float(r.S2_inlet_total_kmol_d) * NM3_PER_KMOL / 24,
-                 S3_out_Nm3h=float(c1.pw3_kmol_d) * NM3_PER_KMOL / 24,
-                 hen_m2=float(c1.hen_area_m2_U50), cooler_kW=float(c1.air_cooler_duty_kW), chiller_duty_kW=float(c1.refrigeration_duty_streams_kW), chiller_kW=float(c1.chiller_kW),
+                 S3_out_Nm3h=float((ck if ck is not None else c1).pw3_kmol_d) * NM3_PER_KMOL / 24,
+                 hen_m2=float(c1.hen_area_m2_U50) if ck is None else 1200.0, cooler_kW=float((ck if ck is not None else c1).air_cooler_duty_kW),
+                 chiller_duty_kW=float((ck if ck is not None else c1).refrigeration_duty_streams_kW), chiller_kW=float((ck if ck is not None else c1).chiller_kW),
                  blower_kW=86.0 + 136.0, orc_kWe=793.0 if basis == "equilibrium" else 30.0, C_stage3_tpd=float(r.C_stage3_tpd),
-                 T_cond_S2_K=float(c1.S2_T_required_K), T_cond_S3_K=float(c1.S3_T_required_K))
+                 T_cond_S2_K=float((ck if ck is not None else c1).S2_T_required_K), T_cond_S3_K=float((ck if ck is not None else c1).S3_T_required_K))
     else:  # submitted
         case = "submitted eq once-through h=0.35" if config == "SUB-once" else "submitted eq recycle h=0.35"
         r = eq_row(case); h2f, qh = h2_fired_eq(case)
@@ -251,10 +253,14 @@ def main():
     add("Biogas CH4 fraction y (0.55 / 0.65)", "0.55", globals()["npv_y=0.55"], "0.65", globals()["npv_y=0.65"])
     add("H2 price (2 / 5 USD/kg)", "2", e(ov=dict(h2=2000)), "5", e(ov=dict(h2=5000)))
     td = pd.DataFrame(torn).sort_values("swing"); td.to_csv(OUTS["torn"], index=False)
-    fig, ax = plt.subplots(figsize=(9, 5.5)); yy = np.arange(len(td))
+    fig, ax = plt.subplots(figsize=(10, 5.8)); yy = np.arange(len(td))
     for i, r in enumerate(td.itertuples()):
-        ax.plot([r.NPV_low, r.NPV_high], [i, i], marker="o"); ax.annotate(r.low_case, (r.NPV_low, i), textcoords="offset points", xytext=(-4, 4), ha="right", fontsize=7); ax.annotate(r.high_case, (r.NPV_high, i), textcoords="offset points", xytext=(4, 4), fontsize=7)
-    ax.axvline(base_e, ls="--", color="k", lw=0.8); ax.set_yticks(yy); ax.set_yticklabels(td.parameter, fontsize=8); ax.set_xlabel("NPV [MUSD] (8 %, 20 y)"); ax.set_title(f"E11 tornado — X4-grid, Base, equilibrium yield, gate 50 % (base NPV {base_e:.1f} MUSD)"); ax.grid(alpha=.3)
+        lo, hi = (r.NPV_low, r.NPV_high) if r.NPV_low <= r.NPV_high else (r.NPV_high, r.NPV_low)
+        llab, hlab = (r.low_case, r.high_case) if r.NPV_low <= r.NPV_high else (r.high_case, r.low_case)
+        ax.plot([lo, hi], [i, i], marker="o"); ax.annotate(llab, (lo, i), textcoords="offset points", xytext=(-5, 0), ha="right", va="center", fontsize=7); ax.annotate(hlab, (hi, i), textcoords="offset points", xytext=(5, 0), ha="left", va="center", fontsize=7)
+    ax.axvline(base_e, ls="--", color="k", lw=0.8); ax.set_yticks(yy); ax.set_yticklabels(td.parameter, fontsize=8); ax.set_xlabel("NPV [MUSD] (8 %, 20 y)")
+    xmin, xmax = min(td.NPV_low.min(), td.NPV_high.min()), max(td.NPV_low.max(), td.NPV_high.max()); ax.set_xlim(xmin - 0.12 * (xmax - xmin), xmax + 0.16 * (xmax - xmin))
+    ax.set_title(f"Tornado, base case (equilibrium yield, gate fee on 50 % of the feed, Base scenario)\nNPV at the low / high value of each parameter; base NPV {base_e:.1f} MUSD", fontsize=10); ax.grid(alpha=.3)
     fig.tight_layout(); fig.savefig(OUTS["png"], dpi=160); plt.close(fig)
     # break-even carbon price (NPV = 0), Base otherwise, X4-grid, both yields, gate 0/50/100 %
     be = []

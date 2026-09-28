@@ -208,7 +208,7 @@ def main():
     TEA = pd.DataFrame(trows); TEA.to_csv(os.path.join(RESULT, "C1_for_TEA.csv"), index=False)
     # figure: X4 recycle and X4 once-through, refrigerated convention, dTmin 20 K
     fig, ax = plt.subplots(2, 2, figsize=(13, 9))
-    for j, (lab, ttl) in enumerate([("2b_y0.60 eq recycle h=0.5", "X4 (2b, y = 0.60, h = 0.50), recycle, equilibrium"), ("2b_y0.60 eq once-through h=0.5", "X4 feed, once-through, equilibrium")]):
+    for j, (lab, ttl) in enumerate([("2b_y0.60 eq recycle h=0.5", "Base case (recycle, equilibrium)"), ("2b_y0.60 eq once-through h=0.5", "Same feed, once-through (equilibrium)")]):
         p = R[lab]["pinch"][20.0]; Th, Hh = p["hot_comp"]; Tc, Hc = p["cold_comp"]
         ax[0, j].plot(Hh / 1000, Th, "r-", label="hot composite"); ax[0, j].plot(Hc / 1000, Tc, "b-", label="cold composite (shifted by Q_C,min)")
         for T in (313.15, 650, 1200): ax[0, j].axhline(T, color="gray", ls=":", lw=0.8)
@@ -219,7 +219,7 @@ def main():
             q = R[lab]["pinch"][dt]; ax[1, j].plot(q["gcc_H"] / 1000, q["gcc_T"], color=col, label=f"GCC dTmin = {dt:g} K (Q_H,min {q['Q_H_min_kW']/1000:.2f} MW)")
         ax[1, j].axhline(313.15 - 10, color="c", ls="--", lw=0.8, label="cooling-water limit (hot side 313 K, shifted)")
         ax[1, j].set_xlabel("net heat flow [MW]"); ax[1, j].set_ylabel("shifted T [K]"); ax[1, j].set_title("grand composite curve"); ax[1, j].legend(fontsize=8); ax[1, j].grid(alpha=.3)
-    fig.suptitle("C1 heat cascade with refrigerated dewatering to 95 % water removal (equilibrium values)"); fig.tight_layout(); fig.savefig(os.path.join(RESULT, "C1_composite_curves.png"), dpi=160); plt.close(fig)
+    fig.tight_layout(); fig.savefig(os.path.join(RESULT, "C1_composite_curves.png"), dpi=160); plt.close(fig)
     # summary
     pd.set_option("display.width", 320); pd.set_option("display.max_columns", 40); pd.set_option("display.max_rows", 300); ff = lambda v: f"{v:,.1f}" if abs(v) >= 10 else f"{v:.3f}"
     rep = R["2b_y0.60 eq recycle h=0.5"]

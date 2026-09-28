@@ -29,10 +29,10 @@ X4-upgrading     kinetic           21.40     77.68
 
 --- For information: CAPEX the kinetic loop 'as modelled' would imply (CO recycle inflates separation equipment) ---
       config  purchased_MUSD  FCI_MUSD
-     X4-grid           33.84    122.85
-      X4-ORC           33.93    123.18
-    X4-PVaux           38.48    139.68
-X4-upgrading           40.83    148.21
+     X4-grid           97.20    352.83
+      X4-ORC           97.29    353.16
+    X4-PVaux          101.83    369.66
+X4-upgrading          104.18    378.19
 
 --- Economics, gate 50 % ---
       config yield_basis     scenario  C_tpd  carbon_revenue  gate_revenue  water_revenue  H2_export_tpd    H2_revenue  H2_purchased_tpd  H2_purchase_cost  electricity_cost   dac_opex     fixed_OM  catalyst_membrane_replacement  annual_cash_flow  FCI_MUSD  NPV_MUSD   IRR  discounted_payback_y

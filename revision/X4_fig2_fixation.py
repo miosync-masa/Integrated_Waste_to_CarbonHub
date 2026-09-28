@@ -67,7 +67,7 @@ def main():
     ax.axhline(100, color="k", lw=0.8, ls="--", zorder=1); ax.text(-0.58, 100.8, f"100 % = all biogas CO$_2$ carbon, {C_CO2:.1f} t C/d", ha="left", va="bottom", fontsize=7.5)
     ax2 = ax.twinx(); ax2.set_ylim(0, 1.24 * C_CO2); ax2.set_ylabel("CO$_2$-derived solid carbon [t/d]")
     ax.legend(loc="upper center", fontsize=7.5, frameon=False, ncol=2, bbox_to_anchor=(0.5, -0.13))
-    ax.set_title("Fixation of biogas CO$_2$ as solid carbon, X4 configuration\n(all biogas CO$_2$ to Stage 2, $y_{CH_4}$ = 0.60, no DAC, no electrolysis; recycle r$_{CH_4}$ = 0.95, purge 0.05)", fontsize=9.5)
+    ax.set_title("Fixation of biogas CO$_2$ as solid carbon\n(all biogas CO$_2$ to Stage 2, $y_{CH_4}$ = 0.60, no DAC, no electrolysis; recycle r$_{CH_4}$ = 0.95, purge 0.05)", fontsize=9.5)
     fig.text(0.5, 0.012, "Equilibrium: Gibbs minimisation at every stage.  Kinetic: design case $\\tau_1^*$ = 8.9 s, Stage 2 two-reaction model ($\\varphi$ = 1), Stage 3 reduced model at 650 K;\n"
              "rate constants uncalibrated.  Bar labels: fixation % (CO$_2$-derived solid carbon, t C/d).", fontsize=6.5, color="0.3", ha="center", va="bottom")
     fig.tight_layout(rect=(0, 0.05, 1, 1))
