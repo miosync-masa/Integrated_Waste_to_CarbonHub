@@ -11,6 +11,7 @@ run K3_stage2_extent_decomposition.py      # K3: Stage 2 extent decomposition an
 run K3_stage2_two_reaction_kinetic.py      # K3: two-reaction Stage 2 reduced model, tau sweep
 run KIN_chain_design_case.py               # KIN: Stage 1 design residence time tau* and kinetic chain
 run KIN_cfr_window_origin.py               # R4 Major 3: origin of Stage 3 carbon across the 750-850 K window
+run C2_table12_X4_once_through.py          # C2: Table 12 (tau1 effect on Stage 2) recomputed for the X4 feed
 run P1_recycle_analysis.py                 # P1/P2: recycle analysis with carbon-origin tracking (long)
 run P1_recycle_plot.py
 run T3_pressure_analysis.py                # T3: pressure effects, per-stage
@@ -27,10 +28,12 @@ run X4_fig2_fixation.py                    # X4: Fig. 2, CO2-carbon fixation bar
 run P3_auxiliary_power.py                  # P3: auxiliary power
 run T4_heat_cascade.py                     # T4: pinch analysis
 run T4b_surplus_heat_use.py                # T4b: use of the 650 K surplus heat
+run C1_refrigerated_dewatering.py          # C1: refrigerated dewatering to 95 % water removal; pinch, aux, self-sufficiency update (feeds E7)
 run X4_exergy_heat.py                      # X4: heat exergy of the T4 streams (independent check of the pinch conclusion)
 run E7_TEA_X4.py                           # E7/E11: screening TEA
 run K2_validation_design.py                # K2: identifiability and validation design
 run K2b_stage3_design_600_850.py           # K2b: D-optimal re-selection of the Stage 3 validation temperatures over 600-850 K
 run K2c_design_X4_inlets.py                # K2c: K2b repeated with the X4 Stage 3 / Stage 2 inlets (+ Stage 2 850-1050 K re-selection)
 run K2d_design_composition.py              # K2d: feed composition (H2/CO2, CO/CO2) as a design variable, two synthetic-feed series
+run C7_carbon_balance_bound.py             # C7: tracer-independent lower bound on CO2-carbon fixation
 echo "== all done ($(date +%H:%M:%S))"

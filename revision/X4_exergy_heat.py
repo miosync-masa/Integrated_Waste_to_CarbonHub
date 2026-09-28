@@ -3,7 +3,8 @@ X4_exergy_heat.py -- thermal (heat) exergy of the X4 process streams, as an inde
 T4 pinch conclusion that the 650 K Stage 3 exotherm cannot serve the 1200 K Stage 1 endotherm.
 
 Scope: heat exergy only (no chemical exergy, no overall exergy balance). Environment T0 = 298.15 K, 1 atm.
-Streams: the 13 hot/cold streams of T4_heat_cascade for the X4 representative case (2b, y = 0.60,
+Streams: the 13 hot/cold streams of T4_heat_cascade for the X4 representative case, with the condensing streams cooled to the
+C1 condenser outlets (284 / 300 K; 95 % water removal) instead of 313 K, (2b, y = 0.60,
 h = 0.50, EQUILIBRIUM recycle). Compositions are taken from X4_fig1_streams.csv (no re-solve) and the
 T-H curves are rebuilt with T4_heat_cascade.curve (GRI-3.0 enthalpies, graphite, water condensation
 below the dew point); duties are checked against T4_streams_X4_rep.csv.
@@ -45,21 +46,26 @@ def comps():
 def main():
     t0 = time.time(); C = comps(); ref = pd.read_csv(os.path.join(RESULT, "T4_streams_X4_rep.csv")).set_index("stream").duty_kW
     S1 = C["S1 solid carbon"]["C(s)"]; S3 = C["S3 solid carbon"]["C(s)"]
+    # condenser outlet temperatures of the refrigerated dewatering (C1): 95 % water removal needs ~284 K (Stage 2) and ~300 K (Stage 3)
+    try:
+        c1 = pd.read_csv(os.path.join(RESULT, "C1_condensers.csv")); c1 = c1[c1.case == "2b_y0.60 eq recycle h=0.5"].iloc[0]; T2o, T3o = float(c1.S2_T_required_K), float(c1.S3_T_required_K)
+    except Exception: T2o = T3o = T_COND
+    T_COND2, T_COND3 = T2o, T3o
     Q1, Q2, Q3 = ref["Stage 1 endotherm @1200 K"], ref["Stage 2 endotherm @950 K"], ref["Stage 3 exotherm @650 K"]
     spec = [  # (kind, name, T_from, T_to, comp, solid, duty)
         ("hot", "Stage 1 gas 1200->950 K", 1200.0, 950.0, C["S1 outlet gas"], 0.0, None),
         ("hot", "Stage 1 solid C 1200->313 K", 1200.0, T_COND, None, S1, None),
-        ("hot", "Stage 2 gas 950->313 K (condensing)", 950.0, T_COND, C["S2 outlet gas"], 0.0, None),
+        ("hot", f"Stage 2 gas 950->{T_COND2:.0f} K (condensing, refrigerated below 313 K)", 950.0, T_COND2, C["S2 outlet gas"], 0.0, None),
         ("hot", "Stage 3 exotherm @650 K", 650.0, 650.0, None, 0.0, Q3),
-        ("hot", "Stage 3 gas 650->313 K (condensing)", 650.0, T_COND, C["S3 outlet gas"], 0.0, None),
+        ("hot", f"Stage 3 gas 650->{T_COND3:.0f} K (condensing, refrigerated below 313 K)", 650.0, T_COND3, C["S3 outlet gas"], 0.0, None),
         ("hot", "Stage 3 solid C 650->313 K", 650.0, T_COND, None, S3, None),
         ("cold", "fresh CH4 298->1200 K", T0, 1200.0, C["S1 fresh CH4 (waste)"], 0.0, None),
-        ("cold", "recycled CH4 313->1200 K", T_COND, 1200.0, C["S1 recycled CH4 (from S3 outlet)"], 0.0, None),
+        ("cold", f"recycled CH4 {T_COND3:.0f}->1200 K", T_COND3, 1200.0, C["S1 recycled CH4 (from S3 outlet)"], 0.0, None),
         ("cold", "Stage 1 endotherm @1200 K", 1200.0, 1200.0, None, 0.0, Q1),
         ("cold", "fresh CO2 298->950 K", T0, 950.0, C["S2 fresh CO2 (biogas)"], 0.0, None),
-        ("cold", "recycle to Stage 2 313->950 K", T_COND, 950.0, C["S2 recycle from S3 outlet"], 0.0, None),
+        ("cold", f"recycle to Stage 2 {T_COND3:.0f}->950 K", T_COND3, 950.0, C["S2 recycle from S3 outlet"], 0.0, None),
         ("cold", "Stage 2 endotherm @950 K", 950.0, 950.0, None, 0.0, Q2),
-        ("cold", "CFR feed 313->650 K", T_COND, 650.0, C["S3 inlet (membrane retentate)"], 0.0, None)]
+        ("cold", f"CFR feed {T_COND2:.0f}->650 K", T_COND2, 650.0, C["S3 inlet (membrane retentate)"], 0.0, None)]
     rows = []
     for kind, name, Ta, Tb, comp, solid, duty in spec:
         if duty is not None:
@@ -72,7 +78,7 @@ def main():
                 Ts = c["T"]; Hs = np.array([T4m.h_gas_kW(comp, T) for T in Ts]); Hs -= Hs[0]
                 cs = dict(T=Ts, H=Hs); sens = float(Hs[-1]); ex_s = ex_curve(cs); lat = Q - sens; ex_l = ex_int - ex_s
             else: sens, lat, ex_s, ex_l = Q, 0.0, ex_int, 0.0
-        rows.append(dict(kind=kind, stream=name, T_in_K=Ta, T_out_K=Tb, duty_kW=Q, duty_T4_kW=float(ref[name]), T_lm_K=Tm,
+        rows.append(dict(kind=kind, stream=name, T_in_K=Ta, T_out_K=Tb, duty_kW=Q, duty_T4_kW=float(ref.get(name, np.nan)), T_lm_K=Tm,
                          carnot_factor_lm=1 - T0 / Tm, Ex_lm_kW=ex_lm, Ex_integral_kW=ex_int, Ex_over_Q=ex_int / Q,
                          sensible_kW=sens, latent_kW=lat, Ex_sensible_kW=ex_s, Ex_latent_kW=ex_l,
                          T_eff_latent_K=(T0 / (1 - ex_l / lat) if (lat == lat and lat > 0) else np.nan)))
@@ -92,7 +98,7 @@ def main():
     pd.set_option("display.width", 250); pd.set_option("display.max_columns", 30)
     cols = ["kind", "stream", "T_in_K", "T_out_K", "duty_kW", "duty_T4_kW", "T_lm_K", "Ex_lm_kW", "Ex_integral_kW", "Ex_over_Q", "sensible_kW", "latent_kW", "Ex_sensible_kW", "Ex_latent_kW", "T_eff_latent_K"]
     L = [f"X4 heat exergy (wall {time.time()-t0:.0f} s). EQUILIBRIUM streams (X4 representative: 2b, y = 0.60, h = 0.50). T0 = 298.15 K. Heat exergy only.",
-         f"max |duty - T4 duty| = {(D.duty_kW - D.duty_T4_kW).abs().max():.2f} kW", "",
+         f"max |duty - T4 duty| over unchanged streams = {(D.duty_kW - D.duty_T4_kW).abs().max():.2f} kW; condensing streams extended to the C1 condenser outlets (Carnot factor negative below T0 = 298 K: that part is exergy that must be supplied by the chiller)", "",
          D[cols].to_string(index=False, float_format=lambda x: f"{x:,.1f}" if abs(x) >= 10 else f"{x:.3f}"), "",
          A.to_string(float_format=lambda x: f"{x:,.3f}")]
     open(os.path.join(RESULT, "X4_exergy_heat_summary.txt"), "w").write("\n".join(L)); print("\n".join(L))

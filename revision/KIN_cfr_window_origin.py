@@ -15,7 +15,9 @@ Two attributions of the Stage 3 solid carbon:
   (a) species-resolved net-conversion tracer (P1_recycle_analysis._reactor_origins), the method used
       throughout the revision; the origin of CO/CH4 entering Stage 3 is tracked through Stage 1-2;
   (b) reaction-resolved: R2 carbon carries the origin of the CO consumed, R3 carbon the origin of the CH4
-      consumed (when R3 runs in reverse, the net solid comes from R2 only).
+      consumed (when R3 runs in reverse, the net solid comes from R2 only). Extents come from
+      _stage3_extent_fix.run_stage3_cfr_kinetic_fixed (the submitted function recorded extents without the
+      negativity-limiter factor; the corrected extents reconstruct the outlet exactly, checked per case).
 Check: C_stage3 at tau1 = 3 s must reproduce submitted_v1/CanteraResult/cfr_carbon_window.csv (mult = 1).
 
 Outputs (revision/Result/): KIN_cfr_window_origin.csv, KIN_cfr_window_origin_summary.txt
@@ -26,6 +28,7 @@ import numpy as np, pandas as pd
 from _paths import HERE, REPO, BASE, RESULT, SOURCES, NOTES
 import Workflow_cantera as W
 from P1_recycle_analysis import _reactor_origins, _mix_origins, c_atoms, carbon, tpd
+from _stage3_extent_fix import run_stage3_cfr_kinetic_fixed, check as extent_check   # corrected extent bookkeeping (see that module)
 
 T3_GRID = [650.0, 700.0, 750.0, 775.0, 800.0, 825.0, 850.0]
 TAU1 = {"submitted tau1 = 3 s": 3.0, "design case tau1* = 8.905 s": 8.905}
@@ -49,7 +52,8 @@ def main():
         o_gas2, _ = _reactor_origins(rf, o_feed2, gas2, 0.0)
         o_cf = {sp: o_gas2[sp] for sp in cf if sp in o_gas2}
         for T3 in T3_GRID:
-            s3 = W.run_stage3_cfr_kinetic(dict(cf), T3, W.P_cfr, eta=1.0, tau_s=W.cfr_tau_s, n_steps=W.cfr_n_steps)
+            s3 = run_stage3_cfr_kinetic_fixed(dict(cf), T3, W.P_cfr, eta=1.0, tau_s=W.cfr_tau_s, n_steps=W.cfr_n_steps)
+            ext_err, ext_ok = extent_check(cf, s3)
             gas3, C3 = s3["result"]["gas_kmol_d"], s3["result"]["Csolid_kmol_d"]; ext = s3.get("extent_kmol_d", {})
             e_meth, e_carb, e_crack = ext.get("CO2_methanation", 0.0), ext.get("CO_carbon", 0.0), ext.get("CH4_cracking", 0.0)
             # (a) species-resolved net-conversion tracer
@@ -71,10 +75,10 @@ def main():
                              reaction_CH4_fraction=float(f_rx[0]), reaction_CO2_fraction=float(f_rx[1] + f_rx[2]),
                              reaction_C3_from_CH4_tpd=tpd("C(s)", C3) * float(f_rx[0]), reaction_C3_from_CO2_tpd=tpd("C(s)", C3) * float(f_rx[1] + f_rx[2]),
                              CO2_fixed_fraction_of_fresh_CO2_tracer=tpd("C(s)", C3) * float(f_sp[1] + f_sp[2]) / tpd("C(s)", CO2_BIO + CO2_DAC),
-                             Q3_kW=s3["Q_kW"]))
+                             extent_reconstruction_max_rel_error=ext_err, extent_reconstruction_ok=ext_ok, Q3_kW=s3["Q_kW"]))
     D = pd.DataFrame(rows); D.to_csv(os.path.join(RESULT, "KIN_cfr_window_origin.csv"), index=False)
     pd.set_option("display.width", 250); pd.set_option("display.max_columns", 30)
-    cols = ["tau1_s", "T3_K", "C_stage3_tpd", "C_stage3_submitted_window_tpd", "ext_CO2_methanation_kmol_d", "ext_CO_carbon_kmol_d", "ext_CH4_cracking_kmol_d",
+    cols = ["tau1_s", "T3_K", "C_stage3_tpd", "C_stage3_submitted_window_tpd", "extent_reconstruction_max_rel_error", "ext_CO2_methanation_kmol_d", "ext_CO_carbon_kmol_d", "ext_CH4_cracking_kmol_d",
             "tracer_CO2_fraction", "tracer_C3_from_CO2_tpd", "tracer_C3_from_CH4_tpd", "reaction_CO2_fraction", "reaction_C3_from_CO2_tpd", "reaction_C3_from_CH4_tpd", "CO2_fixed_fraction_of_fresh_CO2_tracer"]
     L = [f"Stage 3 carbon origin across the CFR window (wall {time.time()-t0:.0f} s). KINETIC, uncalibrated submitted reduced models; once-through, h = 0.35, kref mult = 1.",
          f"Origin of CO entering Stage 3 (CO2-derived fraction): " + ", ".join(f"{lab}: {D[D.stage1_case==lab].CO_origin_CO2_fraction.iloc[0]:.3f}" for lab in TAU1),

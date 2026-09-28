@@ -1,4 +1,4 @@
-K2c: D-optimal validation temperatures with the X4 inlets (wall 30 s). sigma = 0.02; KINETIC reduced models, UNCALIBRATED.
+K2c: D-optimal validation temperatures with the X4 inlets (wall 35 s). sigma = 0.02; KINETIC reduced models, UNCALIBRATED.
 Inlets [kmol/d]: S3 kinetic-loop inlet (X4, H2/CO2 0.42): CH4 490, CO2 10,009, CO 28,728, H2 4,220, H2O 76 | S3 equilibrium-loop inlet (X4, H2/CO2 1.18): CH4 112, CO2 1,858, CO 2,092, H2 2,189, H2O 108 | S2 equilibrium-loop inlet (X4, H2/CO2 1.64): CH4 110, CO2 3,939, CO 14, H2 6,466, H2O 86 | S2 kinetic-loop inlet (X4, H2/CO2 0.87): CH4 465, CO2 11,503, CO 27,258, H2 10,007, H2O 5
 
 === S3 kinetic-loop inlet (X4, H2/CO2 0.42): per-temperature outputs and Fisher diagonal
@@ -61,40 +61,40 @@ K2b (old inlet) 600/700/800/825 P7 (all three reactions + n)    4 600/700/800/82
 
 === S2 equilibrium-loop inlet (X4, H2/CO2 1.64): per-temperature outputs and Fisher diagonal
      T_K  Y_CH4_min  X_COx_min  Y_Csolid_min  Y_CH4_max  X_COx_max  Y_Csolid_max  trace_F  F_k_meth  F_Ea_meth  F_k_carb  F_Ea_carb  F_k_crack  F_Ea_crack  F_n  X_CO2_min  X_CO2_max  F_k1_ref  F_Ea1  F_k2_ref  F_Ea2
-     850     0.0202        NaN           NaN      0.065        NaN           NaN      241       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.135      0.429      84.9    121        11   24.3
-     875     0.0283        NaN           NaN     0.0712        NaN           NaN      185       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.175      0.449      90.5   68.2      11.8   13.9
-     900     0.0376        NaN           NaN     0.0612        NaN           NaN      134       NaN        NaN       NaN        NaN        NaN         NaN  NaN       0.22      0.468      91.9   29.1      8.99   4.45
-     925     0.0317        NaN           NaN     0.0556        NaN           NaN      107       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.267      0.494      92.6   6.94      6.34  0.742
+     850     0.0266        NaN           NaN     0.0801        NaN           NaN      228       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.141      0.426      79.1    112        15   21.3
+     875     0.0343        NaN           NaN     0.0802        NaN           NaN      174       NaN        NaN       NaN        NaN        NaN         NaN  NaN       0.18      0.447      85.5   64.5      13.8   10.4
+     900     0.0423        NaN           NaN      0.064        NaN           NaN      129       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.223      0.466      88.6   28.1      9.67   3.06
+     925     0.0314        NaN           NaN     0.0572        NaN           NaN      105       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.268      0.494      91.3   6.84      6.56  0.492
      950    0.00258        NaN           NaN     0.0528        NaN           NaN     99.8       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.311      0.525      95.9      0      3.83      0
-     975    -0.0128        NaN           NaN     0.0467        NaN           NaN      108       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.347       0.55       100   6.75     0.801 0.0844
-   1e+03    -0.0202        NaN           NaN     0.0245        NaN           NaN      129       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.375       0.57       102   26.2     0.624   0.25
-1.02e+03    -0.0239        NaN           NaN   -0.00205        NaN           NaN      169       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.408      0.587       108   59.5     0.307  0.263
-1.05e+03    -0.0258        NaN           NaN    -0.0186        NaN           NaN      225       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.453      0.602       116    108    0.0142 0.0206
+     975    -0.0128        NaN           NaN     0.0457        NaN           NaN      108       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.347       0.55       100   6.77     0.905  0.061
+   1e+03    -0.0202        NaN           NaN      0.025        NaN           NaN      129       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.376       0.57       102   26.1     0.553  0.142
+1.02e+03    -0.0239        NaN           NaN    -0.0005        NaN           NaN      165       NaN        NaN       NaN        NaN        NaN         NaN  NaN       0.41      0.587       106   58.4     0.411  0.226
+1.05e+03    -0.0258        NaN           NaN    -0.0179        NaN           NaN      221       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.453      0.602       114    106    0.0316 0.0294
 
 === S2 equilibrium-loop inlet (X4, H2/CO2 1.64): D-optimal sets vs reference designs
                     kind         parameter_set  n_T     temperatures  n_points  logdet_F  cond_number  rel_se_k1_ref  rel_se_Ea1  rel_se_k2_ref  rel_se_Ea2
-               D-optimal P4 (k1, Ea1, k2, Ea2)    2          850/950         6      13.9          101          0.102       0.126          0.511         0.4
-               D-optimal P4 (k1, Ea1, k2, Ea2)    3     850/925/1050         9      15.6          129         0.0587      0.0657           0.52       0.433
-               D-optimal P4 (k1, Ea1, k2, Ea2)    4 850/875/950/1050        12      16.7          156          0.052      0.0596          0.475       0.397
-K2 a priori 900/950/1000 P4 (k1, Ea1, k2, Ea2)    3     900/950/1000         9      12.9          193          0.061        0.14          0.435       0.734
-       K2 two T 900/1000 P4 (k1, Ea1, k2, Ea2)    2         900/1000         6      11.1          422         0.0827       0.153          0.859        1.23
+               D-optimal P4 (k1, Ea1, k2, Ea2)    2          850/950         6      13.7          114          0.102       0.128          0.511       0.482
+               D-optimal P4 (k1, Ea1, k2, Ea2)    3     850/925/1050         9      15.5          139         0.0595       0.067          0.505       0.503
+               D-optimal P4 (k1, Ea1, k2, Ea2)    4 850/875/950/1050        12      16.5          171         0.0527      0.0607          0.465       0.472
+K2 a priori 900/950/1000 P4 (k1, Ea1, k2, Ea2)    3     900/950/1000         9      12.4          285         0.0614       0.141          0.444       0.928
+       K2 two T 900/1000 P4 (k1, Ea1, k2, Ea2)    2         900/1000         6      10.5          686          0.085       0.157          0.937        1.67
 
 === S2 kinetic-loop inlet (X4, H2/CO2 0.87): per-temperature outputs and Fisher diagonal
      T_K  Y_CH4_min  X_COx_min  Y_Csolid_min  Y_CH4_max  X_COx_max  Y_Csolid_max  trace_F  F_k_meth  F_Ea_meth  F_k_carb  F_Ea_carb  F_k_crack  F_Ea_crack  F_n  X_CO2_min  X_CO2_max  F_k1_ref  F_Ea1  F_k2_ref   F_Ea2
-     850     0.0003        NaN           NaN    0.00214        NaN           NaN     10.7       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0354      0.091       4.4   6.25    0.0181  0.0402
-     875   0.000446        NaN           NaN      0.003        NaN           NaN     9.45       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0456      0.102      5.34   4.02    0.0376  0.0443
-     900   0.000643        NaN           NaN    0.00393        NaN           NaN     8.27       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0574      0.113       6.2   1.96     0.068  0.0336
-     925   0.000892        NaN           NaN    0.00451        NaN           NaN     7.61       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0706      0.124      6.98  0.523    0.0941   0.011
+     850   0.000403        NaN           NaN    0.00288        NaN           NaN     10.6       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0355     0.0905      4.37    6.2    0.0325  0.0461
+     875   0.000554        NaN           NaN    0.00371        NaN           NaN      9.4       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0456      0.101       5.3      4    0.0572  0.0431
+     900   0.000739        NaN           NaN     0.0045        NaN           NaN     8.24       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0574      0.112      6.17   1.95    0.0888  0.0281
+     925   0.000954        NaN           NaN    0.00481        NaN           NaN      7.6       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0706      0.123      6.96  0.522     0.107 0.00798
      950    0.00117        NaN           NaN    0.00343        NaN           NaN     7.76       NaN        NaN       NaN        NaN        NaN         NaN  NaN     0.0851      0.136       7.7      0    0.0624       0
-     975   -0.00223        NaN           NaN    0.00137        NaN           NaN        9       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.101      0.153       8.4  0.567    0.0286 0.00301
-   1e+03    -0.0153        NaN           NaN    0.00114        NaN           NaN     12.1       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.116      0.177      9.16   2.35     0.444   0.178
-1.02e+03    -0.0306        NaN           NaN  -0.000464        NaN           NaN     16.8       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.132      0.206      10.1   5.57     0.575   0.494
-1.05e+03    -0.0371        NaN           NaN   -0.00529        NaN           NaN     24.3       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.148      0.225      11.7   10.9     0.692    1.01
+     975    -0.0021        NaN           NaN    0.00128        NaN           NaN        9       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.101      0.152      8.41  0.567    0.0255 0.00172
+   1e+03    -0.0142        NaN           NaN    0.00101        NaN           NaN       12       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.117      0.176      9.13   2.34     0.419   0.107
+1.02e+03    -0.0291        NaN           NaN  -0.000376        NaN           NaN     16.4       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.133      0.204      9.93   5.46     0.669   0.367
+1.05e+03    -0.0369        NaN           NaN    -0.0043        NaN           NaN     22.9       NaN        NaN       NaN        NaN        NaN         NaN  NaN      0.148      0.225      11.2   10.4     0.692   0.644
 
 === S2 kinetic-loop inlet (X4, H2/CO2 0.87): D-optimal sets vs reference designs
                     kind         parameter_set  n_T      temperatures  n_points  logdet_F  cond_number  rel_se_k1_ref  rel_se_Ea1  rel_se_k2_ref  rel_se_Ea2
-               D-optimal P4 (k1, Ea1, k2, Ea2)    2          900/1050         6      3.27          235          0.278       0.331           2.47        2.12
-               D-optimal P4 (k1, Ea1, k2, Ea2)    3      875/900/1050         9      4.67          136          0.214       0.253           1.88        1.62
-               D-optimal P4 (k1, Ea1, k2, Ea2)    4 875/900/1025/1050        12      5.75          208           0.19       0.232           1.73        1.61
-K2 a priori 900/950/1000 P4 (k1, Ea1, k2, Ea2)    3      900/950/1000         9      1.88          238           0.21       0.486           1.78        2.93
-       K2 two T 900/1000 P4 (k1, Ea1, k2, Ea2)    2          900/1000         6      1.24          184          0.258       0.487           1.98        3.08
+               D-optimal P4 (k1, Ea1, k2, Ea2)    2          875/1050         6      3.19          219          0.272       0.292           2.28        2.38
+               D-optimal P4 (k1, Ea1, k2, Ea2)    3      850/875/1050         9      4.54          123          0.224       0.225           1.77        1.82
+               D-optimal P4 (k1, Ea1, k2, Ea2)    4 850/875/1025/1050        12      5.72          200          0.191       0.207           1.58        1.82
+K2 a priori 900/950/1000 P4 (k1, Ea1, k2, Ea2)    3      900/950/1000         9       1.6          283           0.21       0.487           1.63        3.35
+       K2 two T 900/1000 P4 (k1, Ea1, k2, Ea2)    2          900/1000         6         1          206          0.259       0.488           1.79        3.46

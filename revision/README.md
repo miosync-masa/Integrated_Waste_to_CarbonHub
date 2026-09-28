@@ -12,8 +12,9 @@ or a **kinetic** value (reduced models with **uncalibrated** rate constants). Th
 
 | Path | Content |
 |---|---|
-| `*.py` | 26 self-contained scripts (flat, same style as `submitted_v1/validation/`); each docstring states purpose, assumptions, sources and outputs |
+| `*.py` | 29 self-contained scripts (flat, same style as `submitted_v1/validation/`); each docstring states purpose, assumptions, sources and outputs |
 | `_paths.py` | shared paths (`BASE` = `submitted_v1/`, `RESULT` = `Result/`) |
+| `_stage3_extent_fix.py` | corrected reaction-extent bookkeeping for the submitted Stage 3 reduced model (outlet flows unchanged; see Notes) |
 | `run_all.sh` | re-runs everything in dependency order (about 90 min on a 12-core laptop; the kinetic recycle solves dominate) |
 | `Result/` | all CSV / TXT / PNG outputs, plus one `.log` per script from the last `run_all.sh` |
 | `SOURCES.md`, `SOURCES.sha256` | third-party documents used (URLs, checksums); the files themselves are not committed |
@@ -41,6 +42,7 @@ Rows follow the execution order of `run_all.sh`.
 | K3 | `K3_stage2_extent_decomposition.py`, `K3_stage2_two_reaction_kinetic.py` | R1-3, R2-4, R4-2 | Contribution of CO2 methanation in Stage 2; apportionment of the −196 kW duty; two-reaction Stage 2 model | `K3_*.csv`, `K3_stage2_2rxn_tau_sweep.png` |
 | KIN | `KIN_chain_design_case.py` | K5, R1-5, m2, m8 | Stage 1 design residence time (approach ≥ 0.90 → τ* = 8.9 s) and the full kinetic chain | `KIN_chain_*.csv` |
 | R4 Major 3 | `KIN_cfr_window_origin.py` | R4-3 | Origin (waste CH4 vs CO2) of the Stage 3 solid carbon in the submitted kinetic chain across the 750–850 K window, species-resolved tracer and reaction-resolved attribution, tau1 = 3 s and tau1* | `KIN_cfr_window_origin.csv`, `KIN_cfr_window_origin_summary.txt` |
+| C2 | `C2_table12_X4_once_through.py` | consistency check | Table 12 (effect of the Stage 1 residence time on Stage 2) recomputed for the X4 feed, once-through, φ = 0 / 0.1 / 1 and equilibrium | `C2_table12_X4.csv` |
 | P1/P2 | `P1_recycle_analysis.py`, `P1_recycle_plot.py` | R1-5 | Converged recycle with species-resolved carbon-origin tracking; H2 split | `P1_recycle_*.csv`, `P1_recycle_co2_carbon.png` |
 | T3 | `T3_pressure_analysis.py`, `T3b_pressure_order_sensitivity.py` | R1-2 | Pressure effect per stage; compression duty; pressure-order sensitivity of the kinetic result | `T3_*.csv`, `T3b_*.csv` |
 | T1 | `T1_carbon_form_sensitivity.py` | R1-2 | Gibbs-energy offset of the solid-carbon phase (0–20 kJ/mol) | `T1_carbon_form_sensitivity.csv` |
@@ -54,11 +56,13 @@ Rows follow the execution order of `run_all.sh`.
 | P3 | `P3_auxiliary_power.py` | R1-5, R2-5 | Auxiliary power (membranes, separation, blowers, cooling, solids) and self-sufficiency map | `P3_*.csv` |
 | T4 | `T4_heat_cascade.py`, `T4b_surplus_heat_use.py` | R2-2 | Pinch analysis (composite and grand composite curves); use of the 650 K surplus heat | `T4_*.csv`, `T4_composite_curves.png`, `T4b_*.csv` |
 | §5.2 | `X4_exergy_heat.py` | R2-2 | Heat exergy (T0 = 298.15 K) of the 13 T4 streams of the X4 case, log-mean and curve-integral values, condensing streams split sensible/latent, ORC exergy efficiency | `X4_exergy_heat_*.csv`, `X4_exergy_heat_summary.txt` |
+| C1 | `C1_refrigerated_dewatering.py` | consistency check | Condenser outlet temperatures for the 95 % water removal, refrigeration duty and chiller power (Carnot-based COP), pinch analysis with refrigeration utility, auxiliary table and self-sufficiency map with chillers, inputs for the TEA | `C1_*.csv`, `C1_composite_curves.png` |
 | E7/E11 | `E7_TEA_X4.py` | R1-6, R2-7, R4-4 | Screening TEA (AACE Class 5) of the revised configuration: CAPEX build-up, NPV/IRR, tornado, break-even | `E7_*.csv`, `E7_tornado.png` |
 | K2 | `K2_validation_design.py` | R2-1 | Identifiability (Fisher information) and a minimal multi-temperature validation design | `K2_*.csv` |
 | K2b | `K2b_stage3_design_600_850.py` | R2-1 | Intermediate step: Stage 3 validation temperatures chosen by exhaustive D-optimal selection over a 600–850 K candidate set, submitted-case inlet (K2 parameter set and the full three-reaction set) | `K2b_*.csv`, `K2b_summary.txt` |
 | K2c | `K2c_design_X4_inlets.py` | R2-1 | Intermediate step: K2b repeated with the X4 Stage 3 inlets (kinetic loop and equilibrium loop) and D-optimal Stage 2 temperatures (850–1050 K) with the X4 Stage 2 inlet; shows that the process inlet compositions are unsuitable as calibration feeds | `K2c_*.csv`, `K2c_summary.txt` |
 | K2d | `K2d_design_composition.py` | R2-1 | **Recommended validation programme (supersedes K2b/K2c).** Feed composition as a design variable: two synthetic-feed series per stage, D-optimal and minimax over temperatures and H2/CO2 (Stage 3 also CO/CO2) | `K2d_*.csv`, `K2d_summary.txt` |
+| C7 | `C7_carbon_balance_bound.py` | consistency check | Tracer-independent lower bound on the CO2-carbon fixation, f ≥ (C_total − C_in,CH4)/C_in,CO2, for the h, T3, ΔG and pressure sweeps | `C7_carbon_balance_bound.csv` |
 
 Dependency order (as in `run_all.sh`): K3 → KIN → KIN_cfr_window_origin → P1 → T3 → T3b → T1 → P4 → E9 → F1 → F1b → X4_fig1 → X4_sensitivity_dG_pressure → X4_T3_sensitivity → X4_fig2 → P3 → T4 → T4b → X4_exergy_heat → E7 → K2 → K2b → K2c → K2d.
 Scripts that need a previous result read it from `Result/` (for example `X4_exergy_heat.py` uses the streams written by `X4_fig1_streams.py`; `K2c`/`K2d` import `K2`/`K2b`). Two scripts cache expensive kinetic solves (`E7_kinetic_X4.csv`, `X4_fig2_kinetic_cases.csv`); delete the cache file to force a re-solve.
@@ -68,6 +72,8 @@ Scripts that need a previous result read it from `Result/` (for example `X4_exer
 * **Kinetic loop "as modelled".** With the uncalibrated reduced kinetics the converged recycle of the kinetic design case circulates about 40,700 kmol/d of CO-rich gas (Stage 3 inlet H2/CO2 = 0.42). Its yields and duties are reported (`X4_fig1_*`, `X4_T3_sensitivity.csv`), but the TEA sizes the plant on the equilibrium loop and `K2c` shows that this composition is unsuitable as a calibration feed.
 * **CO-free feeds freeze the reduced Stage 3 model.** `run_stage3_cfr_kinetic` in the submitted code floors every activity at `TRACE`, so with exactly zero CO the CO-hydrogenation step has a small positive rate while the CO inventory is zero; the negativity limiter then sets the whole integration step to zero and no reaction proceeds. `K2d` therefore uses a 1 % CO trace for its CO-lean series. This does not affect any process case (CO is always present after Stage 2).
 * **Stage 3 temperature.** At equilibrium, fixation decreases as T3 is raised above 650 K; with the uncalibrated reduced kinetics, fixation rises to 53–76 % at 800–850 K (`X4_T3_sensitivity.csv`). The design temperature cannot be chosen until the kinetics are calibrated, which is why the validation temperatures were re-selected over 600–850 K (`K2b`–`K2d`).
+* **Refrigerated dewatering (C1).** The mass balance removes 95 % of the water after Stages 2 and 3; at 1 atm this requires condenser outlets of about 284 K (Stage 2) and 300 K (Stage 3), not the 313 K assumed in the first version of the heat cascade (T4) and the auxiliary table (P3). `C1_refrigerated_dewatering.py` keeps the 95 % (so yields, fixation and duties of every other script are unchanged) and adds the chillers: their power enters the auxiliary load and self-sufficiency map, their duty the CAPEX, and the pinch analysis carries a refrigeration utility below 313 K. `E7_TEA_X4.py` reads `C1_for_TEA.csv`; the T4/P3/T4b outputs remain as the 313 K reference.
+* **Reaction extents of the Stage 3 reduced model.** The submitted `run_stage3_cfr_kinetic` records extents without the negativity-limiter factor that scales the flow update, so the extents did not reconstruct the outlet when the limiter was active. Outlet flows, yields and duties are unaffected. `_stage3_extent_fix.py` rebuilds the function with consistent extents and checks the reconstruction; `KIN_cfr_window_origin.py` uses it.
 * **Logs.** `Result/*.log` are the stdout of the last full run; the local repository path is replaced by `<repo>`.
 
 ## Environment

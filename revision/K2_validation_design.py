@@ -21,7 +21,7 @@ analysis on the reduced models exactly as coded (all rate parameters UNCALIBRATE
 Models and nominal parameters (as submitted / as used in K3-T3b):
   Stage 1  CH4 pyrolysis, run_stage1_pyrolysis_kinetic: k_ref 4.0 mol/m3/s, Ea 180 kJ/mol, T_ref 1200 K
   Stage 2  two-reaction model (K3): RWGS k1_ref 0.05 m3/mol/s, Ea1 80 kJ/mol (submitted); CO2 methanation
-           k2_ref from phi = 1 at the Feed A inlet, Ea2 100 kJ/mol assumed (as the Stage 3 methanation);
+           k2_ref from phi = 1 at the Feed A inlet, Ea2 80 kJ/mol (manuscript Table 2; the process calculations are isothermal at 950 K and do not use Ea2);
            T_ref 950 K; outputs X_CO2 and CH4 yield
   Stage 3  submitted 3-reaction CFR model: CO2 methanation k_ref 0.25, Ea 100 kJ/mol, T_ref 650 K;
            pressure order n (native 5) via the T3b factor (P/P0)^(n-5); outputs CH4 yield and COx conversion
@@ -94,7 +94,7 @@ STAGES = {
                  "four T (600-750 K) x tau 1/3/10 s x P 1/5/10 bar": dict(T=[600, 650, 700, 750], tau=[1, 3, 10], P=[ATM, 5 * BAR, 10 * BAR]),
                  "four T (600-750 K) x tau 0.3/1/3/10/30 s x P 1/5/10 bar": dict(T=[600, 650, 700, 750], tau=[0.3, 1, 3, 10, 30], P=[ATM, 5 * BAR, 10 * BAR])},
         subsets={"(k_ref, Ea) only, n fixed": [0, 1]}),
-    "Stage 2 RWGS + CO2 methanation (priority 2/3)": dict(model=stage2_model, theta=np.array([np.log(0.05), 80e3, np.log(K2_PHI1), 100e3]), names=["k1_ref", "Ea1", "k2_ref", "Ea2"], Tref=950.0,
+    "Stage 2 RWGS + CO2 methanation (priority 2/3)": dict(model=stage2_model, theta=np.array([np.log(0.05), 80e3, np.log(K2_PHI1), 80e3]), names=["k1_ref", "Ea1", "k2_ref", "Ea2"], Tref=950.0,
         designs={"single T (950 K) x tau 1/3/10 s": dict(T=[950], tau=[1, 3, 10], P=[ATM]),
                  "two T (900/1000 K) x tau 1/3/10 s": dict(T=[900, 1000], tau=[1, 3, 10], P=[ATM]),
                  "three T (900/950/1000 K) x tau 1/3/10 s": dict(T=[900, 950, 1000], tau=[1, 3, 10], P=[ATM]),

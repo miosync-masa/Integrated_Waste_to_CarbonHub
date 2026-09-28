@@ -39,6 +39,9 @@ net exportable H2 2 / 3 / 5 USD/kg (assumption). Carbon credits only as an Oppor
 (0.5 creditable x 80 USD/tCO2; note that biogas CO2 is biogenic).
 
 Reproducibility: cd <repo>/revision ; ../.venv/bin/python E7_TEA_X4.py   (~5 min first run: kinetic cases; seconds afterwards)
+Update (C1): condensers are refrigerated to the outlet temperature that gives the 95 % water removal of the mass balance; the chiller
+  power enters the auxiliary load and its duty the CAPEX (400 USD/kW_th, assumption); HEN area and air-cooler duty from C1; a furnace-fuel
+  shortfall (H2 fired > surplus) is purchased at the scenario H2 price; IRR is searched over (-0.99, 2].
 Outputs: E7_kinetic_X4.csv, E7_capex.csv, E7_annual.csv, E7_economics.csv, E7_tornado.csv, E7_tornado.png, E7_breakeven.csv, E7_summary.txt
 """
 import os, sys, time
@@ -57,6 +60,8 @@ OUTS = {k: os.path.join(RESULT, v) for k, v in dict(kin="E7_kinetic_X4.csv", cap
         torn="E7_tornado.csv", png="E7_tornado.png", be="E7_breakeven.csv", txt="E7_summary.txt").items()}
 F1 = pd.read_csv(os.path.join(RESULT, "F1_cases.csv")); T4 = pd.read_csv(os.path.join(RESULT, "T4_selfsufficiency.csv")); T4P = pd.read_csv(os.path.join(RESULT, "T4_pinch_results.csv"))
 P3 = pd.read_csv(os.path.join(RESULT, "P3_selfsufficiency_map.csv")); P3 = P3[(P3.heat_recovery_fraction == 0) & (P3.power_source == "fuel cell 0.50")]
+C1 = pd.read_csv(os.path.join(RESULT, "C1_for_TEA.csv"))   # refrigerated dewatering (95 % water removal): Q_H,min, HEN area, coolers, chillers, aux incl. chiller
+def c1_row(case): return C1[C1.case == case].iloc[0]
 
 # ---------------- unit-cost assumptions (2024 USD) — each with basis
 UC = dict(
@@ -71,6 +76,7 @@ UC = dict(
     blower_per_kW=1500.0,             # blowers / vacuum pump per kW shaft (assumption)
     solids_handling=0.6e6,            # solid carbon discharge, cooling, conveying, bagging (assumption, lump sum)
     h2_export_compression=0.3e6,      # small H2 export compressor to 30 bar + purge/flare (assumption)
+    chiller_per_kWth=400.0,           # packaged vapour-compression chiller incl. glycol loop, per kW cooling duty (assumption; process-refrigeration correlations give 300-600 USD/kW_th at 275-295 K evaporator; TO BE VERIFIED)
     orc_per_kWe=3000.0,               # bottoming ORC/steam, per kWe (Quoilin et al. 2013 report ~2,000-4,000 EUR/kW for < 1 MW; assumption)
     pv_per_kWp=900.0,                 # utility PV per kWp installed (assumption; no storage)
     electrolyser_per_kW=770.0,        # IRENA 2020 'average investment of USD 770/kW' (today) — submitted configuration only
@@ -112,17 +118,19 @@ def process_data(config, basis, kin=None, y=0.60):
     d = {}
     if config.startswith("X4"):
         case = f"2b_y{y:.2f} eq recycle h=0.5"
+        c1 = c1_row(case)   # equilibrium-sized plant with refrigerated dewatering (C1)
         if basis == "equilibrium":
-            r = eq_row(case); h2f, qh = h2_fired_eq(case)
+            r = eq_row(case); qh = float(c1.Q_H_min_kW_dT20); h2f = float(c1.H2_fired_tpd)
         else:
             r = kin[kin.phi == 1.0].iloc[0]; qh = float(r.Q_fired_kW); h2f = qh / ETA_FURNACE * 24 / LHV / 1000
+        aux_eq = float(c1.aux_incl_upgrading_kW if config == "X4-upgrading" else c1.aux_excl_upgrading_kW)
         d.update(C_tpd=float(r.C_total_tpd), water_tpd=float(r.water_total_tpd), CO2_fixed_tpd=float(r.CO2_fixed_as_CO2_tpd), H2_export_raw=float(r.H2_net_exportable_tpd),
-                 H2_fired=h2f, Q_fired_kW=qh, aux_kW=aux_kW(case, incl=(config == "X4-upgrading")), y=y,
+                 H2_fired=h2f, Q_fired_kW=qh, aux_kW=(aux_eq if basis == "equilibrium" else aux_eq * 0.9), y=y,
                  raw_biogas_Nm3h=FRESH_CH4 * NM3_PER_KMOL / y / 24, S2_feed_Nm3h=float(r.S2_inlet_total_kmol_d) * NM3_PER_KMOL / 24,
-                 S3_out_Nm3h=(float(r.pw3_kmol_d) if "pw3_kmol_d" in r else 2612.0) * NM3_PER_KMOL / 24,   # 2,612 kmol/d = P3 value for the eq rep case
-                 hen_m2=1670.0 if basis == "equilibrium" else 1200.0, cooler_kW=5152.0 if basis == "equilibrium" else 3000.0,
-                 blower_kW=86.0 + 136.0, orc_kWe=793.0 if basis == "equilibrium" else 30.0, C_stage3_tpd=float(r.C_stage3_tpd))
-        d["aux_kW"] = float(d["aux_kW"]) if basis == "equilibrium" else float(aux_kW(case)) * 0.9
+                 S3_out_Nm3h=float(c1.pw3_kmol_d) * NM3_PER_KMOL / 24,
+                 hen_m2=float(c1.hen_area_m2_U50), cooler_kW=float(c1.air_cooler_duty_kW), chiller_duty_kW=float(c1.refrigeration_duty_streams_kW), chiller_kW=float(c1.chiller_kW),
+                 blower_kW=86.0 + 136.0, orc_kWe=793.0 if basis == "equilibrium" else 30.0, C_stage3_tpd=float(r.C_stage3_tpd),
+                 T_cond_S2_K=float(c1.S2_T_required_K), T_cond_S3_K=float(c1.S3_T_required_K))
     else:  # submitted
         case = "submitted eq once-through h=0.35" if config == "SUB-once" else "submitted eq recycle h=0.35"
         r = eq_row(case); h2f, qh = h2_fired_eq(case)
@@ -142,7 +150,8 @@ def capex_table(config, pdata):
     it("H2 membrane (vacuum permeate)", UC["h2_membrane_per_Nm3h"] * pdata["S2_feed_Nm3h"], f"{pdata['S2_feed_Nm3h']:,.0f} Nm3/h feed x 400 USD/(Nm3/h)", "assumption")
     it("CH4 separation at Stage 3 outlet", UC["ch4_sep_per_Nm3h"] * pdata["S3_out_Nm3h"], f"{pdata['S3_out_Nm3h']:,.0f} Nm3/h x 1,500 USD/(Nm3/h)", "assumption (SGC 2013:270 Fig.5 order)")
     it("Heat exchanger network", UC["hen_per_m2"] * pdata["hen_m2"], f"{pdata['hen_m2']:,.0f} m2 (T4 area target, U=50) x 600 USD/m2", "assumption")
-    it("Air-cooled condensers", UC["aircooler_per_kW"] * pdata["cooler_kW"], f"{pdata['cooler_kW']:,.0f} kW x 100 USD/kW", "assumption")
+    it("Air-cooled condensers (incl. chiller heat rejection)", UC["aircooler_per_kW"] * pdata["cooler_kW"], f"{pdata['cooler_kW']:,.0f} kW x 100 USD/kW", "assumption")
+    if pdata.get("chiller_duty_kW", 0) > 0: it("Refrigeration for 95 % water removal (chillers)", UC["chiller_per_kWth"] * pdata["chiller_duty_kW"], f"{pdata['chiller_duty_kW']:,.0f} kW cooling below 313 K (to {pdata['T_cond_S2_K']:.0f} / {pdata['T_cond_S3_K']:.0f} K) x 400 USD/kW", "assumption, TO BE VERIFIED (C1)")
     it("Blowers / vacuum pump", UC["blower_per_kW"] * pdata["blower_kW"], f"{pdata['blower_kW']:.0f} kW x 1,500 USD/kW", "assumption")
     it("Solid carbon handling", UC["solids_handling"], "lump sum", "assumption")
     it("H2 export compression, purge/flare", UC["h2_export_compression"], "lump sum", "assumption")
@@ -160,8 +169,8 @@ def capex_table(config, pdata):
 def annual(config, pdata, scen, gate_share=0.5, credits=False, overrides=None):
     o = dict(SCEN[scen]); o.update(overrides or {})
     C = pdata["C_tpd"]; rev_c = C * DAYS * o["cprice"]; rev_gate = 800.0 * gate_share * DAYS * o["fee"]; rev_w = pdata["water_tpd"] * DAYS * o["water"]
-    h2_export = max(0.0, pdata["H2_export_raw"] - pdata["H2_fired"]); rev_h2 = h2_export * 1000 * DAYS * o["h2"] / 1000.0 * 1.0   # t/d -> kg/d ; USD/kg = o["h2"]/1000
-    rev_h2 = h2_export * 1000 * DAYS * (o["h2"] / 1000.0)
+    h2_net = pdata["H2_export_raw"] - pdata["H2_fired"]; h2_export = max(0.0, h2_net); h2_buy = max(0.0, -h2_net)   # t/d; shortfall of furnace fuel is purchased at the scenario H2 price
+    rev_h2 = h2_export * 1000 * DAYS * (o["h2"] / 1000.0); c_h2_buy = h2_buy * 1000 * DAYS * (o["h2"] / 1000.0)
     rev_credit = pdata["CO2_fixed_tpd"] * 0.5 * DAYS * 80.0 if credits else 0.0
     grid_kW = pdata["aux_kW"]
     if config == "X4-ORC": grid_kW = max(0.0, pdata["aux_kW"] - 0.25 * 3171.0 * (pdata["orc_kWe"] / 793.0))
@@ -169,24 +178,24 @@ def annual(config, pdata, scen, gate_share=0.5, credits=False, overrides=None):
     c_el = grid_kW * 24 * DAYS * o["elec"]
     c_dac = 10.0 * DAYS * UC["dac_opex_per_t"] if config.startswith("SUB") else 0.0
     return dict(config=config, scenario=scen, gate_share=gate_share, carbon_revenue=rev_c, gate_revenue=rev_gate, water_revenue=rev_w, H2_export_tpd=h2_export, H2_revenue=rev_h2,
-                credit_revenue=rev_credit, electricity_cost=c_el, dac_opex=c_dac, grid_kW=grid_kW)
+                H2_purchased_tpd=h2_buy, H2_purchase_cost=c_h2_buy, credit_revenue=rev_credit, electricity_cost=c_el, dac_opex=c_dac, grid_kW=grid_kW)
 
 def economics(fci_musd, purchased_musd, react_memb_musd, ann, r=0.08, om=FIXED_OM):
     fci = fci_musd * 1e6; om_cost = om * fci; repl = CATALYST_REPL * react_memb_musd * 1e6
-    cf = ann["carbon_revenue"] + ann["gate_revenue"] + ann["water_revenue"] + ann["H2_revenue"] + ann["credit_revenue"] - ann["electricity_cost"] - ann["dac_opex"] - om_cost - repl
+    cf = ann["carbon_revenue"] + ann["gate_revenue"] + ann["water_revenue"] + ann["H2_revenue"] + ann["credit_revenue"] - ann["electricity_cost"] - ann["dac_opex"] - ann.get("H2_purchase_cost", 0.0) - om_cost - repl
     af = (1 - (1 + r) ** -LIFE) / r; npv = -fci + cf * af
     # IRR by bisection
-    def npv_at(rate): return -fci + cf * ((1 - (1 + rate) ** -LIFE) / rate if rate > 1e-9 else LIFE)
+    def npv_at(rate): return -fci + cf * ((1 - (1 + rate) ** -LIFE) / rate if abs(rate) > 1e-9 else LIFE)
     irr = np.nan
-    if cf > 0:
-        lo, hi = 1e-6, 2.0
-        if npv_at(hi) < 0:
+    if cf > 0:                                   # IRR may be negative when 20 x cf < FCI; search rate in (-0.99, 2]
+        lo, hi = -0.99, 2.0
+        if npv_at(hi) < 0 and npv_at(lo) > 0:
             for _ in range(200):
                 mid = 0.5 * (lo + hi)
                 if npv_at(mid) > 0: lo = mid
                 else: hi = mid
             irr = 0.5 * (lo + hi)
-        else: irr = hi
+        elif npv_at(hi) >= 0: irr = hi
     dpb = np.nan
     if cf > 0:
         cum = 0.0
@@ -266,7 +275,7 @@ def main():
         tot = pd.DataFrame([dict(config=c, yield_basis=b, purchased_MUSD=CAP[(c, b)][0], FCI_MUSD=CAP[(c, b)][1]) for (c, b) in CAP]); L.append("\n--- Totals (Lang 3.63); kinetic rows use the equilibrium-sized plant ---\n" + tot.to_string(index=False))
         L.append("\n--- For information: CAPEX the kinetic loop 'as modelled' would imply (CO recycle inflates separation equipment) ---\n" + pd.DataFrame([dict(config=c, purchased_MUSD=v[0], FCI_MUSD=v[1]) for c, v in KIN_ASMODELLED.items()]).to_string(index=False))
         sel = ann[(ann.gate_share == 0.5) & (~ann.credits)]
-        L.append("\n--- Economics, gate 50 % ---\n" + sel[["config", "yield_basis", "scenario", "C_tpd", "carbon_revenue", "gate_revenue", "water_revenue", "H2_export_tpd", "H2_revenue", "electricity_cost", "dac_opex", "fixed_OM", "catalyst_membrane_replacement", "annual_cash_flow", "FCI_MUSD", "NPV_MUSD", "IRR", "discounted_payback_y"]].to_string(index=False))
+        L.append("\n--- Economics, gate 50 % ---\n" + sel[["config", "yield_basis", "scenario", "C_tpd", "carbon_revenue", "gate_revenue", "water_revenue", "H2_export_tpd", "H2_revenue", "H2_purchased_tpd", "H2_purchase_cost", "electricity_cost", "dac_opex", "fixed_OM", "catalyst_membrane_replacement", "annual_cash_flow", "FCI_MUSD", "NPV_MUSD", "IRR", "discounted_payback_y"]].to_string(index=False))
         L.append("\n--- X4-grid, all gate shares ---\n" + ann[(ann.config == "X4-grid")][["yield_basis", "scenario", "gate_share", "credits", "annual_cash_flow", "NPV_MUSD", "IRR", "discounted_payback_y"]].to_string(index=False))
         L.append("\n--- Tornado ---\n" + td.to_string(index=False)); L.append("\n--- Break-even carbon price ---\n" + bed.to_string(index=False))
         L.append("\n--- Kinetic X4 cases (h = 0.50) ---\n" + kin[["case", "C_total_tpd", "C_from_CO2_total_tpd", "water_total_tpd", "H2_net_exportable_tpd", "Q1_kW", "Q2_kW", "Q3_kW", "Q_fired_kW"]].to_string(index=False))

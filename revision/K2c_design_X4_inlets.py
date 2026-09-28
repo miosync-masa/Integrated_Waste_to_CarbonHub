@@ -13,7 +13,7 @@ differences, exhaustive D-optimal subset selection of temperatures (every chosen
   Stage 3: T 600-850 K step 25 x tau 1/3/10 s x P 1/5 bar; parameter sets P3 (ln k_meth, Ea_meth, n) and
            P7 (+ ln k_carb, Ea_carb, ln k_crack, Ea_crack); outputs Y_CH4, X_COx, Y_Csolid (P3 uses the first two)
   Stage 2: T 850-1050 K step 25 x tau 1/3/10 s x 1 atm; two-reaction model (K3): ln k1, Ea1 (RWGS), ln k2, Ea2
-           (CO2 methanation, k2 from phi = 1 as in the design case); outputs X_CO2, Y_CH4
+           (CO2 methanation, k2 from phi = 1 as in the design case, Ea2 = 80 kJ/mol as in manuscript Table 2); outputs X_CO2, Y_CH4
 Rate parameters UNCALIBRATED (submitted reduced models). KINETIC values.
 
 Outputs (revision/Result/): K2c_candidate_points.csv, K2c_per_temperature_information.csv, K2c_designs.csv,
@@ -56,7 +56,7 @@ def model3(feed, pt, th):
 
 # ---------------- Stage 2 (as K2, feed as argument)
 T2_CAND = list(np.arange(850.0, 1050.1, 25.0)); TAU2 = [1.0, 3.0, 10.0]; P2 = [ATM]
-N4 = ["k1_ref", "Ea1", "k2_ref", "Ea2"]; TH4 = np.array([np.log(0.05), 80e3, np.log(K2m.K2_PHI1), 100e3]); OUT2 = ["X_CO2", "Y_CH4"]
+N4 = ["k1_ref", "Ea1", "k2_ref", "Ea2"]; TH4 = np.array([np.log(0.05), 80e3, np.log(K2m.K2_PHI1), 80e3]); OUT2 = ["X_CO2", "Y_CH4"]   # Ea2 = 80 kJ/mol (Table 2)
 def model2(feed, pt, th):
     T, P, tau = pt["T"], pt["P"], pt["tau"]; feed = W.clean_species_dict(feed)
     g = ct.Solution("gri30.yaml"); g.TP = T, P0; gRT = g.standard_gibbs_RT; i = [g.species_index(s) for s in SP2]

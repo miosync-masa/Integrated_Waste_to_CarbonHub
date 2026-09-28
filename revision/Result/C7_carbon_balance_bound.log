@@ -1,0 +1,4 @@
+C7 carbon-balance lower bound f_lb = (C_total - 35.936) / C_in,CO2 versus the species-resolved tracer. Kinetic rows are labelled in the case name.
+Base case (2b, y = 0.60, h = 0.50, eq recycle): f_lb = 0.94800, tracer = 0.94812
+max |tracer - bound| over all rows: 0.3404; the bound never exceeds the tracer: True
+

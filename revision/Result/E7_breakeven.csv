@@ -1,7 +1,7 @@
 config,yield_basis,gate_share,breakeven_carbon_price_USD_per_t
-X4-grid,equilibrium,0 %,382.69955385522985
-X4-grid,equilibrium,50 %,280.39464370055316
-X4-grid,equilibrium,100 %,178.08973354587636
-X4-grid,kinetic,0 %,210.40295956387138
-X4-grid,kinetic,50 %,46.63253386682456
+X4-grid,equilibrium,0 %,393.8825680325772
+X4-grid,equilibrium,50 %,291.5776578779004
+X4-grid,equilibrium,100 %,189.27274772322363
+X4-grid,kinetic,0 %,227.6600981036088
+X4-grid,kinetic,50 %,63.88967240656197
 X4-grid,kinetic,100 %,1.9721522630525295e-27
